@@ -1,0 +1,7 @@
+﻿<NavigationWindow x:Class="ImageValidation.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Image Validation System" Height="600" Width="820" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Closing="NavigationWindow_Closing"
+        Icon="/ImageValidation.Client;component/Images/settings.ico">
+
+</NavigationWindow>

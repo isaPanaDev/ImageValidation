@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2006b48f-2591-4896-adbd-05e417180cbd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ivservice.cloudapp.net/ImageValidationService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ImageValidationService.xsd" MetadataType="Schema" ID="e194de7b-9bf3-4dba-ac64-a0f726551bc9" SourceId="1" SourceUrl="http://ivservice.cloudapp.net/ImageValidationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ImageValidationService1.xsd" MetadataType="Schema" ID="027fc44d-f57a-4641-ab19-b86f8a8e2750" SourceId="1" SourceUrl="http://ivservice.cloudapp.net/ImageValidationService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ImageValidationService.wsdl" MetadataType="Wsdl" ID="5c62d9ff-9173-436d-98a7-39328aa8d1b0" SourceId="1" SourceUrl="http://ivservice.cloudapp.net/ImageValidationService.svc?wsdl" />
+    <MetadataFile FileName="ImageValidationService2.xsd" MetadataType="Schema" ID="25776089-90da-4695-ae42-9b72ed148a31" SourceId="1" SourceUrl="http://ivservice.cloudapp.net/ImageValidationService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

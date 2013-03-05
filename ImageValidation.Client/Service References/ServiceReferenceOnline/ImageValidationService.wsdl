@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ImageValidationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ivservice.cloudapp.net/ImageValidationService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ivservice.cloudapp.net/ImageValidationService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ivservice.cloudapp.net/ImageValidationService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ImageValidation.Core" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IImageValidationService_ValidateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUser" />
+  </wsdl:message>
+  <wsdl:message name="IImageValidationService_ValidateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IImageValidationService_SaveAccountHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAccountHistory" />
+  </wsdl:message>
+  <wsdl:message name="IImageValidationService_SaveAccountHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAccountHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IImageValidationService_CheckUsernameExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUsernameExists" />
+  </wsdl:message>
+  <wsdl:message name="IImageValidationService_CheckUsernameExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUsernameExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IImageValidationService_SaveFailedLogon_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFailedLogon" />
+  </wsdl:message>
+  <wsdl:message name="IImageValidationService_SaveFailedLogon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFailedLogonResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IImageValidationService">
+    <wsdl:operation name="ValidateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IImageValidationService/ValidateUser" message="tns:IImageValidationService_ValidateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IImageValidationService/ValidateUserResponse" message="tns:IImageValidationService_ValidateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAccountHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IImageValidationService/SaveAccountHistory" message="tns:IImageValidationService_SaveAccountHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IImageValidationService/SaveAccountHistoryResponse" message="tns:IImageValidationService_SaveAccountHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUsernameExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IImageValidationService/CheckUsernameExists" message="tns:IImageValidationService_CheckUsernameExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IImageValidationService/CheckUsernameExistsResponse" message="tns:IImageValidationService_CheckUsernameExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveFailedLogon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IImageValidationService/SaveFailedLogon" message="tns:IImageValidationService_SaveFailedLogon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IImageValidationService/SaveFailedLogonResponse" message="tns:IImageValidationService_SaveFailedLogon_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IImageValidationService" type="tns:IImageValidationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateUser">
+      <soap:operation soapAction="http://tempuri.org/IImageValidationService/ValidateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAccountHistory">
+      <soap:operation soapAction="http://tempuri.org/IImageValidationService/SaveAccountHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUsernameExists">
+      <soap:operation soapAction="http://tempuri.org/IImageValidationService/CheckUsernameExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFailedLogon">
+      <soap:operation soapAction="http://tempuri.org/IImageValidationService/SaveFailedLogon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ImageValidationService">
+    <wsdl:port name="BasicHttpBinding_IImageValidationService" binding="tns:BasicHttpBinding_IImageValidationService">
+      <soap:address location="http://ivservice.cloudapp.net/ImageValidationService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

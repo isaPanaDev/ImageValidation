@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ebfc7880-2a08-4fcf-88c8-c849ba6c5ec0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://168.63.133.244/ImageValidationService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="9c03b570-6d0e-46d3-8f44-276c7f972ebb" SourceId="1" SourceUrl="http://168.63.133.244/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="f0a65657-e96a-4771-935f-ca04aa7c37cf" SourceId="1" SourceUrl="http://168.63.133.244/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="4e8dded7-8687-41b2-83ed-1287f4d3c61a" SourceId="1" SourceUrl="http://168.63.133.244/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="ImageValidation.Core.xsd" MetadataType="Schema" ID="c189484b-ed70-4e8d-a743-c61442fa7d69" SourceId="1" SourceUrl="http://168.63.133.244/ImageValidationService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
