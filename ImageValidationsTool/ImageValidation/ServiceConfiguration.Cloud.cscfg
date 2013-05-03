@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ImageValidation" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="ImageValidation.Service">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="StorageConnectionString" value="BlobEndpoint=http://imagevalidationblob.blob.core.windows.net/;AccountName=imagevalidationblob;AccountKey=ZusTpUgGPdQ98NlQdtMFP1WLBm+QZ0DlQKkOKHIBO/GaUeE+nq5xJ/I+aHYdPZXdD7Lw5CcEUfHlKDxzu5DinA==" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Certificate1" thumbprint="69159839B552844FE2B90776513C269ADAA74E6B" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

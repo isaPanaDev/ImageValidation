@@ -1,0 +1,119 @@
+﻿@model AdminWebPortal.Models.ComputerModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true, "")
+    
+        @Html.LabelFor(m => m.Computer_ID) @Html.TextBoxFor(m => m.Computer_ID, new { @readonly = true, @Style = "width:50px;" })
+        <fieldset>
+            <legend>Computer Information</legend>
+            <table>
+                <tr style="height: 30px;">
+                    <td style="padding-right: 10px;">
+                        @Html.LabelFor(m => m.Computer_Model):
+                    </td>
+                    <td style="padding-right: 10px;">
+                        @Html.TextBoxFor(m => m.Computer_Model)
+                        @Html.ValidationMessageFor(m => m.Computer_Model)
+                    </td>
+                    <td style="padding-right: 10px;">
+                        @Html.LabelFor(m => m.ComputerProduct):
+                    </td>
+                    <td style="padding-right: 10px;">
+                        @Html.TextBoxFor(m => m.ComputerProduct)
+                        @Html.ValidationMessageFor(m => m.Computer_Model)
+                    </td>
+                    <td style="padding-right: 10px;">@Html.LabelFor(m => m.ComputerManufacturer):
+                    </td>
+                    <td style="padding-right: 10px;">@Model.ComputerManufacturer
+                    </td>
+                    <td style="padding-right: 10px;">
+                        @Html.LabelFor(m => m.SerialNumber):
+                    </td>
+                    <td style="padding-right: 10px;">
+                        @Model.SerialNumber
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td colspan="6" style="text-align: right; padding-right: 10px;">
+                        @Html.CheckBoxFor(m => m.IsComputerPrimaryModel) @Html.LabelFor(m => m.IsComputerPrimaryModel)
+                    </td>
+                    <td style="padding-right: 10px;" colspan="2">
+                        @Html.CheckBoxFor(m => m.IsComputerPrimaryProduct) @Html.LabelFor(m => m.IsComputerPrimaryProduct)
+                    </td>
+                </tr>
+            </table>
+            <fieldset>
+                <legend>Operating System Information</legend>
+                <table class="tablestyle">
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.ComputerCaption): @Model.ComputerCaption
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.CSD_Version): @Model.CSD_Version
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Install_Date): @Model.Install_Date
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.ServicePack_MajorVersion): @Model.ServicePack_MajorVersion
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.ServicePack_MinorVersion): @Model.ServicePack_MinorVersion
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.MUI_Language): @Model.MUI_Language
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.System_Directory): @Model.System_Directory
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.ComputerBuildNumber): @Model.ComputerBuildNumber
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.OS_Architecture): @Model.OS_Architecture
+                        </td>
+                        <td>
+                           @Html.LabelFor(m => m.SystemDrive): @Model.SystemDrive
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.OS_Language): @Model.OS_Language
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.ComputerVersion): @Model.ComputerVersion
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Windows_Directory): @Model.Windows_Directory
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <p>
+                @if (User.IsInRole("Admin") || User.IsInRole("PowerUser"))
+                { 
+                    <input type="submit" value="Update Validation Record" />
+                }
+                @if (User.IsInRole("Admin"))
+                {
+                    @Html.ActionLink("Delete Validation Record " + Model.Computer_ID, "ComputerRecordDelete", "Computer", new { ID = Model.Computer_ID}, new {Class="btna", onclick = "return confirm('Are you sure your want to perform a Delete Operation?');" })
+                }
+            </p>
+        </fieldset>
+      
+    }</p>

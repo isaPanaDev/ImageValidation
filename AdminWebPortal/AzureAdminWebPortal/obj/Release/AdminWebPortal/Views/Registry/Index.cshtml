@@ -1,0 +1,68 @@
+﻿@model AdminWebPortal.Models.RegistryModel
+@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <span class="field-validation-error">@ViewBag.ErrorMsg</span><br />
+    Validation Record ID: @Html.TextBox("ComputerID", @computerstatus.ComputerIDFromSession, new { @readonly = true, @Style = "width:50px;" })
+    <fieldset>
+        <legend>Registry Setting Checks</legend>Select a Registry File(.REG) to add registry
+        setting that should be checked for the image<br />
+        <br />
+        <form action="" method="post" enctype="multipart/form-data">
+        <label for="file">
+            Filename:</label>
+        <input type="file" name="file" id="file" accept="reg" />      
+        <input type="submit" value="Upload Registry File" /></form>
+        <br />
+        <br />
+        @if (Model != null)
+        {
+            if (Model.RegistryGroup.Count > 0)
+            {
+            <table class="gridtable">
+                <tr>
+                    <th>
+                        File ID
+                    </th>
+                    <th>
+                        Registry File Name
+                    </th>
+                    @if (User.IsInRole("Admin") || User.IsInRole("PowerUser"))
+                    {<th>
+                        Action
+                    </th>
+                    }
+                </tr>
+                @foreach (var item in Model.RegistryGroup)
+                {
+
+                    <tr>
+                        <td>
+                            @item.RegistryGroupID
+                        </td>
+                        <td>
+                            @item.FileName
+                        </td>
+                        <td>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                @Html.ActionLink("Delete", "DeleteRegistry", "Registry", new { ID = item.RegistryGroupID }, new { onclick = "return confirm('Are you sure your want to perform a Delete Operation?');" })
+                            }
+                            @if (User.IsInRole("Admin") || User.IsInRole("PowerUser"))
+                            {
+                                @Html.ActionLink("Edit", "Edit", "Registry", new { ID = item.RegistryGroupID }, null)
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+              
+            }
+        }
+    </fieldset>
+</div>

@@ -1,0 +1,1364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ImageValidationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ImageValidationModelStoreContainer">
+          <EntitySet Name="AccountHistory" EntityType="ImageValidationModel.Store.AccountHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Application" EntityType="ImageValidationModel.Store.Application" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ApplicationDriverDepency" EntityType="ImageValidationModel.Store.ApplicationDriverDepency" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Computer" EntityType="ImageValidationModel.Store.Computer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Driver" EntityType="ImageValidationModel.Store.Driver" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EmployeeLogin" EntityType="ImageValidationModel.Store.EmployeeLogin" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FailedLogon" EntityType="ImageValidationModel.Store.FailedLogon" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FileFolder" EntityType="ImageValidationModel.Store.FileFolder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FileFolderType" EntityType="ImageValidationModel.Store.FileFolderType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="HotFix" EntityType="ImageValidationModel.Store.HotFix" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OperatingSystem" EntityType="ImageValidationModel.Store.OperatingSystem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Permission" EntityType="ImageValidationModel.Store.Permission" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Product" EntityType="ImageValidationModel.Store.Product" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="QuickSearch" EntityType="ImageValidationModel.Store.QuickSearch" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Registry" EntityType="ImageValidationModel.Store.Registry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RegistryGroup" EntityType="ImageValidationModel.Store.RegistryGroup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RegistryGrouping" EntityType="ImageValidationModel.Store.RegistryGrouping" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User" EntityType="ImageValidationModel.Store.User" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserPermission" EntityType="ImageValidationModel.Store.UserPermission" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_AccountHistory_User" Association="ImageValidationModel.Store.FK_AccountHistory_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="AccountHistory" EntitySet="AccountHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Application_Computer" Association="ImageValidationModel.Store.FK_Application_Computer">
+            <End Role="Computer" EntitySet="Computer" />
+            <End Role="Application" EntitySet="Application" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationDriverDepency_Application" Association="ImageValidationModel.Store.FK_ApplicationDriverDepency_Application">
+            <End Role="Application" EntitySet="Application" />
+            <End Role="ApplicationDriverDepency" EntitySet="ApplicationDriverDepency" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationDriverDepency_Driver" Association="ImageValidationModel.Store.FK_ApplicationDriverDepency_Driver">
+            <End Role="Driver" EntitySet="Driver" />
+            <End Role="ApplicationDriverDepency" EntitySet="ApplicationDriverDepency" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Computer_User" Association="ImageValidationModel.Store.FK_Computer_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Computer" EntitySet="Computer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Driver_Computer" Association="ImageValidationModel.Store.FK_Driver_Computer">
+            <End Role="Computer" EntitySet="Computer" />
+            <End Role="Driver" EntitySet="Driver" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FailedLogon_User" Association="ImageValidationModel.Store.FK_FailedLogon_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="FailedLogon" EntitySet="FailedLogon" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FileFolder_Computer" Association="ImageValidationModel.Store.FK_FileFolder_Computer">
+            <End Role="Computer" EntitySet="Computer" />
+            <End Role="FileFolder" EntitySet="FileFolder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FileFolder_FileFolderType" Association="ImageValidationModel.Store.FK_FileFolder_FileFolderType">
+            <End Role="FileFolderType" EntitySet="FileFolderType" />
+            <End Role="FileFolder" EntitySet="FileFolder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HotFix_Computer" Association="ImageValidationModel.Store.FK_HotFix_Computer">
+            <End Role="Computer" EntitySet="Computer" />
+            <End Role="HotFix" EntitySet="HotFix" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistryGrouping_Computer" Association="ImageValidationModel.Store.FK_RegistryGrouping_Computer">
+            <End Role="Computer" EntitySet="Computer" />
+            <End Role="RegistryGrouping" EntitySet="RegistryGrouping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistryGrouping_Registry" Association="ImageValidationModel.Store.FK_RegistryGrouping_Registry">
+            <End Role="Registry" EntitySet="Registry" />
+            <End Role="RegistryGrouping" EntitySet="RegistryGrouping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistryGrouping_RegistryGroup" Association="ImageValidationModel.Store.FK_RegistryGrouping_RegistryGroup">
+            <End Role="RegistryGroup" EntitySet="RegistryGroup" />
+            <End Role="RegistryGrouping" EntitySet="RegistryGrouping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Permission" Association="ImageValidationModel.Store.FK_User_Permission">
+            <End Role="Permission" EntitySet="Permission" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPermission_Permission" Association="ImageValidationModel.Store.FK_UserPermission_Permission">
+            <End Role="Permission" EntitySet="Permission" />
+            <End Role="UserPermission" EntitySet="UserPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPermission_User" Association="ImageValidationModel.Store.FK_UserPermission_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserPermission" EntitySet="UserPermission" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AccountHistory">
+          <Key>
+            <PropertyRef Name="AccountHistoryID" />
+          </Key>
+          <Property Name="AccountHistoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="LoginDate" Type="datetime" Nullable="false" />
+          <Property Name="SessionID" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="ApplicationID" />
+          </Key>
+          <Property Name="ApplicationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ComputerID" Type="int" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+          <Property Name="DisplayVersion" Type="nvarchar(max)" />
+          <Property Name="Publisher" Type="nvarchar(max)" />
+          <Property Name="VersionMinor" Type="nvarchar(max)" />
+          <Property Name="VersionMajor" Type="nvarchar(max)" />
+          <Property Name="Version" Type="nvarchar(max)" />
+          <Property Name="HelpLink" Type="nvarchar(max)" />
+          <Property Name="HelpTelephone" Type="nvarchar(max)" />
+          <Property Name="InstallDate" Type="nvarchar(max)" />
+          <Property Name="InstallLocation" Type="nvarchar(max)" />
+          <Property Name="InstallSource" Type="nvarchar(max)" />
+          <Property Name="URLInfoAbout" Type="nvarchar(max)" />
+          <Property Name="URLUpdateInfo" Type="nvarchar(max)" />
+          <Property Name="Comments" Type="nvarchar(max)" />
+          <Property Name="AuthorizedCDFPrefix" Type="nvarchar(max)" />
+          <Property Name="Contact" Type="nvarchar(max)" />
+          <Property Name="EstimatedSize" Type="nvarchar(max)" />
+          <Property Name="Language" Type="nvarchar(max)" />
+          <Property Name="ModifyPath" Type="nvarchar(max)" />
+          <Property Name="ReadMe" Type="nvarchar(max)" />
+          <Property Name="UnInstallString" Type="nvarchar(max)" />
+          <Property Name="SettingIdentifier" Type="nvarchar(max)" />
+          <Property Name="IsRequired" Type="bit" />
+          <Property Name="ApplicationUrl" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ApplicationDriverDepency">
+          <Key>
+            <PropertyRef Name="ApplicationDriverDepencyID" />
+          </Key>
+          <Property Name="ApplicationDriverDepencyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ApplicationID" Type="int" />
+          <Property Name="DriverID" Type="int" />
+        </EntityType>
+        <EntityType Name="Computer">
+          <Key>
+            <PropertyRef Name="ComputerID" />
+          </Key>
+          <Property Name="ComputerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="Model" Type="nvarchar" MaxLength="100" />
+          <Property Name="Product" Type="nvarchar" MaxLength="100" />
+          <Property Name="BuildNumber" Type="nvarchar" MaxLength="100" />
+          <Property Name="Caption" Type="nvarchar" MaxLength="100" />
+          <Property Name="CSDVersion" Type="nvarchar" MaxLength="100" />
+          <Property Name="InstallDate" Type="nvarchar" MaxLength="100" />
+          <Property Name="MUILanguages" Type="nvarchar" MaxLength="100" />
+          <Property Name="OSArchitecture" Type="nvarchar" MaxLength="100" />
+          <Property Name="OSLanguage" Type="nvarchar" MaxLength="100" />
+          <Property Name="OSProductSuite" Type="nvarchar" MaxLength="100" />
+          <Property Name="OSType" Type="nvarchar" MaxLength="100" />
+          <Property Name="ServicePackMajorVersion" Type="nvarchar" MaxLength="100" />
+          <Property Name="ServicePackMinorVersion" Type="nvarchar" MaxLength="100" />
+          <Property Name="SystemDirectory" Type="nvarchar" MaxLength="100" />
+          <Property Name="Version" Type="nvarchar" MaxLength="100" />
+          <Property Name="WindowsDirectory" Type="nvarchar" MaxLength="100" />
+          <Property Name="Manufacturer" Type="nvarchar" MaxLength="100" />
+          <Property Name="Manufacturer2" Type="nvarchar" MaxLength="100" />
+          <Property Name="ComputerRecordAddDate" Type="datetime2" />
+          <Property Name="IsPrimaryProduct" Type="bit" />
+          <Property Name="IsPrimaryModel" Type="bit" />
+          <Property Name="SerialNumber" Type="nvarchar" MaxLength="500" />
+          <Property Name="SystemDrive" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Driver">
+          <Key>
+            <PropertyRef Name="DriverID" />
+          </Key>
+          <Property Name="DriverID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ComputerID" Type="int" />
+          <Property Name="CompatID" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DeviceClass" Type="nvarchar(max)" />
+          <Property Name="DeviceID" Type="nvarchar" MaxLength="500" />
+          <Property Name="DeviceName" Type="nvarchar" MaxLength="500" />
+          <Property Name="DriverDate" Type="nvarchar" MaxLength="100" />
+          <Property Name="DriverProviderName" Type="nvarchar" MaxLength="100" />
+          <Property Name="DriverVersion" Type="nvarchar" MaxLength="100" />
+          <Property Name="FriendlyName" Type="nvarchar" MaxLength="100" />
+          <Property Name="HardWareID" Type="nvarchar" MaxLength="100" />
+          <Property Name="InfName" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsSigned" Type="nvarchar" MaxLength="100" />
+          <Property Name="Manufacturer" Type="nvarchar" MaxLength="100" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="PDO" Type="nvarchar" MaxLength="100" />
+          <Property Name="Signer" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsRequired" Type="bit" />
+          <Property Name="httpUrl" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="EmployeeLogin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="FailedLogon">
+          <Key>
+            <PropertyRef Name="FailID" />
+          </Key>
+          <Property Name="FailID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="DateTime" Type="datetime2" />
+        </EntityType>
+        <EntityType Name="FileFolder">
+          <Key>
+            <PropertyRef Name="FileFolderID" />
+          </Key>
+          <Property Name="FileFolderID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ComputerID" Type="int" />
+          <Property Name="Location" Type="nvarchar" MaxLength="100" />
+          <Property Name="FileFolderTypeID" Type="int" />
+          <Property Name="Note" Type="text" />
+        </EntityType>
+        <EntityType Name="FileFolderType">
+          <Key>
+            <PropertyRef Name="FileFolderTypeID" />
+          </Key>
+          <Property Name="FileFolderTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="HotFix">
+          <Key>
+            <PropertyRef Name="HotFixID" />
+          </Key>
+          <Property Name="HotFixID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ComputerID" Type="int" />
+          <Property Name="CSName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="InstallDate" Type="nvarchar" MaxLength="100" />
+          <Property Name="InstalledBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsRequired" Type="bit" />
+          <Property Name="HotFixIDs" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="OperatingSystem">
+          <Key>
+            <PropertyRef Name="OSID" />
+          </Key>
+          <Property Name="OSID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OSName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Permission">
+          <Key>
+            <PropertyRef Name="PermissionID" />
+          </Key>
+          <Property Name="PermissionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="100" />
+          <Property Name="RoleDescription" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="QuickSearch">
+          <Key>
+            <PropertyRef Name="QuickSearchID" />
+          </Key>
+          <Property Name="QuickSearchID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="QuickSearchName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Registry">
+          <Key>
+            <PropertyRef Name="RegistryID" />
+          </Key>
+          <Property Name="RegistryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Key" Type="nvarchar" MaxLength="100" />
+          <Property Name="Value" Type="nvarchar" MaxLength="100" />
+          <Property Name="ValueData" Type="nvarchar" MaxLength="100" />
+          <Property Name="DataType" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="RegistryGroup">
+          <Key>
+            <PropertyRef Name="RegistryGroupID" />
+          </Key>
+          <Property Name="RegistryGroupID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Note" Type="text" />
+        </EntityType>
+        <EntityType Name="RegistryGrouping">
+          <Key>
+            <PropertyRef Name="RegistryGroupingID" />
+          </Key>
+          <Property Name="RegistryGroupingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RegistryGroupID" Type="int" />
+          <Property Name="RegistryID" Type="int" />
+          <Property Name="ComputerID" Type="int" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+          <Property Name="UserCreateDate" Type="datetime2" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="DeleteRecord" Type="int" />
+          <Property Name="PermissionID" Type="int" />
+        </EntityType>
+        <EntityType Name="UserPermission">
+          <Key>
+            <PropertyRef Name="UserPermissionID" />
+          </Key>
+          <Property Name="PermissionID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="UserPermissionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <Association Name="FK_AccountHistory_User">
+          <End Role="User" Type="ImageValidationModel.Store.User" Multiplicity="1" />
+          <End Role="AccountHistory" Type="ImageValidationModel.Store.AccountHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="AccountHistory">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Application_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Store.Computer" Multiplicity="0..1" />
+          <End Role="Application" Type="ImageValidationModel.Store.Application" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="Application">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationDriverDepency_Application">
+          <End Role="Application" Type="ImageValidationModel.Store.Application" Multiplicity="0..1" />
+          <End Role="ApplicationDriverDepency" Type="ImageValidationModel.Store.ApplicationDriverDepency" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Application">
+              <PropertyRef Name="ApplicationID" />
+            </Principal>
+            <Dependent Role="ApplicationDriverDepency">
+              <PropertyRef Name="ApplicationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationDriverDepency_Driver">
+          <End Role="Driver" Type="ImageValidationModel.Store.Driver" Multiplicity="0..1" />
+          <End Role="ApplicationDriverDepency" Type="ImageValidationModel.Store.ApplicationDriverDepency" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Driver">
+              <PropertyRef Name="DriverID" />
+            </Principal>
+            <Dependent Role="ApplicationDriverDepency">
+              <PropertyRef Name="DriverID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Computer_User">
+          <End Role="User" Type="ImageValidationModel.Store.User" Multiplicity="0..1" />
+          <End Role="Computer" Type="ImageValidationModel.Store.Computer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Computer">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Driver_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Store.Computer" Multiplicity="0..1" />
+          <End Role="Driver" Type="ImageValidationModel.Store.Driver" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="Driver">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FailedLogon_User">
+          <End Role="User" Type="ImageValidationModel.Store.User" Multiplicity="0..1" />
+          <End Role="FailedLogon" Type="ImageValidationModel.Store.FailedLogon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="FailedLogon">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FileFolder_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Store.Computer" Multiplicity="0..1" />
+          <End Role="FileFolder" Type="ImageValidationModel.Store.FileFolder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="FileFolder">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FileFolder_FileFolderType">
+          <End Role="FileFolderType" Type="ImageValidationModel.Store.FileFolderType" Multiplicity="0..1" />
+          <End Role="FileFolder" Type="ImageValidationModel.Store.FileFolder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FileFolderType">
+              <PropertyRef Name="FileFolderTypeID" />
+            </Principal>
+            <Dependent Role="FileFolder">
+              <PropertyRef Name="FileFolderTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HotFix_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Store.Computer" Multiplicity="0..1" />
+          <End Role="HotFix" Type="ImageValidationModel.Store.HotFix" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="HotFix">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistryGrouping_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Store.Computer" Multiplicity="0..1" />
+          <End Role="RegistryGrouping" Type="ImageValidationModel.Store.RegistryGrouping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="RegistryGrouping">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistryGrouping_Registry">
+          <End Role="Registry" Type="ImageValidationModel.Store.Registry" Multiplicity="0..1" />
+          <End Role="RegistryGrouping" Type="ImageValidationModel.Store.RegistryGrouping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registry">
+              <PropertyRef Name="RegistryID" />
+            </Principal>
+            <Dependent Role="RegistryGrouping">
+              <PropertyRef Name="RegistryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistryGrouping_RegistryGroup">
+          <End Role="RegistryGroup" Type="ImageValidationModel.Store.RegistryGroup" Multiplicity="0..1" />
+          <End Role="RegistryGrouping" Type="ImageValidationModel.Store.RegistryGrouping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistryGroup">
+              <PropertyRef Name="RegistryGroupID" />
+            </Principal>
+            <Dependent Role="RegistryGrouping">
+              <PropertyRef Name="RegistryGroupID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Permission">
+          <End Role="Permission" Type="ImageValidationModel.Store.Permission" Multiplicity="0..1" />
+          <End Role="User" Type="ImageValidationModel.Store.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permission">
+              <PropertyRef Name="PermissionID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="PermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPermission_Permission">
+          <End Role="Permission" Type="ImageValidationModel.Store.Permission" Multiplicity="1" />
+          <End Role="UserPermission" Type="ImageValidationModel.Store.UserPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permission">
+              <PropertyRef Name="PermissionID" />
+            </Principal>
+            <Dependent Role="UserPermission">
+              <PropertyRef Name="PermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPermission_User">
+          <End Role="User" Type="ImageValidationModel.Store.User" Multiplicity="0..1" />
+          <End Role="UserPermission" Type="ImageValidationModel.Store.UserPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserPermission">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ImageValidationModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ImageValidationEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AccountHistories" EntityType="ImageValidationModel.AccountHistory" />
+          <EntitySet Name="Applications" EntityType="ImageValidationModel.Application" />
+          <EntitySet Name="ApplicationDriverDepencies" EntityType="ImageValidationModel.ApplicationDriverDepency" />
+          <EntitySet Name="Computers" EntityType="ImageValidationModel.Computer" />
+          <EntitySet Name="Drivers" EntityType="ImageValidationModel.Driver" />
+          <EntitySet Name="EmployeeLogins" EntityType="ImageValidationModel.EmployeeLogin" />
+          <EntitySet Name="FailedLogons" EntityType="ImageValidationModel.FailedLogon" />
+          <EntitySet Name="FileFolders" EntityType="ImageValidationModel.FileFolder" />
+          <EntitySet Name="FileFolderTypes" EntityType="ImageValidationModel.FileFolderType" />
+          <EntitySet Name="HotFixes" EntityType="ImageValidationModel.HotFix" />
+          <EntitySet Name="OperatingSystems" EntityType="ImageValidationModel.OperatingSystem" />
+          <EntitySet Name="Permissions" EntityType="ImageValidationModel.Permission" />
+          <EntitySet Name="Products" EntityType="ImageValidationModel.Product" />
+          <EntitySet Name="QuickSearches" EntityType="ImageValidationModel.QuickSearch" />
+          <EntitySet Name="Registries" EntityType="ImageValidationModel.Registry" />
+          <EntitySet Name="RegistryGroups" EntityType="ImageValidationModel.RegistryGroup" />
+          <EntitySet Name="RegistryGroupings" EntityType="ImageValidationModel.RegistryGrouping" />
+          <EntitySet Name="Users" EntityType="ImageValidationModel.User" />
+          <EntitySet Name="UserPermissions" EntityType="ImageValidationModel.UserPermission" />
+          <AssociationSet Name="FK_AccountHistory_User" Association="ImageValidationModel.FK_AccountHistory_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="AccountHistory" EntitySet="AccountHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Application_Computer" Association="ImageValidationModel.FK_Application_Computer">
+            <End Role="Computer" EntitySet="Computers" />
+            <End Role="Application" EntitySet="Applications" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationDriverDepency_Application" Association="ImageValidationModel.FK_ApplicationDriverDepency_Application">
+            <End Role="Application" EntitySet="Applications" />
+            <End Role="ApplicationDriverDepency" EntitySet="ApplicationDriverDepencies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ApplicationDriverDepency_Driver" Association="ImageValidationModel.FK_ApplicationDriverDepency_Driver">
+            <End Role="Driver" EntitySet="Drivers" />
+            <End Role="ApplicationDriverDepency" EntitySet="ApplicationDriverDepencies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Computer_User" Association="ImageValidationModel.FK_Computer_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Computer" EntitySet="Computers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Driver_Computer" Association="ImageValidationModel.FK_Driver_Computer">
+            <End Role="Computer" EntitySet="Computers" />
+            <End Role="Driver" EntitySet="Drivers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FileFolder_Computer" Association="ImageValidationModel.FK_FileFolder_Computer">
+            <End Role="Computer" EntitySet="Computers" />
+            <End Role="FileFolder" EntitySet="FileFolders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HotFix_Computer" Association="ImageValidationModel.FK_HotFix_Computer">
+            <End Role="Computer" EntitySet="Computers" />
+            <End Role="HotFix" EntitySet="HotFixes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistryGrouping_Computer" Association="ImageValidationModel.FK_RegistryGrouping_Computer">
+            <End Role="Computer" EntitySet="Computers" />
+            <End Role="RegistryGrouping" EntitySet="RegistryGroupings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FailedLogon_User" Association="ImageValidationModel.FK_FailedLogon_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="FailedLogon" EntitySet="FailedLogons" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FileFolder_FileFolderType" Association="ImageValidationModel.FK_FileFolder_FileFolderType">
+            <End Role="FileFolderType" EntitySet="FileFolderTypes" />
+            <End Role="FileFolder" EntitySet="FileFolders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Permission" Association="ImageValidationModel.FK_User_Permission">
+            <End Role="Permission" EntitySet="Permissions" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPermission_Permission" Association="ImageValidationModel.FK_UserPermission_Permission">
+            <End Role="Permission" EntitySet="Permissions" />
+            <End Role="UserPermission" EntitySet="UserPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistryGrouping_Registry" Association="ImageValidationModel.FK_RegistryGrouping_Registry">
+            <End Role="Registry" EntitySet="Registries" />
+            <End Role="RegistryGrouping" EntitySet="RegistryGroupings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistryGrouping_RegistryGroup" Association="ImageValidationModel.FK_RegistryGrouping_RegistryGroup">
+            <End Role="RegistryGroup" EntitySet="RegistryGroups" />
+            <End Role="RegistryGrouping" EntitySet="RegistryGroupings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPermission_User" Association="ImageValidationModel.FK_UserPermission_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserPermission" EntitySet="UserPermissions" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AccountHistory">
+          <Key>
+            <PropertyRef Name="AccountHistoryID" />
+          </Key>
+          <Property Name="AccountHistoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="LoginDate" Type="DateTime" Nullable="false" />
+          <Property Name="SessionID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="User" Relationship="ImageValidationModel.FK_AccountHistory_User" FromRole="AccountHistory" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="ApplicationID" />
+          </Key>
+          <Property Name="ApplicationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComputerID" Type="Int32" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DisplayVersion" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Publisher" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="VersionMinor" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="VersionMajor" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="HelpLink" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="HelpTelephone" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="InstallDate" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="InstallLocation" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="InstallSource" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="URLInfoAbout" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="URLUpdateInfo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Comments" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="AuthorizedCDFPrefix" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Contact" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="EstimatedSize" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Language" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ModifyPath" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ReadMe" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="UnInstallString" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SettingIdentifier" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="IsRequired" Type="Boolean" />
+          <Property Name="ApplicationUrl" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Computer" Relationship="ImageValidationModel.FK_Application_Computer" FromRole="Application" ToRole="Computer" />
+          <NavigationProperty Name="ApplicationDriverDepencies" Relationship="ImageValidationModel.FK_ApplicationDriverDepency_Application" FromRole="Application" ToRole="ApplicationDriverDepency" />
+        </EntityType>
+        <EntityType Name="ApplicationDriverDepency">
+          <Key>
+            <PropertyRef Name="ApplicationDriverDepencyID" />
+          </Key>
+          <Property Name="ApplicationDriverDepencyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ApplicationID" Type="Int32" />
+          <Property Name="DriverID" Type="Int32" />
+          <NavigationProperty Name="Application" Relationship="ImageValidationModel.FK_ApplicationDriverDepency_Application" FromRole="ApplicationDriverDepency" ToRole="Application" />
+          <NavigationProperty Name="Driver" Relationship="ImageValidationModel.FK_ApplicationDriverDepency_Driver" FromRole="ApplicationDriverDepency" ToRole="Driver" />
+        </EntityType>
+        <EntityType Name="Computer">
+          <Key>
+            <PropertyRef Name="ComputerID" />
+          </Key>
+          <Property Name="ComputerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="Model" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Product" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="BuildNumber" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Caption" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CSDVersion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="InstallDate" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="MUILanguages" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OSArchitecture" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OSLanguage" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OSProductSuite" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OSType" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ServicePackMajorVersion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ServicePackMinorVersion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="SystemDirectory" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="WindowsDirectory" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Manufacturer" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Manufacturer2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ComputerRecordAddDate" Type="DateTime" />
+          <Property Name="IsPrimaryProduct" Type="Boolean" />
+          <Property Name="IsPrimaryModel" Type="Boolean" />
+          <Property Name="SerialNumber" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="SystemDrive" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Applications" Relationship="ImageValidationModel.FK_Application_Computer" FromRole="Computer" ToRole="Application" />
+          <NavigationProperty Name="User" Relationship="ImageValidationModel.FK_Computer_User" FromRole="Computer" ToRole="User" />
+          <NavigationProperty Name="Drivers" Relationship="ImageValidationModel.FK_Driver_Computer" FromRole="Computer" ToRole="Driver" />
+          <NavigationProperty Name="FileFolders" Relationship="ImageValidationModel.FK_FileFolder_Computer" FromRole="Computer" ToRole="FileFolder" />
+          <NavigationProperty Name="HotFixes" Relationship="ImageValidationModel.FK_HotFix_Computer" FromRole="Computer" ToRole="HotFix" />
+          <NavigationProperty Name="RegistryGroupings" Relationship="ImageValidationModel.FK_RegistryGrouping_Computer" FromRole="Computer" ToRole="RegistryGrouping" />
+        </EntityType>
+        <EntityType Name="Driver">
+          <Key>
+            <PropertyRef Name="DriverID" />
+          </Key>
+          <Property Name="DriverID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComputerID" Type="Int32" />
+          <Property Name="CompatID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DeviceClass" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DeviceID" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="DeviceName" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="DriverDate" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DriverProviderName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DriverVersion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="FriendlyName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="HardWareID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="InfName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsSigned" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Manufacturer" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PDO" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Signer" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsRequired" Type="Boolean" />
+          <Property Name="httpUrl" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ApplicationDriverDepencies" Relationship="ImageValidationModel.FK_ApplicationDriverDepency_Driver" FromRole="Driver" ToRole="ApplicationDriverDepency" />
+          <NavigationProperty Name="Computer" Relationship="ImageValidationModel.FK_Driver_Computer" FromRole="Driver" ToRole="Computer" />
+        </EntityType>
+        <EntityType Name="EmployeeLogin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="FailedLogon">
+          <Key>
+            <PropertyRef Name="FailID" />
+          </Key>
+          <Property Name="FailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="DateTime" Type="DateTime" />
+          <NavigationProperty Name="User" Relationship="ImageValidationModel.FK_FailedLogon_User" FromRole="FailedLogon" ToRole="User" />
+        </EntityType>
+        <EntityType Name="FileFolder">
+          <Key>
+            <PropertyRef Name="FileFolderID" />
+          </Key>
+          <Property Name="FileFolderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComputerID" Type="Int32" />
+          <Property Name="Location" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="FileFolderTypeID" Type="Int32" />
+          <Property Name="Note" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Computer" Relationship="ImageValidationModel.FK_FileFolder_Computer" FromRole="FileFolder" ToRole="Computer" />
+          <NavigationProperty Name="FileFolderType" Relationship="ImageValidationModel.FK_FileFolder_FileFolderType" FromRole="FileFolder" ToRole="FileFolderType" />
+        </EntityType>
+        <EntityType Name="FileFolderType">
+          <Key>
+            <PropertyRef Name="FileFolderTypeID" />
+          </Key>
+          <Property Name="FileFolderTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="FileFolders" Relationship="ImageValidationModel.FK_FileFolder_FileFolderType" FromRole="FileFolderType" ToRole="FileFolder" />
+        </EntityType>
+        <EntityType Name="HotFix">
+          <Key>
+            <PropertyRef Name="HotFixID" />
+          </Key>
+          <Property Name="HotFixID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComputerID" Type="Int32" />
+          <Property Name="CSName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="InstallDate" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="InstalledBy" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsRequired" Type="Boolean" />
+          <Property Name="HotFixIDs" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Computer" Relationship="ImageValidationModel.FK_HotFix_Computer" FromRole="HotFix" ToRole="Computer" />
+        </EntityType>
+        <EntityType Name="OperatingSystem">
+          <Key>
+            <PropertyRef Name="OSID" />
+          </Key>
+          <Property Name="OSID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OSName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Permission">
+          <Key>
+            <PropertyRef Name="PermissionID" />
+          </Key>
+          <Property Name="PermissionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="RoleDescription" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Users" Relationship="ImageValidationModel.FK_User_Permission" FromRole="Permission" ToRole="User" />
+          <NavigationProperty Name="UserPermissions" Relationship="ImageValidationModel.FK_UserPermission_Permission" FromRole="Permission" ToRole="UserPermission" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="QuickSearch">
+          <Key>
+            <PropertyRef Name="QuickSearchID" />
+          </Key>
+          <Property Name="QuickSearchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QuickSearchName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Registry">
+          <Key>
+            <PropertyRef Name="RegistryID" />
+          </Key>
+          <Property Name="RegistryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Key" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Value" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ValueData" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DataType" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="RegistryGroupings" Relationship="ImageValidationModel.FK_RegistryGrouping_Registry" FromRole="Registry" ToRole="RegistryGrouping" />
+        </EntityType>
+        <EntityType Name="RegistryGroup">
+          <Key>
+            <PropertyRef Name="RegistryGroupID" />
+          </Key>
+          <Property Name="RegistryGroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Note" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="RegistryGroupings" Relationship="ImageValidationModel.FK_RegistryGrouping_RegistryGroup" FromRole="RegistryGroup" ToRole="RegistryGrouping" />
+        </EntityType>
+        <EntityType Name="RegistryGrouping">
+          <Key>
+            <PropertyRef Name="RegistryGroupingID" />
+          </Key>
+          <Property Name="RegistryGroupingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RegistryGroupID" Type="Int32" />
+          <Property Name="RegistryID" Type="Int32" />
+          <Property Name="ComputerID" Type="Int32" />
+          <NavigationProperty Name="Computer" Relationship="ImageValidationModel.FK_RegistryGrouping_Computer" FromRole="RegistryGrouping" ToRole="Computer" />
+          <NavigationProperty Name="Registry" Relationship="ImageValidationModel.FK_RegistryGrouping_Registry" FromRole="RegistryGrouping" ToRole="Registry" />
+          <NavigationProperty Name="RegistryGroup" Relationship="ImageValidationModel.FK_RegistryGrouping_RegistryGroup" FromRole="RegistryGrouping" ToRole="RegistryGroup" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="UserCreateDate" Type="DateTime" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DeleteRecord" Type="Int32" />
+          <Property Name="PermissionID" Type="Int32" />
+          <NavigationProperty Name="AccountHistories" Relationship="ImageValidationModel.FK_AccountHistory_User" FromRole="User" ToRole="AccountHistory" />
+          <NavigationProperty Name="Computers" Relationship="ImageValidationModel.FK_Computer_User" FromRole="User" ToRole="Computer" />
+          <NavigationProperty Name="FailedLogons" Relationship="ImageValidationModel.FK_FailedLogon_User" FromRole="User" ToRole="FailedLogon" />
+          <NavigationProperty Name="Permission" Relationship="ImageValidationModel.FK_User_Permission" FromRole="User" ToRole="Permission" />
+          <NavigationProperty Name="UserPermissions" Relationship="ImageValidationModel.FK_UserPermission_User" FromRole="User" ToRole="UserPermission" />
+        </EntityType>
+        <EntityType Name="UserPermission">
+          <Key>
+            <PropertyRef Name="UserPermissionID" />
+          </Key>
+          <Property Name="PermissionID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="UserPermissionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Permission" Relationship="ImageValidationModel.FK_UserPermission_Permission" FromRole="UserPermission" ToRole="Permission" />
+          <NavigationProperty Name="User" Relationship="ImageValidationModel.FK_UserPermission_User" FromRole="UserPermission" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_AccountHistory_User">
+          <End Role="User" Type="ImageValidationModel.User" Multiplicity="1" />
+          <End Role="AccountHistory" Type="ImageValidationModel.AccountHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="AccountHistory">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Application_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Computer" Multiplicity="0..1" />
+          <End Role="Application" Type="ImageValidationModel.Application" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="Application">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationDriverDepency_Application">
+          <End Role="Application" Type="ImageValidationModel.Application" Multiplicity="0..1" />
+          <End Role="ApplicationDriverDepency" Type="ImageValidationModel.ApplicationDriverDepency" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Application">
+              <PropertyRef Name="ApplicationID" />
+            </Principal>
+            <Dependent Role="ApplicationDriverDepency">
+              <PropertyRef Name="ApplicationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ApplicationDriverDepency_Driver">
+          <End Role="Driver" Type="ImageValidationModel.Driver" Multiplicity="0..1" />
+          <End Role="ApplicationDriverDepency" Type="ImageValidationModel.ApplicationDriverDepency" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Driver">
+              <PropertyRef Name="DriverID" />
+            </Principal>
+            <Dependent Role="ApplicationDriverDepency">
+              <PropertyRef Name="DriverID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Computer_User">
+          <End Role="User" Type="ImageValidationModel.User" Multiplicity="0..1" />
+          <End Role="Computer" Type="ImageValidationModel.Computer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Computer">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Driver_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Computer" Multiplicity="0..1" />
+          <End Role="Driver" Type="ImageValidationModel.Driver" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="Driver">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FileFolder_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Computer" Multiplicity="0..1" />
+          <End Role="FileFolder" Type="ImageValidationModel.FileFolder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="FileFolder">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HotFix_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Computer" Multiplicity="0..1" />
+          <End Role="HotFix" Type="ImageValidationModel.HotFix" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="HotFix">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistryGrouping_Computer">
+          <End Role="Computer" Type="ImageValidationModel.Computer" Multiplicity="0..1" />
+          <End Role="RegistryGrouping" Type="ImageValidationModel.RegistryGrouping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Computer">
+              <PropertyRef Name="ComputerID" />
+            </Principal>
+            <Dependent Role="RegistryGrouping">
+              <PropertyRef Name="ComputerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FailedLogon_User">
+          <End Role="User" Type="ImageValidationModel.User" Multiplicity="0..1" />
+          <End Role="FailedLogon" Type="ImageValidationModel.FailedLogon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="FailedLogon">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FileFolder_FileFolderType">
+          <End Role="FileFolderType" Type="ImageValidationModel.FileFolderType" Multiplicity="0..1" />
+          <End Role="FileFolder" Type="ImageValidationModel.FileFolder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FileFolderType">
+              <PropertyRef Name="FileFolderTypeID" />
+            </Principal>
+            <Dependent Role="FileFolder">
+              <PropertyRef Name="FileFolderTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Permission">
+          <End Role="Permission" Type="ImageValidationModel.Permission" Multiplicity="0..1" />
+          <End Role="User" Type="ImageValidationModel.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permission">
+              <PropertyRef Name="PermissionID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="PermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPermission_Permission">
+          <End Role="Permission" Type="ImageValidationModel.Permission" Multiplicity="1" />
+          <End Role="UserPermission" Type="ImageValidationModel.UserPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permission">
+              <PropertyRef Name="PermissionID" />
+            </Principal>
+            <Dependent Role="UserPermission">
+              <PropertyRef Name="PermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistryGrouping_Registry">
+          <End Role="Registry" Type="ImageValidationModel.Registry" Multiplicity="0..1" />
+          <End Role="RegistryGrouping" Type="ImageValidationModel.RegistryGrouping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registry">
+              <PropertyRef Name="RegistryID" />
+            </Principal>
+            <Dependent Role="RegistryGrouping">
+              <PropertyRef Name="RegistryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistryGrouping_RegistryGroup">
+          <End Role="RegistryGroup" Type="ImageValidationModel.RegistryGroup" Multiplicity="0..1" />
+          <End Role="RegistryGrouping" Type="ImageValidationModel.RegistryGrouping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistryGroup">
+              <PropertyRef Name="RegistryGroupID" />
+            </Principal>
+            <Dependent Role="RegistryGrouping">
+              <PropertyRef Name="RegistryGroupID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPermission_User">
+          <End Role="User" Type="ImageValidationModel.User" Multiplicity="0..1" />
+          <End Role="UserPermission" Type="ImageValidationModel.UserPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserPermission">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ImageValidationModelStoreContainer" CdmEntityContainer="ImageValidationEntities">
+          <EntitySetMapping Name="AccountHistories"><EntityTypeMapping TypeName="ImageValidationModel.AccountHistory"><MappingFragment StoreEntitySet="AccountHistory">
+            <ScalarProperty Name="AccountHistoryID" ColumnName="AccountHistoryID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+            <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Applications"><EntityTypeMapping TypeName="ImageValidationModel.Application"><MappingFragment StoreEntitySet="Application">
+            <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+            <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+            <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+            <ScalarProperty Name="DisplayVersion" ColumnName="DisplayVersion" />
+            <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+            <ScalarProperty Name="VersionMinor" ColumnName="VersionMinor" />
+            <ScalarProperty Name="VersionMajor" ColumnName="VersionMajor" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+            <ScalarProperty Name="HelpLink" ColumnName="HelpLink" />
+            <ScalarProperty Name="HelpTelephone" ColumnName="HelpTelephone" />
+            <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+            <ScalarProperty Name="InstallLocation" ColumnName="InstallLocation" />
+            <ScalarProperty Name="InstallSource" ColumnName="InstallSource" />
+            <ScalarProperty Name="URLInfoAbout" ColumnName="URLInfoAbout" />
+            <ScalarProperty Name="URLUpdateInfo" ColumnName="URLUpdateInfo" />
+            <ScalarProperty Name="Comments" ColumnName="Comments" />
+            <ScalarProperty Name="AuthorizedCDFPrefix" ColumnName="AuthorizedCDFPrefix" />
+            <ScalarProperty Name="Contact" ColumnName="Contact" />
+            <ScalarProperty Name="EstimatedSize" ColumnName="EstimatedSize" />
+            <ScalarProperty Name="Language" ColumnName="Language" />
+            <ScalarProperty Name="ModifyPath" ColumnName="ModifyPath" />
+            <ScalarProperty Name="ReadMe" ColumnName="ReadMe" />
+            <ScalarProperty Name="UnInstallString" ColumnName="UnInstallString" />
+            <ScalarProperty Name="SettingIdentifier" ColumnName="SettingIdentifier" />
+            <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+            <ScalarProperty Name="ApplicationUrl" ColumnName="ApplicationUrl" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ApplicationDriverDepencies"><EntityTypeMapping TypeName="ImageValidationModel.ApplicationDriverDepency"><MappingFragment StoreEntitySet="ApplicationDriverDepency">
+            <ScalarProperty Name="ApplicationDriverDepencyID" ColumnName="ApplicationDriverDepencyID" />
+            <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+            <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Computers"><EntityTypeMapping TypeName="ImageValidationModel.Computer"><MappingFragment StoreEntitySet="Computer">
+            <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="Model" ColumnName="Model" />
+            <ScalarProperty Name="Product" ColumnName="Product" />
+            <ScalarProperty Name="BuildNumber" ColumnName="BuildNumber" />
+            <ScalarProperty Name="Caption" ColumnName="Caption" />
+            <ScalarProperty Name="CSDVersion" ColumnName="CSDVersion" />
+            <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+            <ScalarProperty Name="MUILanguages" ColumnName="MUILanguages" />
+            <ScalarProperty Name="OSArchitecture" ColumnName="OSArchitecture" />
+            <ScalarProperty Name="OSLanguage" ColumnName="OSLanguage" />
+            <ScalarProperty Name="OSProductSuite" ColumnName="OSProductSuite" />
+            <ScalarProperty Name="OSType" ColumnName="OSType" />
+            <ScalarProperty Name="ServicePackMajorVersion" ColumnName="ServicePackMajorVersion" />
+            <ScalarProperty Name="ServicePackMinorVersion" ColumnName="ServicePackMinorVersion" />
+            <ScalarProperty Name="SystemDirectory" ColumnName="SystemDirectory" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+            <ScalarProperty Name="WindowsDirectory" ColumnName="WindowsDirectory" />
+            <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+            <ScalarProperty Name="Manufacturer2" ColumnName="Manufacturer2" />
+            <ScalarProperty Name="ComputerRecordAddDate" ColumnName="ComputerRecordAddDate" />
+            <ScalarProperty Name="IsPrimaryProduct" ColumnName="IsPrimaryProduct" />
+            <ScalarProperty Name="IsPrimaryModel" ColumnName="IsPrimaryModel" />
+            <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+            <ScalarProperty Name="SystemDrive" ColumnName="SystemDrive" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Drivers"><EntityTypeMapping TypeName="ImageValidationModel.Driver"><MappingFragment StoreEntitySet="Driver">
+            <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+            <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+            <ScalarProperty Name="CompatID" ColumnName="CompatID" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="DeviceClass" ColumnName="DeviceClass" />
+            <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+            <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+            <ScalarProperty Name="DriverDate" ColumnName="DriverDate" />
+            <ScalarProperty Name="DriverProviderName" ColumnName="DriverProviderName" />
+            <ScalarProperty Name="DriverVersion" ColumnName="DriverVersion" />
+            <ScalarProperty Name="FriendlyName" ColumnName="FriendlyName" />
+            <ScalarProperty Name="HardWareID" ColumnName="HardWareID" />
+            <ScalarProperty Name="InfName" ColumnName="InfName" />
+            <ScalarProperty Name="IsSigned" ColumnName="IsSigned" />
+            <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="PDO" ColumnName="PDO" />
+            <ScalarProperty Name="Signer" ColumnName="Signer" />
+            <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+            <ScalarProperty Name="httpUrl" ColumnName="httpUrl" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="EmployeeLogins"><EntityTypeMapping TypeName="ImageValidationModel.EmployeeLogin"><MappingFragment StoreEntitySet="EmployeeLogin">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="FailedLogons"><EntityTypeMapping TypeName="ImageValidationModel.FailedLogon"><MappingFragment StoreEntitySet="FailedLogon">
+            <ScalarProperty Name="FailID" ColumnName="FailID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="FileFolders"><EntityTypeMapping TypeName="ImageValidationModel.FileFolder"><MappingFragment StoreEntitySet="FileFolder">
+            <ScalarProperty Name="FileFolderID" ColumnName="FileFolderID" />
+            <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+            <ScalarProperty Name="Location" ColumnName="Location" />
+            <ScalarProperty Name="FileFolderTypeID" ColumnName="FileFolderTypeID" />
+            <ScalarProperty Name="Note" ColumnName="Note" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="FileFolderTypes"><EntityTypeMapping TypeName="ImageValidationModel.FileFolderType"><MappingFragment StoreEntitySet="FileFolderType">
+            <ScalarProperty Name="FileFolderTypeID" ColumnName="FileFolderTypeID" />
+            <ScalarProperty Name="Type" ColumnName="Type" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="HotFixes"><EntityTypeMapping TypeName="ImageValidationModel.HotFix"><MappingFragment StoreEntitySet="HotFix">
+            <ScalarProperty Name="HotFixID" ColumnName="HotFixID" />
+            <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+            <ScalarProperty Name="CSName" ColumnName="CSName" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+            <ScalarProperty Name="InstalledBy" ColumnName="InstalledBy" />
+            <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+            <ScalarProperty Name="HotFixIDs" ColumnName="HotFixIDs" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OperatingSystems"><EntityTypeMapping TypeName="ImageValidationModel.OperatingSystem"><MappingFragment StoreEntitySet="OperatingSystem">
+            <ScalarProperty Name="OSID" ColumnName="OSID" />
+            <ScalarProperty Name="OSName" ColumnName="OSName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Permissions"><EntityTypeMapping TypeName="ImageValidationModel.Permission"><MappingFragment StoreEntitySet="Permission">
+            <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+            <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+            <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Products"><EntityTypeMapping TypeName="ImageValidationModel.Product"><MappingFragment StoreEntitySet="Product">
+            <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+            <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="QuickSearches"><EntityTypeMapping TypeName="ImageValidationModel.QuickSearch"><MappingFragment StoreEntitySet="QuickSearch">
+            <ScalarProperty Name="QuickSearchID" ColumnName="QuickSearchID" />
+            <ScalarProperty Name="QuickSearchName" ColumnName="QuickSearchName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Registries"><EntityTypeMapping TypeName="ImageValidationModel.Registry"><MappingFragment StoreEntitySet="Registry">
+            <ScalarProperty Name="RegistryID" ColumnName="RegistryID" />
+            <ScalarProperty Name="Key" ColumnName="Key" />
+            <ScalarProperty Name="Value" ColumnName="Value" />
+            <ScalarProperty Name="ValueData" ColumnName="ValueData" />
+            <ScalarProperty Name="DataType" ColumnName="DataType" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="RegistryGroups"><EntityTypeMapping TypeName="ImageValidationModel.RegistryGroup"><MappingFragment StoreEntitySet="RegistryGroup">
+            <ScalarProperty Name="RegistryGroupID" ColumnName="RegistryGroupID" />
+            <ScalarProperty Name="FileName" ColumnName="FileName" />
+            <ScalarProperty Name="Note" ColumnName="Note" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="RegistryGroupings"><EntityTypeMapping TypeName="ImageValidationModel.RegistryGrouping"><MappingFragment StoreEntitySet="RegistryGrouping">
+            <ScalarProperty Name="RegistryGroupingID" ColumnName="RegistryGroupingID" />
+            <ScalarProperty Name="RegistryGroupID" ColumnName="RegistryGroupID" />
+            <ScalarProperty Name="RegistryID" ColumnName="RegistryID" />
+            <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Users"><EntityTypeMapping TypeName="ImageValidationModel.User"><MappingFragment StoreEntitySet="User">
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="Username" ColumnName="Username" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="UserCreateDate" ColumnName="UserCreateDate" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="DeleteRecord" ColumnName="DeleteRecord" />
+            <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UserPermissions"><EntityTypeMapping TypeName="ImageValidationModel.UserPermission"><MappingFragment StoreEntitySet="UserPermission">
+            <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="UserPermissionID" ColumnName="UserPermissionID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="AdminWebPortal">
+        <EntityTypeShape EntityType="ImageValidationModel.AccountHistory" Width="1.5" PointX="5.25" PointY="6.75" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.Application" Width="1.5" PointX="7.5" PointY="9.5" Height="6.4032194010416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.ApplicationDriverDepency" Width="1.5" PointX="9.75" PointY="14.75" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.Computer" Width="1.5" PointX="5.25" PointY="14" Height="6.9801236979166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.Driver" Width="1.5" PointX="7.5" PointY="16.75" Height="5.2494108072916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.EmployeeLogin" Width="1.5" PointX="0.75" PointY="0.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.FailedLogon" Width="1.5" PointX="5.25" PointY="26.25" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.FileFolder" Width="1.5" PointX="10.5" PointY="18.25" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.FileFolderType" Width="1.5" PointX="8.25" PointY="29.75" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.HotFix" Width="1.5" PointX="7.5" PointY="25.75" Height="2.7494921875000031" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.OperatingSystem" Width="1.5" PointX="2.75" PointY="0.75" Height="1.4033821614583353" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.Permission" Width="1.5" PointX="0.75" PointY="16.375" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.Product" Width="1.5" PointX="0.75" PointY="3.75" Height="1.4033821614583388" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.QuickSearch" Width="1.5" PointX="2.75" PointY="3.75" Height="1.4033821614583388" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.Registry" Width="1.5" PointX="8.25" PointY="6.125" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.RegistryGroup" Width="1.5" PointX="8.25" PointY="3" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.RegistryGrouping" Width="1.5" PointX="10.5" PointY="11.25" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.User" Width="1.5" PointX="3" PointY="15.5" Height="3.7109993489583388" IsExpanded="true" />
+        <EntityTypeShape EntityType="ImageValidationModel.UserPermission" Width="1.5" PointX="10.25" PointY="21.375" Height="1.9802864583333388" IsExpanded="true" />
+        <AssociationConnector Association="ImageValidationModel.FK_AccountHistory_User" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="15.5" />
+          <ConnectorPoint PointX="3.75" PointY="7.7401432291666667" />
+          <ConnectorPoint PointX="5.25" PointY="7.7401432291666667" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_Application_Computer" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="14.951609700520834" />
+          <ConnectorPoint PointX="7.5" PointY="14.951609700520834" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_ApplicationDriverDepency_Application" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="15.326609700520834" />
+          <ConnectorPoint PointX="9.75" PointY="15.326609700520834" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_ApplicationDriverDepency_Driver" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="17.46875" />
+          <ConnectorPoint PointX="9.96875" PointY="17.46875" />
+          <ConnectorPoint PointX="9.96875" PointY="16.730286458333332" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_Computer_User" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="17.355499674479169" />
+          <ConnectorPoint PointX="5.25" PointY="17.355499674479169" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_Driver_Computer" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="18.865061848958334" />
+          <ConnectorPoint PointX="7.5" PointY="18.865061848958334" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_FileFolder_Computer" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="16.908335774739584" />
+          <ConnectorPoint PointX="7.25" PointY="16.908335774739584" />
+          <ConnectorPoint PointX="7.25" PointY="16.5" />
+          <ConnectorPoint PointX="9.5" PointY="16.5" />
+          <ConnectorPoint PointX="9.5" PointY="16.980286458333332" />
+          <ConnectorPoint PointX="9.8854166666666661" PointY="16.980286458333332" />
+          <ConnectorPoint PointX="10.052083333333334" PointY="16.980286458333332" />
+          <ConnectorPoint PointX="11.25" PointY="16.980286458333332" />
+          <ConnectorPoint PointX="11.25" PointY="18.25" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_HotFix_Computer" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="20.980123697916667" />
+          <ConnectorPoint PointX="7.125" PointY="21.355123697916667" />
+          <ConnectorPoint PointX="7.125" PointY="27.12474609375" />
+          <ConnectorPoint PointX="7.5" PointY="27.12474609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_RegistryGrouping_Computer" ManuallyRouted="false">
+          <ConnectorPoint PointX="6" PointY="14" />
+          <ConnectorPoint PointX="6" PointY="9.25" />
+          <ConnectorPoint PointX="10.125" PointY="9.25" />
+          <ConnectorPoint PointX="10.125" PointY="12.432444661458334" />
+          <ConnectorPoint PointX="10.5" PointY="12.432444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_FailedLogon_User" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="19.210999348958339" />
+          <ConnectorPoint PointX="3.75" PointY="27.143992513020834" />
+          <ConnectorPoint PointX="5.25" PointY="27.143992513020834" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_FileFolder_FileFolderType" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="30.547841796874998" />
+          <ConnectorPoint PointX="11.90625" PointY="30.547841796874998" />
+          <ConnectorPoint PointX="11.90625" PointY="20.614889322916667" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_User_Permission" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="17.365143229166666" />
+          <ConnectorPoint PointX="3" PointY="17.365143229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_UserPermission_Permission" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="18.355286458333332" />
+          <ConnectorPoint PointX="1.5" PointY="22.708598632812503" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="22.708598632812503" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="22.708598632812503" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="22.708598632812503" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="22.708598632812503" />
+          <ConnectorPoint PointX="10.25" PointY="22.708598632812503" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_RegistryGrouping_Registry" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="7.2112939453125016" />
+          <ConnectorPoint PointX="10.760414166666665" PointY="7.2112939453125007" />
+          <ConnectorPoint PointX="10.927080833333333" PointY="7.2112939453125016" />
+          <ConnectorPoint PointX="11.25" PointY="7.2112939453125016" />
+          <ConnectorPoint PointX="11.25" PointY="11.25" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_RegistryGrouping_RegistryGroup" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="3.8939925130208337" />
+          <ConnectorPoint PointX="10.8437475" PointY="3.8939925130208337" />
+          <ConnectorPoint PointX="10.8437475" PointY="11.25" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageValidationModel.FK_UserPermission_User" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.1562525" PointY="19.210999348958339" />
+          <ConnectorPoint PointX="4.1562525" PointY="22.354002220052084" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="22.354002220052084" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="22.354002220052084" />
+          <ConnectorPoint PointX="10.25" PointY="22.354002220052084" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

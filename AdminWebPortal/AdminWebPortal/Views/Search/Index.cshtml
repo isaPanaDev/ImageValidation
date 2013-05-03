@@ -1,0 +1,33 @@
+﻿@model AdminWebPortal.Models.SearchModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<p>
+    <fieldset>
+        <legend>Validation Record Search</legend>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true, "")
+            <strong>@Html.LabelFor(m => m.QuickSearch)</strong><br />
+            @Html.TextBoxFor(m => m.QuickSearch)
+            @Html.DropDownListFor(x => x.SelectQuickSearchItem, new SelectList(Model.QuickSearchList, "QuickSearchName", "QuickSearchName"))<input
+                type="submit" value="Search" />
+      
+        }
+        @using (Html.BeginForm("BrowseSearch", "Search", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true, "")
+            <br />
+            <br />
+            <br />
+            <strong>Browse Computer Validation Record</strong><br />
+            @Html.DropDownListFor(x => x.SelectProductItem, new SelectList(Model.ProductList, "ProductName", "ProductName"))
+            @Html.DropDownListFor(x => x.SelectOperatingSystemItem, new SelectList(Model.OperatingSystemList, "OSName", "OSName"))
+            <input type="submit" value="Search" />
+       
+        }
+    </fieldset>
+</p>

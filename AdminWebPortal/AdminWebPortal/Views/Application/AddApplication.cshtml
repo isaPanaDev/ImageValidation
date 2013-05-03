@@ -1,0 +1,178 @@
+﻿@model AdminWebPortal.Models.ApplicationModel
+@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+@{
+    ViewBag.Title = "AddApplication";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true, "")
+    
+        <div>
+            Validation Record ID: @Html.TextBox("ComputerID", @computerstatus.ComputerIDFromSession, new { @readonly = true, @Style = "width:50px;" })
+            <fieldset>
+                <legend>Application Information</legend>
+                <table class="tablestyle lblcss">
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Display_Name)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Display_Name)
+                            @Html.ValidationMessageFor(m => m.Display_Name)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.Display_Version)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Display_Version)
+                            @Html.ValidationMessageFor(m => m.Display_Version)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Publisher_)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Publisher_)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.Version_Major)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Version_Major)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Version_Minor)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Version_Minor)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.Version_)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Version_)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Help_Link)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Help_Link)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.Help_Telephone)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Help_Telephone)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Read_me)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Read_me)
+                        </td>
+                        <td>@Html.LabelFor(m => m.Uninstall_String)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Uninstall_String)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Settings_Identifier)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Settings_Identifier)
+                        </td>
+                        <td>@Html.LabelFor(m => m.Download_Link)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Download_Link)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Install_Date)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Install_Date)
+                        </td>
+                        <td>@Html.LabelFor(m => m.Install_Location)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Install_Location)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Install_Source)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Install_Source)
+                        </td>
+                        <td>@Html.LabelFor(m => m.URL_InfoAbout)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.URL_InfoAbout)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Comment)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Comment)
+                        </td>
+                        <td>@Html.LabelFor(m => m.Authorized_CDFPrefix)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Authorized_CDFPrefix)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Contact_)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Contact_)
+                        </td>
+                        <td>@Html.LabelFor(m => m.Estimated_Size)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Estimated_Size)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Language_)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Language_)
+                        </td>
+                        <td>@Html.LabelFor(m => m.Modify_Path)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Modify_Path)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.URL_UpdateInfo)
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.URL_UpdateInfo)
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            @Html.CheckBoxFor(m => m.Is_Required) @Html.LabelFor(m => m.Is_Required)
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Add Application" />
+            </fieldset>
+        </div>
+    }
+</p>

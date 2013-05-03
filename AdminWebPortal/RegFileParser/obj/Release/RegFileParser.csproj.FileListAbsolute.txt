@@ -1,0 +1,14 @@
+D:\Project\AzureAdminWebPortal\RegFileParser\bin\Release\RegFileParser.dll
+D:\Project\AzureAdminWebPortal\RegFileParser\bin\Release\RegFileParser.pdb
+D:\Project\AzureAdminWebPortal\RegFileParser\obj\Release\ResolveAssemblyReference.cache
+D:\Project\AzureAdminWebPortal\RegFileParser\obj\Release\RegFileParser.dll
+D:\Project\AzureAdminWebPortal\RegFileParser\obj\Release\RegFileParser.pdb
+D:\Project\AdminWebPortal\RegFileParser\bin\Release\RegFileParser.dll
+D:\Project\AdminWebPortal\RegFileParser\bin\Release\RegFileParser.pdb
+D:\Project\AdminWebPortal\RegFileParser\obj\Release\ResolveAssemblyReference.cache
+D:\Project\AdminWebPortal\RegFileParser\obj\Release\RegFileParser.dll
+D:\Project\AdminWebPortal\RegFileParser\obj\Release\RegFileParser.pdb
+D:\Project\AdminWebPanel\RegFileParser\bin\Release\RegFileParser.dll
+D:\Project\AdminWebPanel\RegFileParser\bin\Release\RegFileParser.pdb
+D:\Project\AdminWebPanel\RegFileParser\obj\Release\RegFileParser.dll
+D:\Project\AdminWebPanel\RegFileParser\obj\Release\RegFileParser.pdb

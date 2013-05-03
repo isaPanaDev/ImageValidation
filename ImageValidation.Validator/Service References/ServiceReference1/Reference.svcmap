@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bb765c37-8403-4da5-996a-26d6a4d1159a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://168.62.25.8/ImageValidationService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="16d0110d-d8e5-4337-98f5-196cf01a8cc3" SourceId="1" SourceUrl="http://168.62.25.8/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="ef04aae0-701d-43b3-a48c-39c7a06e2f5e" SourceId="1" SourceUrl="http://168.62.25.8/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="d2bfea89-50df-4882-ba4f-97ecdd0c2118" SourceId="1" SourceUrl="http://168.62.25.8/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="ImageValidation.Core.xsd" MetadataType="Schema" ID="fe386fbd-5495-484e-b003-a2169fdf555d" SourceId="1" SourceUrl="http://168.62.25.8/ImageValidationService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

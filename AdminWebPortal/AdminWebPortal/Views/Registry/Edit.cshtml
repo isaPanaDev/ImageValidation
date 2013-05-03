@@ -1,0 +1,68 @@
+﻿@model AdminWebPortal.Models.RegistryModel
+@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+Validation Record ID: @Html.TextBox("ComputerID", @computerstatus.ComputerIDFromSession, new { @readonly = true, @Style = "width:50px;" })<br />
+<fieldset>
+    <legend>Registry Setting Checks</legend>File ID: @Html.TextBox("FileID", @Model.RegistryGroupID, new { @readonly = true, @Style = "width:50px;" })
+    @if (Model != null)
+    {
+
+        if (Model.Registry.Count > 0)
+        {
+        <table class="gridtable">
+            <tr>
+                <th>
+                    Registry Key
+                </th>
+                <th>
+                    Value
+                </th>
+                <th>
+                    Value Data
+                </th>
+                <th>
+                    Type
+                </th>
+            </tr>
+            @foreach (var item in Model.Registry)
+            {
+
+                <tr>
+                    <td>
+                        @item.Key
+                    </td>
+                    <td>
+                        @item.Value
+                    </td>
+                    <td>
+                        @item.ValueData
+                    </td>
+                    <td>
+                        @item.DataType
+                    </td>
+                </tr>
+            }
+        </table>
+              
+        }
+    }
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true, "")
+        @Html.HiddenFor(m => m.RegistryGroupID)
+        @Html.LabelFor(m => m.Note)
+        @Html.TextAreaFor(m => m.Note)
+        @Html.ValidationMessageFor(m => m.Note)
+        <br />
+        <input type="submit" value="Add Note/Instructions" />
+        if (User.IsInRole("Admin"))
+        {
+        @Html.ActionLink("Delete Registry", "DeleteRegistry", "Registry", new { ID = Model.RegistryGroupID }, new { Class = "btna", onclick = "return confirm('Are you sure your want to perform a Delete Operation?');" })
+        }
+    }
+</fieldset>

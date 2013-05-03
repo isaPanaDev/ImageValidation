@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ImageValidationModelStoreContainer" CdmEntityContainer="ImageValidationEntities">
+    <EntitySetMapping Name="AccountHistories">
+      <EntityTypeMapping TypeName="ImageValidationModel.AccountHistory">
+        <MappingFragment StoreEntitySet="AccountHistory">
+          <ScalarProperty Name="AccountHistoryID" ColumnName="AccountHistoryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Applications">
+      <EntityTypeMapping TypeName="ImageValidationModel.Application">
+        <MappingFragment StoreEntitySet="Application">
+          <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="DisplayVersion" ColumnName="DisplayVersion" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="VersionMinor" ColumnName="VersionMinor" />
+          <ScalarProperty Name="VersionMajor" ColumnName="VersionMajor" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="HelpLink" ColumnName="HelpLink" />
+          <ScalarProperty Name="HelpTelephone" ColumnName="HelpTelephone" />
+          <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+          <ScalarProperty Name="InstallLocation" ColumnName="InstallLocation" />
+          <ScalarProperty Name="InstallSource" ColumnName="InstallSource" />
+          <ScalarProperty Name="URLInfoAbout" ColumnName="URLInfoAbout" />
+          <ScalarProperty Name="URLUpdateInfo" ColumnName="URLUpdateInfo" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="AuthorizedCDFPrefix" ColumnName="AuthorizedCDFPrefix" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="EstimatedSize" ColumnName="EstimatedSize" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="ModifyPath" ColumnName="ModifyPath" />
+          <ScalarProperty Name="ReadMe" ColumnName="ReadMe" />
+          <ScalarProperty Name="UnInstallString" ColumnName="UnInstallString" />
+          <ScalarProperty Name="SettingIdentifier" ColumnName="SettingIdentifier" />
+          <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+          <ScalarProperty Name="ApplicationUrl" ColumnName="ApplicationUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationDriverDepencies">
+      <EntityTypeMapping TypeName="ImageValidationModel.ApplicationDriverDepency">
+        <MappingFragment StoreEntitySet="ApplicationDriverDepency">
+          <ScalarProperty Name="ApplicationDriverDepencyID" ColumnName="ApplicationDriverDepencyID" />
+          <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+          <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Computers">
+      <EntityTypeMapping TypeName="ImageValidationModel.Computer">
+        <MappingFragment StoreEntitySet="Computer">
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="BuildNumber" ColumnName="BuildNumber" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="CSDVersion" ColumnName="CSDVersion" />
+          <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+          <ScalarProperty Name="MUILanguages" ColumnName="MUILanguages" />
+          <ScalarProperty Name="OSArchitecture" ColumnName="OSArchitecture" />
+          <ScalarProperty Name="OSLanguage" ColumnName="OSLanguage" />
+          <ScalarProperty Name="OSProductSuite" ColumnName="OSProductSuite" />
+          <ScalarProperty Name="OSType" ColumnName="OSType" />
+          <ScalarProperty Name="ServicePackMajorVersion" ColumnName="ServicePackMajorVersion" />
+          <ScalarProperty Name="ServicePackMinorVersion" ColumnName="ServicePackMinorVersion" />
+          <ScalarProperty Name="SystemDirectory" ColumnName="SystemDirectory" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="WindowsDirectory" ColumnName="WindowsDirectory" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Manufacturer2" ColumnName="Manufacturer2" />
+          <ScalarProperty Name="ComputerRecordAddDate" ColumnName="ComputerRecordAddDate" />
+          <ScalarProperty Name="IsPrimaryProduct" ColumnName="IsPrimaryProduct" />
+          <ScalarProperty Name="IsPrimaryModel" ColumnName="IsPrimaryModel" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="SystemDrive" ColumnName="SystemDrive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Drivers">
+      <EntityTypeMapping TypeName="ImageValidationModel.Driver">
+        <MappingFragment StoreEntitySet="Driver">
+          <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="CompatID" ColumnName="CompatID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DeviceClass" ColumnName="DeviceClass" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="DriverDate" ColumnName="DriverDate" />
+          <ScalarProperty Name="DriverProviderName" ColumnName="DriverProviderName" />
+          <ScalarProperty Name="DriverVersion" ColumnName="DriverVersion" />
+          <ScalarProperty Name="FriendlyName" ColumnName="FriendlyName" />
+          <ScalarProperty Name="HardWareID" ColumnName="HardWareID" />
+          <ScalarProperty Name="InfName" ColumnName="InfName" />
+          <ScalarProperty Name="IsSigned" ColumnName="IsSigned" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PDO" ColumnName="PDO" />
+          <ScalarProperty Name="Signer" ColumnName="Signer" />
+          <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+          <ScalarProperty Name="httpUrl" ColumnName="httpUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeLogins">
+      <EntityTypeMapping TypeName="ImageValidationModel.EmployeeLogin">
+        <MappingFragment StoreEntitySet="EmployeeLogin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FailedLogons">
+      <EntityTypeMapping TypeName="ImageValidationModel.FailedLogon">
+        <MappingFragment StoreEntitySet="FailedLogon">
+          <ScalarProperty Name="FailID" ColumnName="FailID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FileFolders">
+      <EntityTypeMapping TypeName="ImageValidationModel.FileFolder">
+        <MappingFragment StoreEntitySet="FileFolder">
+          <ScalarProperty Name="FileFolderID" ColumnName="FileFolderID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="FileFolderTypeID" ColumnName="FileFolderTypeID" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FileFolderTypes">
+      <EntityTypeMapping TypeName="ImageValidationModel.FileFolderType">
+        <MappingFragment StoreEntitySet="FileFolderType">
+          <ScalarProperty Name="FileFolderTypeID" ColumnName="FileFolderTypeID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HotFixes">
+      <EntityTypeMapping TypeName="ImageValidationModel.HotFix">
+        <MappingFragment StoreEntitySet="HotFix">
+          <ScalarProperty Name="HotFixID" ColumnName="HotFixID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="CSName" ColumnName="CSName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+          <ScalarProperty Name="InstalledBy" ColumnName="InstalledBy" />
+          <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+          <ScalarProperty Name="HotFixIDs" ColumnName="HotFixIDs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OperatingSystems">
+      <EntityTypeMapping TypeName="ImageValidationModel.OperatingSystem">
+        <MappingFragment StoreEntitySet="OperatingSystem">
+          <ScalarProperty Name="OSID" ColumnName="OSID" />
+          <ScalarProperty Name="OSName" ColumnName="OSName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permissions">
+      <EntityTypeMapping TypeName="ImageValidationModel.Permission">
+        <MappingFragment StoreEntitySet="Permission">
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ImageValidationModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuickSearches">
+      <EntityTypeMapping TypeName="ImageValidationModel.QuickSearch">
+        <MappingFragment StoreEntitySet="QuickSearch">
+          <ScalarProperty Name="QuickSearchID" ColumnName="QuickSearchID" />
+          <ScalarProperty Name="QuickSearchName" ColumnName="QuickSearchName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registries">
+      <EntityTypeMapping TypeName="ImageValidationModel.Registry">
+        <MappingFragment StoreEntitySet="Registry">
+          <ScalarProperty Name="RegistryID" ColumnName="RegistryID" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ValueData" ColumnName="ValueData" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegistryGroups">
+      <EntityTypeMapping TypeName="ImageValidationModel.RegistryGroup">
+        <MappingFragment StoreEntitySet="RegistryGroup">
+          <ScalarProperty Name="RegistryGroupID" ColumnName="RegistryGroupID" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegistryGroupings">
+      <EntityTypeMapping TypeName="ImageValidationModel.RegistryGrouping">
+        <MappingFragment StoreEntitySet="RegistryGrouping">
+          <ScalarProperty Name="RegistryGroupingID" ColumnName="RegistryGroupingID" />
+          <ScalarProperty Name="RegistryGroupID" ColumnName="RegistryGroupID" />
+          <ScalarProperty Name="RegistryID" ColumnName="RegistryID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ImageValidationModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="UserCreateDate" ColumnName="UserCreateDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DeleteRecord" ColumnName="DeleteRecord" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPermissions">
+      <EntityTypeMapping TypeName="ImageValidationModel.UserPermission">
+        <MappingFragment StoreEntitySet="UserPermission">
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserPermissionID" ColumnName="UserPermissionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

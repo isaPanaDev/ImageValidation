@@ -1,0 +1,41 @@
+﻿@model AdminWebPortal.Models.FileAndFolderModel
+@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <span class="field-validation-error">@ViewBag.ErrorMsg</span><br />
+    Validation Record ID: @Html.TextBox("ComputerID", @computerstatus.ComputerIDFromSession, new { @readonly = true, @Style = "width:50px;" })
+    <fieldset>
+        <legend>File And Folder Checks</legend>
+        <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+             @Html.HiddenFor(m => m.FileFolderID)
+            <legend>Add File And Folder</legend>
+            <label for="file">
+                Browse & Select:</label>
+            <input type="file" name="file" id="file" accept="reg" />
+            <br />
+            OR<br />
+            <label for="file">
+                Manualy Enter Info:</label>
+            @Html.TextBoxFor(x => x.FilePath)
+        </fieldset>
+        <br />
+        <label for="file">
+            Note/Instruction:</label>
+        @Html.TextAreaFor(x => x.Note, new {@style="width:400px;"})
+        <br />
+        <input type="submit" value="Edit File Or Folder"/></form>
+        @if (Model != null)
+        {
+           <br />
+            <span>Current File Or Folder</span>
+            <br />
+            @Html.TextBox("CurrentFilePathID", @Model.CurrentFilePath, new { @readonly = true, @style="width:400px;"})
+        }
+    </fieldset>
+</div>

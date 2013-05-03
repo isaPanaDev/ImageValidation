@@ -1,0 +1,86 @@
+﻿@model AdminWebPortal.Models.FileAndFolderModel
+@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>
+    <span class="field-validation-error">@ViewBag.ErrorMsg</span><br />
+    Validation Record ID: @Html.TextBox("ComputerID", @computerstatus.ComputerIDFromSession, new { @readonly = true, @Style = "width:50px;" })
+    <fieldset>
+        <legend>File And Folder Checks</legend>
+        <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Add File And Folder</legend>
+            <label for="file">
+                Browse & Select:</label>
+            <input type="file" name="file" id="file" />
+            <br />
+            OR<br />
+            <label for="file">
+                Manualy Enter Info:</label>
+           @Html.TextBoxFor(x => x.FilePath)
+        </fieldset>
+        <br />
+        <label for="file">
+            Note/Instruction:</label>
+        @Html.TextAreaFor(x => x.Note)
+        <br />
+        <input type="submit" value="Add File Or Folder" /></form>
+        @if (Model != null)
+        {
+            if (Model.FileFoler.Count > 0)
+            {
+            <table class="gridtable">
+                <tr>
+                    <th>
+                        File And Folder
+                    </th>
+                    <th>
+                        Note
+                    </th>
+                    <th>
+                        Type
+                    </th>
+                    @if (User.IsInRole("Admin") || User.IsInRole("PowerUser"))
+                    { <th>
+                        Action
+                    </th>
+                    }
+                </tr>
+                @foreach (var item in Model.FileFoler)
+                {
+
+                    <tr>
+                        <td>
+                            @item.Location
+                        </td>
+                        <td>
+                            @Html.Raw(item.Note)
+                        </td>
+                        <td>
+                            @{
+                    AdminWebPortal.Controllers.FileAndFolderController obj = new AdminWebPortal.Controllers.FileAndFolderController();
+                    string type = obj.GetFileFolderType((int)item.FileFolderTypeID);
+                            }
+                            @type
+                        </td>
+                        @if (User.IsInRole("Admin") || User.IsInRole("PowerUser"))
+                        {
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "FileAndFolder", new { ID = item.FileFolderID }, null)
+                                @if (User.IsInRole("Admin"))
+                                {@Html.ActionLink("Delete", "Delete", "FileAndFolder", new { ID = item.FileFolderID }, new { onclick = "return confirm('Are you sure your want to perform a Delete Operation?');" })
+                                }
+                            </td>
+                        }
+                    </tr>
+                }
+            </table>
+              
+            }
+        }
+    </fieldset>
+</p>

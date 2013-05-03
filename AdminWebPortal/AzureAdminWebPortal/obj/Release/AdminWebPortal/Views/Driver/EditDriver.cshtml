@@ -1,0 +1,158 @@
+﻿@model AdminWebPortal.Models.DriverModel
+@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+@{
+    ViewBag.Title = "EditDriver";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true, "")
+    
+        <div>
+            Validation Record ID: @Html.TextBox("ComputerID", @computerstatus.ComputerIDFromSession, new { @readonly = true, @Style = "width:50px;" })
+            @Html.HiddenFor(x => x.DriverID)
+            <fieldset>
+                <legend>Driver Information</legend>
+                <table class="tablestyle lblcss">
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Compat_ID):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Compat_ID)
+                            @Html.ValidationMessageFor(m => m.Compat_ID)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.Friendly_Name):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Friendly_Name)
+                            @Html.ValidationMessageFor(m => m.Friendly_Name)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Descriptions):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Descriptions)
+                            @Html.ValidationMessageFor(m => m.Descriptions)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.HardWare_ID):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.HardWare_ID)
+                            @Html.ValidationMessageFor(m => m.HardWare_ID)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Device_Class):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Device_Class)
+                            @Html.ValidationMessageFor(m => m.Device_Class)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.Inf_Name):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Inf_Name)
+                            @Html.ValidationMessageFor(m => m.Inf_Name)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Device_ID):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Device_ID)
+                            @Html.ValidationMessageFor(m => m.Device_ID)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.Is_Signed):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Is_Signed)
+                            @Html.ValidationMessageFor(m => m.Is_Signed)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(m => m.Device_Name):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Device_Name)
+                            @Html.ValidationMessageFor(m => m.Device_Name)
+                        </td>
+                        <td>
+                            @Html.LabelFor(m => m.Manufacturer_):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Manufacturer_)
+                            @Html.ValidationMessageFor(m => m.Manufacturer_)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Driver_Date):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Driver_Date)
+                            @Html.ValidationMessageFor(m => m.Driver_Date)
+                        </td>
+                        <td>@Html.LabelFor(m => m.Name_):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Name_)
+                            @Html.ValidationMessageFor(m => m.Name_)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Driver_ProviderName):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Driver_ProviderName)
+                            @Html.ValidationMessageFor(m => m.Driver_ProviderName)
+                        </td>
+                        <td>@Html.LabelFor(m => m.PDO_):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.PDO_)
+                            @Html.ValidationMessageFor(m => m.PDO_)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.Driver_Version):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Driver_Version)
+                            @Html.ValidationMessageFor(m => m.Driver_Version)
+                        </td>
+                        <td>@Html.LabelFor(m => m.Signer_):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Signer_)
+                            @Html.ValidationMessageFor(m => m.Signer_)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(m => m.DownloadLink):
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.DownloadLink)
+                            @Html.ValidationMessageFor(m => m.DownloadLink)
+                        </td>
+                        <td></td>
+                        <td>
+                            @Html.CheckBoxFor(m => m.Is_Required) @Html.LabelFor(m => m.Is_Required)
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Update Driver" />
+            </fieldset>
+        </div>
+    }
+</p>

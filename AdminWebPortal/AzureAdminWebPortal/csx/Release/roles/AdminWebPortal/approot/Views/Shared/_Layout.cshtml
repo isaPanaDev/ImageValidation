@@ -1,0 +1,190 @@
+﻿@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Image Validation System</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="../../Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <link href="../../Content/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="../../tiny_mce/tiny_mce.js" type="text/javascript"></script>
+    <link href="../../Content/TableGrid.css" rel="stylesheet" type="text/css" />
+    @*New CSS*@
+    <link href="../../Content/css/layout.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/css/reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../Content/css/text.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../Content/css/grid.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../Content/css/layout.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../Content/css/nav.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../Content/css/nav-v.css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="../../Content/css/ie6.css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="../../Content/css/ie.css" media="screen" /><![endif]-->
+    <script language="JavaScript" type="text/javascript">
+        $(document).ready(function () {
+            $('.links li code').hide();
+            $('.links li p').click(function () {
+                $(this).next().slideToggle('fast');
+            });
+        });
+    </script>
+    <!-- BEGIN: load jquery -->
+    <script type="text/javascript" language="javascript">
+        tinyMCE.init({
+            // General options
+            mode: "textareas",
+            theme: "simple",
+            plugins: "pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups"
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container_12">
+        <div class="grid_12 header-repeat">
+            <div id="branding">
+                <div class="floatleft">
+                    <a href="../Home/Index">
+                        <img src="../../Content/img/logo.png" alt="Logo" /></a>
+                </div>
+                <div class="floatright">
+                    <div class="floatleft">
+                        <img src="../../Content/img/img-profile.jpg" alt="Profile Pic" /></div>
+                    <div class="floatleft marginleft10">
+                        <ul class="inline-ul floatleft">
+                            @if (Request.IsAuthenticated)
+                            { 
+                                <li>
+                                    <text>Welcome <strong>@User.Identity.Name</strong>!
+    [ @Html.ActionLink("Log Off", "LogOff", "Users") ]</text>
+                                </li>
+                            }
+                            else
+                            { 
+                                <li>
+                                    <text>Welcome <strong>Guest</strong>
+                                    !
+                                    @Html.ActionLink("Log On", "Login", "Users")</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="grid_12">
+            <ul class="nav main">
+                <li class="ic-dashboard">
+                    @Html.ActionLink("Home", "Index", "Home")</li>
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="ic-form-style">@Html.ActionLink("Administrator", "Index", "AllUsers")</li>
+                               
+                }
+                @if (Request.IsAuthenticated)
+                { <li class="ic-notifications">@Html.ActionLink("Validation Search", "Index", "Search")</li>
+                                
+                }
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+        <div style="background: rgb(245, 245, 245); width: 97%; margin: 0 auto; min-height: 520px; padding-left: 10px;">
+            @RenderSection("featured", required: false)
+            @if (computerstatus.ComputerIDFromSession > 0)
+            {
+                <div class="vertical_nav">
+                    <ul id="navmenu-v">
+                        @{
+                string CurrentController = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+                if (CurrentController == "Computer")
+                {
+                        <li>@Html.ActionLink("Computer Information", "Index", "Computer", new { ID = computerstatus.ComputerIDFromSession }, new {style = "background-color: #BBB" })</li>
+                        <li>@Html.ActionLink("Driver Information", "Index", "Driver")</li>
+                        <li>@Html.ActionLink("Application Information", "Index", "Application") </li>
+                        <li>@Html.ActionLink("Registry Setting Checks", "Index", "Registry")</li>
+                        <li>@Html.ActionLink("File and Folder Checks", "Index", "FileAndFolder")</li>
+                        <li>@Html.ActionLink("HotFixes", "Index", "HotFix")</li>
+                }
+
+                if (CurrentController == "Driver")
+                {
+                        <li>@Html.ActionLink("Computer Information", "Index", "Computer", new { ID = computerstatus.ComputerIDFromSession }, null)</li>
+                        <li>@Html.ActionLink("Driver Information", "Index", "Driver", new { style = "background-color: #BBB" })</li>
+                        <li>@Html.ActionLink("Application Information", "Index", "Application") </li>
+                        <li>@Html.ActionLink("Registry Setting Checks", "Index", "Registry")</li>
+                        <li>@Html.ActionLink("File and Folder Checks", "Index", "FileAndFolder")</li>
+                        <li>@Html.ActionLink("HotFixes", "Index", "HotFix")</li>
+                }
+
+                if (CurrentController == "Application")
+                {
+                        <li>@Html.ActionLink("Computer Information", "Index", "Computer", new { ID = computerstatus.ComputerIDFromSession }, null)</li>
+                        <li>@Html.ActionLink("Driver Information", "Index", "Driver")</li>
+                        <li>@Html.ActionLink("Application Information", "Index", "Application", new {style = "background-color: #BBB" }) </li>
+                        <li>@Html.ActionLink("Registry Setting Checks", "Index", "Registry")</li>
+                        <li>@Html.ActionLink("File and Folder Checks", "Index", "FileAndFolder")</li>
+                        <li>@Html.ActionLink("HotFixes", "Index", "HotFix")</li>
+                }
+
+                if (CurrentController == "Registry")
+                {
+                        <li>@Html.ActionLink("Computer Information", "Index", "Computer", new { ID = computerstatus.ComputerIDFromSession }, null)</li>
+                        <li>@Html.ActionLink("Driver Information", "Index", "Driver")</li>
+                        <li>@Html.ActionLink("Application Information", "Index", "Application") </li>
+                        <li>@Html.ActionLink("Registry Setting Checks", "Index", "Registry", new { style = "background-color: #BBB" })</li>
+                        <li>@Html.ActionLink("File and Folder Checks", "Index", "FileAndFolder")</li>
+                        <li>@Html.ActionLink("HotFixes", "Index", "HotFix")</li>
+                }
+
+                if (CurrentController == "FileAndFolder")
+                {
+                        <li>@Html.ActionLink("Computer Information", "Index", "Computer", new { ID = computerstatus.ComputerIDFromSession }, null)</li>
+                        <li>@Html.ActionLink("Driver Information", "Index", "Driver")</li>
+                        <li>@Html.ActionLink("Application Information", "Index", "Application") </li>
+                        <li>@Html.ActionLink("Registry Setting Checks", "Index", "Registry")</li>
+                        <li>@Html.ActionLink("File and Folder Checks", "Index", "FileAndFolder", new { style = "background-color: #BBB" })</li>
+                        <li>@Html.ActionLink("HotFixes", "Index", "HotFix")</li>
+                }
+
+                if (CurrentController == "HotFix")
+                {
+                        <li>@Html.ActionLink("Computer Information", "Index", "Computer", new { ID = computerstatus.ComputerIDFromSession }, null)</li>
+                        <li>@Html.ActionLink("Driver Information", "Index", "Driver")</li>
+                        <li>@Html.ActionLink("Application Information", "Index", "Application") </li>
+                        <li>@Html.ActionLink("Registry Setting Checks", "Index", "Registry")</li>
+                        <li>@Html.ActionLink("File and Folder Checks", "Index", "FileAndFolder")</li>
+                        <li>@Html.ActionLink("HotFixes", "Index", "HotFix", new { style = "background-color: #BBB" })</li>
+                } 
+                
+            }
+                        
+            
+                    </ul>
+                </div>
+            }
+            <div class="rightcontainer" style="width: 80%;">
+                @RenderBody()
+                <div class="clear">
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="site_info">
+        <p>
+            &copy; 2013 - Image Validation System. All Rights Reserved
+        </p>
+    </div>
+</body>
+</html>

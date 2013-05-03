@@ -1,0 +1,8 @@
+F:\moonshine\ImageValidation_WebAdministrationPortal\AzureAdminWebPortal\AzureAdminWebPortal\bin\Debug\ServiceConfiguration.cscfg
+F:\moonshine\ImageValidation_WebAdministrationPortal\AzureAdminWebPortal\AzureAdminWebPortal\bin\Debug\ServiceDefinition.csdef
+D:\Project\AzureAdminWebPortal\AzureAdminWebPortal\bin\Debug\ServiceConfiguration.cscfg
+D:\Project\AzureAdminWebPortal\AzureAdminWebPortal\bin\Debug\ServiceDefinition.csdef
+D:\Project\AdminWebPortal\AzureAdminWebPortal\bin\Debug\ServiceConfiguration.cscfg
+D:\Project\AdminWebPortal\AzureAdminWebPortal\bin\Debug\ServiceDefinition.csdef
+D:\Project\AdminWebPanel\AzureAdminWebPortal\bin\Debug\ServiceConfiguration.cscfg
+D:\Project\AdminWebPanel\AzureAdminWebPortal\bin\Debug\ServiceDefinition.csdef

@@ -1,0 +1,78 @@
+﻿@model AdminWebPortal.Models.DriverModel
+@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+@{
+    ViewBag.Title = "AddDeviceDependency";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type='text/javascript'>
+    $(document).ready(function () {
+
+        $(function () {
+            $('#btnadd').bind('click', function () {
+                $(':checkbox:checked').each(function (i) {
+                    var AppID = $("#Application_ID").val();
+                    var DriverID = $(this).val();
+                    var url = "/Application/UpdateDriverIsRequest";
+                    $.post(url, { ID: AppID, DrvID: DriverID }, function (result) {
+                        return result;
+                    });
+                });
+                $(".lblmsg").text("Saved Successfully!!");
+            });
+        });
+    });
+</script>
+<p>
+    Validation Record ID: @Html.TextBox("ComputerID", @computerstatus.ComputerIDFromSession, new { @readonly = true, @Style = "width:50px;" })<label
+        id="lblmsg" class="lblmsg" style="color: Red; font-weight: bold;"></label>
+    <fieldset>
+        <legend>Application Information</legend>
+        <strong>Add a Device Depandency on an Application</strong> <br /><br />
+Some application require that a certain device be in the computer. Use this page to associate an application with device.
+<br /><p style="color:Red;">Note: A device driver record must already be in the system in order to associate it with an application. Add the device first if its is not already added. Click Add Device Driver Button below</p>
+        @if (Model.Driver.Count > 0)
+        {
+            @Html.HiddenFor(m => m.Application_ID)
+            <table class="gridtable">
+                <tr>
+                    <th>
+                        Driver Name
+                    </th>
+                    <th>
+                        HardWare ID
+                    </th>
+                    <th>
+                        Add Dependency
+                    </th>
+                </tr>
+                @foreach (var item in Model.Driver)
+                {
+                    <tr>
+                        <td>
+                            @item.DeviceName
+                        </td>
+                        <td>
+                            @item.HardWareID
+                        </td>
+                        <td>
+                            <input type="checkbox" name="checkbox" value="@item.DriverID" class="DCheckbox"/>
+                        </td>
+                    </tr>
+                }
+            </table>
+ 
+        }
+        else
+        {
+            <h2>
+                Data Not Found!!</h2> 
+        }
+    </fieldset>
+    <a id="btnadd" style="cursor: pointer;" class="btna">Add Dependency</a>
+    @if (User.IsInRole("Admin") || User.IsInRole("PowerUser"))
+    { 
+        @Html.ActionLink("Add Driver", "AddDriver", "Driver", null, new { Class = "btna" })
+    }
+</p>

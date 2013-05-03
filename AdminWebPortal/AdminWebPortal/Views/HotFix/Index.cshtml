@@ -1,0 +1,86 @@
+﻿@model AdminWebPortal.Models.HotFixModel
+@{
+    AdminWebPortal.Repository.ComputerStatus computerstatus = new AdminWebPortal.Repository.ComputerStatus();
+}
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $(function () {
+            $('input[type="checkbox"]').bind('click', function () {
+                var HotFixID = $(this).attr('HotFixID');
+                var url = "HotFix/UpdateHotFixIsRequest";
+
+                if ($(this).is(':checked')) {
+                    $.post(url, { ID: HotFixID, IsRequired: true }, function (result) {
+                        return false;
+                    });
+                }
+                else {
+                    $.post(url, { ID: HotFixID, IsRequired: false }, function (result) {
+                        return false;
+                    });
+                }
+                $(".lblmsg").text("Saved Successfully!!");
+            });
+        });
+    });
+</script>
+<h2>
+    MS HotFixes</h2>
+<p>
+    Validation Record ID: @Html.TextBox("ComputerID", @computerstatus.ComputerIDFromSession, new { @readonly = true, @Style = "width:50px;" })
+    <label id="lblmsg" class="lblmsg" style="color: Red; font-weight: bold;">
+    </label>
+    <fieldset>
+        <legend>Microsoft HotFixes</legend>
+        @if (Model != null)
+        {
+            if (Model.HotFix != null)
+            {
+            <table class="gridtable">
+                <tr>
+                    <th>
+                        Microsoft HotFixes
+                    </th>
+                    <th>
+                        IsRequired
+                    </th>
+                    @if (User.IsInRole("Admin"))
+                    {<th>
+                    Action
+                </th>
+                    }
+                </tr>
+                @foreach (var item in Model.HotFix)
+                {
+
+                    <tr>
+                        <td>
+                            @item.HotFixIDs
+                        </td>
+                        <td>
+                            @if (User.IsInRole("Admin") || User.IsInRole("PowerUser"))
+                            {
+                                @Html.CheckBoxFor(m => item.IsRequired.Value, new { @Class = "IsRequired", HotFixID = item.HotFixID })
+                            }
+                            else
+                            {  
+                                @Html.CheckBoxFor(m => item.IsRequired.Value, new { @Class = "IsRequired", HotFixID = item.HotFixID, @disabled = "disabled" })
+                            }
+                        </td>
+                        @if (User.IsInRole("Admin"))
+                        { <td>
+                        @Html.ActionLink("Delete", "Delete", "HotFix", new { ID = item.HotFixID }, new { onclick = "return confirm('Are you sure your want to perform a Delete Operation?');" })
+                    </td>
+                        }
+                    </tr>
+                }
+            </table>
+              
+            }
+        }
+    </fieldset>
+</p>
