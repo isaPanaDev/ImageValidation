@@ -1,0 +1,75 @@
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\bin\Release\ServiceConfiguration.cscfg
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\bin\Release\ServiceDefinition.csdef
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\bin\Release\ValidationIssues.xml
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Core.dll
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Service.dll
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\obj\Release\ImageValidation.Service\ImageValidationService.svc
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\obj\Release\ImageValidation.Service\packages.config
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation\obj\Release\ImageValidation.Service\Web.config
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\bin\Release\ServiceConfiguration.cscfg
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\bin\Release\ServiceDefinition.csdef
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\bin\Release\ValidationIssues.xml
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Service.dll
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\obj\Release\ImageValidation.Service\ImageValidationService.svc
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\obj\Release\ImageValidation.Service\packages.config
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation\obj\Release\ImageValidation.Service\Web.config
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\bin\Release\ServiceConfiguration.cscfg
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\bin\Release\ServiceDefinition.csdef
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\bin\Release\ValidationIssues.xml
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Service.dll
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\obj\Release\ImageValidation.Service\ImageValidationService.svc
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\obj\Release\ImageValidation.Service\packages.config
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation\obj\Release\ImageValidation.Service\Web.config
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\bin\Release\ServiceConfiguration.cscfg
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\bin\Release\ServiceDefinition.csdef
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\bin\Release\ValidationIssues.xml
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Service.dll
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\ImageValidationService.svc
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\packages.config
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\Web.config
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\Web1.config
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\Web1.Debug.config
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation\obj\Release\ImageValidation.Service\Web1.Release.config
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\bin\Release\ServiceConfiguration.cscfg
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\bin\Release\ServiceDefinition.csdef
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\bin\Release\ValidationIssues.xml
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Core.dll
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Service.dll
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\ImageValidationService.svc
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\packages.config
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web.config
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.config
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.Debug.config
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.Release.config
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\bin\Release\ServiceConfiguration.cscfg
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\bin\Release\ServiceDefinition.csdef
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\bin\Release\ValidationIssues.xml
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Service.dll
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\ImageValidationService.svc
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\packages.config
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web.config
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.config
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.Debug.config
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.Release.config

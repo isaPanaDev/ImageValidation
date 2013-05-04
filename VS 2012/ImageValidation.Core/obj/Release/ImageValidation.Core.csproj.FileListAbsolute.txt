@@ -1,0 +1,34 @@
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation.Core\bin\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation.Core\obj\Release\ResolveAssemblyReference.cache
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\Service\ImageValidation\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\Service\ImageValidation 05-02\ImageValidation.Core\bin\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\Service\ImageValidation 05-02\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\Service\ImageValidation 05-02\ImageValidation.Core\obj\Release\ResolveAssemblyReference.cache
+F:\Azure Image validation utility\Service\ImageValidation 05-02\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\Service\ImageValidation 05-02\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation.Core\bin\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation.Core\obj\Release\ResolveAssemblyReference.cache
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 19-02\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation.Core\bin\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation.Core\obj\Release\ResolveAssemblyReference.cache
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation.Core\bin\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation.Core\obj\Release\ResolveAssemblyReference.cache
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
+F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\bin\Release\ImageValidation.Core.dll
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Release\ResolveAssemblyReference.cache
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
+D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\bin\Release\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ImageValidation.Core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ImageValidation.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Users">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeleteRecord" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LoginDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PermissionID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SessionID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Users" nillable="true" type="tns:Users" />
+  <xs:complexType name="Computer">
+    <xs:sequence>
+      <xs:element name="_x003C_BuildNumber_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CDSVersion_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Caption_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ComputerRecordAddDate_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_InstallDate_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IsPrimaryModel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IsPrimaryProduct_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_MUILanguages_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Manufacturer2_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Manufacturer_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Model_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OSArchitecture_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OSLanguage_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OSProductSuite_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OSType_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Product_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SerialNumber_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ServicePackMajorVersion_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ServicePackMinorVersion_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SystemDirectory_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SystemDrive_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_UserID_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Version_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WindowsDirectory_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Computer" nillable="true" type="tns:Computer" />
+  <xs:complexType name="ArrayOfApplications">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Applications" nillable="true" type="tns:Applications" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplications" nillable="true" type="tns:ArrayOfApplications" />
+  <xs:complexType name="Applications">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApplicationUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AuthorizedCDFPrefix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstimatedSize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HelpLink" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HelpTelephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InstallDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InstallLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InstallSource" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCompared" type="xs:int" />
+      <xs:element minOccurs="0" name="IsRequired" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifyPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Publisher" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReadMe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SettingsIdentifier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="URLUpdateInfo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UninstallString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UrlInfoAbout" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VersionMajor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VersionMinor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Applications" nillable="true" type="tns:Applications" />
+  <xs:complexType name="ArrayOfHotFix">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HotFix" nillable="true" type="tns:HotFix" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHotFix" nillable="true" type="tns:ArrayOfHotFix" />
+  <xs:complexType name="HotFix">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CSName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HotFixIDs" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InstallDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InstalledBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCompared" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRequired" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HotFix" nillable="true" type="tns:HotFix" />
+</xs:schema>
