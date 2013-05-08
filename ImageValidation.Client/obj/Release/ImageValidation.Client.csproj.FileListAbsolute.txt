@@ -5,3 +5,4 @@ F:\Azure Image validation utility\ImageValidation 25-02Eve\ImageValidation.Clien
 F:\Azure Image validation utility\ImageValidation 26-02\ImageValidation.Client\bin\Release\ImageValidation.Client.exe.config
 D:\Project\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Client\bin\Release\ImageValidation.Client.exe.config
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Client\bin\Release\ImageValidation.Client.exe.config
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Release\ImageValidation.Client.exe.config

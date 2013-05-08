@@ -34,9 +34,11 @@
       <xs:element name="_x003C_OSProductSuite_x003E_k__BackingField" nillable="true" type="xs:string" />
       <xs:element name="_x003C_OSType_x003E_k__BackingField" nillable="true" type="xs:string" />
       <xs:element name="_x003C_Product_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SerialNumber_x003E_k__BackingField" nillable="true" type="xs:string" />
       <xs:element name="_x003C_ServicePackMajorVersion_x003E_k__BackingField" nillable="true" type="xs:string" />
       <xs:element name="_x003C_ServicePackMinorVersion_x003E_k__BackingField" nillable="true" type="xs:string" />
       <xs:element name="_x003C_SystemDirectory_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SystemDrive_x003E_k__BackingField" nillable="true" type="xs:string" />
       <xs:element name="_x003C_UserID_x003E_k__BackingField" type="xs:int" />
       <xs:element name="_x003C_Version_x003E_k__BackingField" nillable="true" type="xs:string" />
       <xs:element name="_x003C_WindowsDirectory_x003E_k__BackingField" nillable="true" type="xs:string" />

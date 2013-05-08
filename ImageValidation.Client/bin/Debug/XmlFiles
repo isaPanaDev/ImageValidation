@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Computer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ComputerID xsi:nil="true" />
+  <UserID>0</UserID>
+  <Model>DG31GL</Model>
+  <Product>DG31GL</Product>
+  <BuildNumber>7600</BuildNumber>
+  <Caption>Microsoft Windows 7 Ultimate </Caption>
+  <InstallDate>0001-01-01T00:00:00</InstallDate>
+  <OSArchitecture>32-bit</OSArchitecture>
+  <OSLanguage>1033</OSLanguage>
+  <OSProductSuite>256</OSProductSuite>
+  <OSType>18</OSType>
+  <ServicePackMajorVersion>0</ServicePackMajorVersion>
+  <ServicePackMinorVersion>0</ServicePackMinorVersion>
+  <SystemDirectory>C:\Windows\system32</SystemDirectory>
+  <Version>AAE33912-200</Version>
+  <WindowsDirectory>C:\Windows</WindowsDirectory>
+  <Manufacturer>INTEL</Manufacturer>
+  <ComputerRecordAddDate>2013-02-04T00:30:42.5442102+05:30</ComputerRecordAddDate>
+</Computer>

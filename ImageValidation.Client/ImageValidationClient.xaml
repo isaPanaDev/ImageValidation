@@ -8,23 +8,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     mc:Ignorable="d"
-    d:DesignHeight="700" d:DesignWidth="1000" Title="Image Validation Client" WindowHeight="700" WindowWidth="1000" WindowTitle="Image Validation Client" Background="Transparent" ShowsNavigationUI="False">
+    d:DesignHeight="621" d:DesignWidth="860" Title="Image Validation Client" WindowHeight="621" WindowWidth="860" WindowTitle="Image Validation Client" Background="Transparent" ShowsNavigationUI="False">
     <DockPanel>
         <Frame x:Name="_mainFrame" />
-		<Grid Background="Transparent" DockPanel.Dock="Top">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*"/>
-			</Grid.ColumnDefinitions>
-			<Button Name="CloseButtonImage" Margin="855,11,0,0" Grid.Column="1" Width="28" Height="28" Click="CloseButton_Click"><Image Width="11" Height="12" Source="Image1.png"></Image></Button>
-		</Grid>        
-        <ScrollViewer Margin="33,30,35,128" HorizontalContentAlignment="Center" BorderBrush="Black">
+        <Grid Background="Transparent" DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="156*"/>
+                <ColumnDefinition Width="59*"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="CloseButtonImage" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="148.619,8,52.5,0" Grid.Column="1" Width="34" Height="37" Click="CloseButton_Click">
+                <Image Width="30" Height="32" Source="./Images/Offbutton.png"></Image>
+            </Button>
+        </Grid>
+        <ScrollViewer Margin="25,8,28,105" HorizontalContentAlignment="Center" BorderBrush="Black">
             <ScrollViewer.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                    <GradientStop Color="#FF8E8E8F" Offset="0"/>
+                    <GradientStop Color="#FFF9F9FB" Offset="0"/>
                     <GradientStop Color="#FFF5F5F7" Offset="1"/>
                 </LinearGradientBrush>
             </ScrollViewer.Background>
-            <Grid VerticalAlignment="Center" Width="820">
+            <Grid VerticalAlignment="Center" Width="820" Background="White">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="9*"/>
                     <ColumnDefinition Width="83*"/>
@@ -32,7 +35,7 @@
                     <ColumnDefinition Width="233*"/>
                 </Grid.ColumnDefinitions>
 
-                <GroupBox Header="Computer Information" Height="181" HorizontalAlignment="Left" Margin="1,10,0,0" Name="grpboxImageInfo" VerticalAlignment="Top" Width="601" Grid.ColumnSpan="3" BorderBrush="White" FontWeight="Bold" Grid.Column="1">
+                <GroupBox Header="Computer Information" Background="Lightgray" Height="130" HorizontalAlignment="Left" Margin="1,10,0,0" Name="grpboxImageInfo" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" BorderBrush="DarkGray" FontWeight="Bold" Grid.Column="1">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="52*"/>
@@ -46,84 +49,56 @@
                             <TextBox IsReadOnly="True" Background="Transparent" Name="txtmodel" Visibility="Visible" IsEnabled="False" FontSize="12" VerticalContentAlignment="Center">
                             </TextBox>
                         </Border>
-                        <Label Content="Product:" Height="28" HorizontalAlignment="Left" Name="label7" VerticalAlignment="Top" Margin="-3,52,0,0" FontWeight="Bold" Grid.ColumnSpan="2" Width="57.857" />
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="254.143" Margin="0.857,54,0,0" Grid.ColumnSpan="4" Grid.Column="1" >
+                        <Label Content="Product:" Height="28" HorizontalAlignment="Left" Name="label7" VerticalAlignment="Top" Margin="131.223,14,0,0" FontWeight="Bold" Width="57.857" Grid.Column="4" />
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="77.477" Margin="189.08,14,0,0" Grid.Column="4" >
                             <TextBox Height="23" IsReadOnly="True"  Name="txtproduct" IsEnabled="False" />
                         </Border>
-                        <Label Content="Serial:" Height="28" HorizontalAlignment="Left" Name="label8" VerticalAlignment="Top" Margin="149,16,0,0" FontWeight="Bold" Grid.Column="4" Width="44.527" />
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" VerticalAlignment="Top"  Margin="190,16,16,0" Grid.Column="4" >
-                                <TextBox Height="23" IsReadOnly="True" Name="txtserial"  IsEnabled="False" />
+                        <Label Content="Serial:" Height="28" HorizontalAlignment="Left" Name="label8" VerticalAlignment="Top" Margin="283.129,15,0,0" FontWeight="Bold" Grid.Column="4" Width="44.527" />
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" VerticalAlignment="Top"  Margin="332.656,15,10,0" Grid.Column="4" >
+                            <TextBox Height="23" IsReadOnly="True" Name="txtserial"  IsEnabled="False" />
                         </Border>
-                        <Label Content="OS:" Height="28" HorizontalAlignment="Left" Margin="160,56,0,0" Name="label9" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="4" Width="29.08" />
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Background="White"  Height="25" Width="217.473" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="190,57,0,0" Grid.Column="4"></Border>
-                        <Label Content="Arch:" Height="28" HorizontalAlignment="Left" Margin="11,89,0,0" Name="label10" VerticalAlignment="Top" FontWeight="Bold" Width="39" />
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" HorizontalAlignment="Left" Margin="0.857,89,0,0" VerticalAlignment="Top" Width="254.143"  Grid.ColumnSpan="4" Grid.Column="1" >
-                                <TextBox IsReadOnly="True" Height="23"  Name="txtarch"  IsEnabled="False"/>
+
+                        <Label Content="OS:" Height="28" HorizontalAlignment="Left" Margin="1,47,0,0" Name="label9" VerticalAlignment="Top" FontWeight="Bold" />
+
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" VerticalAlignment="Top" Margin="0.001,50,424.228,0" Grid.Column="1" Grid.ColumnSpan="4">
+                            <TextBox Height="23" IsReadOnly="True" Name="txtos" IsEnabled="False" />
                         </Border>
-                        <Button Content="Validate Image" Height="30" HorizontalAlignment="Left" Margin="227.378,102.04,0,0" Name="btnvaidate" VerticalAlignment="Top" Width="155" Click="btnvaidate_Click" Grid.Column="4" />
-                        <TextBox Height="23" IsReadOnly="True" Name="txtos" IsEnabled="False" Grid.Column="4" Margin="191,58,18,77" />
+
+                        <Label Content="Arch:" Height="28" HorizontalAlignment="Left" Margin="145.08,47,0,0" Name="label10" VerticalAlignment="Top" FontWeight="Bold" Width="39" Grid.Column="4" />
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" HorizontalAlignment="Left" Margin="189.08,50,0,0" VerticalAlignment="Top" Width="77.477" Grid.Column="4" >
+                            <TextBox IsReadOnly="True" Height="23"  Name="txtarch"  IsEnabled="False"/>
+                        </Border>
+                        <Button Content="Validate Image" Height="23" HorizontalAlignment="Left" Margin="348.463,52,0,0" Name="btnvaidate" VerticalAlignment="Top" Width="155" Click="btnvaidate_Click" Grid.Column="4" />
                     </Grid>
                 </GroupBox>
-                <GroupBox Header="Legend" Height="181" HorizontalAlignment="Left" Margin="27.903,10,0,0" Name="grboxlegend" VerticalAlignment="Top" Width="162" Grid.Column="3" BorderBrush="White">
-                    <Grid Width="144">
-                        <Ellipse Height="28" HorizontalAlignment="Left" Name="ellipse2" Stroke="Black" VerticalAlignment="Top" Width="28" Fill="#FFD3EF03" Margin="6,6,0,0"/>
-                        <Ellipse Height="28" HorizontalAlignment="Left" Name="ellipse3" Stroke="Black" VerticalAlignment="Top" Width="28" Fill="#FF20860C" Margin="6,55,0,0" />
-                        <Ellipse Height="28" HorizontalAlignment="Left" Name="ellipse1" Stroke="Black" VerticalAlignment="Top" Width="28" Fill="#FFE81515" Margin="6,106,0,0" />
-                        <Label Content="Version Mismatch" Height="28" HorizontalAlignment="Left" Margin="35,6,0,0" Name="label11" VerticalAlignment="Top" />
-                        <Label Content="Version Match" Height="28" HorizontalAlignment="Right" Margin="0,0,18,72" Name="label12" VerticalAlignment="Bottom" />
-                        <Label Content="Software Missing" Height="28" HorizontalAlignment="Left" Margin="40,106,0,0" Name="label13" VerticalAlignment="Top" />
-                    </Grid>
-                </GroupBox>
-                <GroupBox Header="Summary" Height="206" HorizontalAlignment="Left" Margin="0,207,0,0" Name="grpboxsmmry" VerticalAlignment="Top" Width="770" Grid.ColumnSpan="3" Grid.Column="1" FontWeight="Bold" BorderBrush="White">
+                <GroupBox Header="Summary" Background="LightGray" Height="290" HorizontalAlignment="Left" Margin="0,150,0,0" Name="grpboxsmmry" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" Grid.Column="1" FontWeight="Bold" BorderBrush="DarkGray">
                     <Grid>
-                        <Image Name="imgthumboverall" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,6,733,149" />
-						<Image Name="imgthumboveralld" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,6,733,149" />
-                        <Label Content="" HorizontalAlignment="Left"  Margin="22,6,0,154" Name="lbloverall" />
-                        <Image Name="imgthumbapp" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,35,733,120" />
-						<Image Name="imgthumbappd" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,35,733,120" />
-                        <Label Content="" HorizontalAlignment="Left" Margin="22,35,0,120" Name="lblapp" />
-                        <Image Name="imgthumbdriverd" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,66,733,86" />
-						<Image Name="imgthumbdriver" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,66,733,86" />
-                        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="22,66,0,0" Name="lbldriver" VerticalAlignment="Top" />
-                        <Image Name="imgthumbfilefolder" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,97,733,52"/>
-						<Image Name="imgthumbfilefolderd" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,97,733,52"/>
-                        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="22,97,0,0" Name="lblfilefolder" VerticalAlignment="Top" />
-                        <Image Name="imgthumbregistry" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,128,733,28"/>
-						<Image Name="imgthumbregistryd" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,128,733,28"/>
-                        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="22,128,0,0" Name="lblregistry" VerticalAlignment="Top" />
-                        <Image Name="imgthumbhotfixes"  Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,159,733,0" />
-						<Image Name="imgthumbhotfixesd" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,159,733,0" />
-                        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="22,159,0,0" Name="lblhotfixes" VerticalAlignment="Top" />
-                         
-						 <xctk:BusyIndicator x:Name="_busyIndicator" IsBusy="False" DisplayAfter="0" >
-                            <xctk:BusyIndicator.BusyContentTemplate>
-                                <DataTemplate>
-                                    <StackPanel Margin="0">
-                                        <TextBlock FontSize="15" Text="Please Wait" FontWeight="Bold" HorizontalAlignment="Center"/>
-                                        <ProgressBar Value="100" Height="40"/>
-                                          
-                                    </StackPanel>
-                                </DataTemplate>
-                            </xctk:BusyIndicator.BusyContentTemplate>
-                            <xctk:BusyIndicator.OverlayStyle>
-                                <Style TargetType="Rectangle">
-                                    <Setter Property="Fill" Value="LightGray"/>
-                                </Style>
-                            </xctk:BusyIndicator.OverlayStyle>
-                            <xctk:BusyIndicator.ProgressBarStyle>
-                                <Style TargetType="ProgressBar">
-                                    <Setter Property="Visibility" Value="Collapsed"/>
-                                </Style>
-                            </xctk:BusyIndicator.ProgressBarStyle>
-                            <ContentControl/>
-                        </xctk:BusyIndicator>
-					
-					
-					</Grid>
+                        <Image Name="imgthumboverall"  VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,10,718,0" />
+                        <Image Name="imgthumboveralld" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,10,718,0" />
+                        <Label FontSize="14" Content="" HorizontalAlignment="Left"  Margin="22,10,0,154" Name="lbloverall" />
+                        <Image Name="imgthumbapp" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,50,718,0" />
+                        <Image Name="imgthumbappd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,50,718,0" />
+                        <Label FontSize="14" Content="" HorizontalAlignment="Left" Margin="22,50,0,120" Name="lblapp" />
+                        <Image Name="imgthumbdriver" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,90,718,0" />
+                        <Image Name="imgthumbdriverd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,90,718,0" />
+                        <Label FontSize="14" Content="" Height="28"  HorizontalAlignment="Left" Margin="22,90,0,0" Name="lbldriver" VerticalAlignment="Top" />
+                        <Image Name="imgthumbfilefolder" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,130,718,0"/>
+                        <Image Name="imgthumbfilefolderd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,130,718,0"/>
+                        <Label FontSize="14" Content="" Height="28" HorizontalAlignment="Left" Margin="22,130,0,0" Name="lblfilefolder" VerticalAlignment="Top" />
+                        <Image Name="imgthumbregistry" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,170,718,0"/>
+                        <Image Name="imgthumbregistryd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,170,718,0"/>
+                        <Label FontSize="14" Content="" Height="28" HorizontalAlignment="Left" Margin="22,170,0,0" Name="lblregistry" VerticalAlignment="Top" />
+                        <Image Name="imgthumbhotfixes" VerticalAlignment="Top"  Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,210,718,0" />
+                        <Image Name="imgthumbhotfixesd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,210,718,0" />
+                        <Label FontSize="14" Content="" Height="28" HorizontalAlignment="Left" Margin="22,210,0,0" Name="lblhotfixes" VerticalAlignment="Top" />
+
+                       
+
+                    </Grid>
                 </GroupBox>
 
                 <Label Content="Driver Validation" Height="28" HorizontalAlignment="Left" Margin="0,450,0,0" Name="lblDrvr" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" RenderTransformOrigin="0.226,0.407" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,475,0,0" Name="dataGrid_driver" VerticalAlignment="Top" Width="770" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,475,0,0" Name="dataGrid_driver" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=DeviceName}" Header="Device Name" Width="230" IsReadOnly="True" >
                             <my:DataGridTextColumn.ElementStyle>
@@ -161,7 +136,7 @@
                 </my:DataGrid>
 
                 <Label Content="Application Validation" HorizontalAlignment="Left" Margin="0,613,0,658" Name="lblappval" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,638,0,0" Name="dataGrid_app" VerticalAlignment="Top" Width="770" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,638,0,0" Name="dataGrid_app" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=DisplayName}" Header="Display Name" Width="230" IsReadOnly="True" >
                             <my:DataGridTextColumn.ElementStyle>
@@ -199,7 +174,7 @@
                 </my:DataGrid>
 
                 <Label Content="File And Folder" HorizontalAlignment="Left" Margin="0,776,0,0" Name="lblfilefolderval" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1"/>
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,801,0,0" Name="dataGrid_filefolder" VerticalAlignment="Top" Width="770" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,801,0,0" Name="dataGrid_filefolder" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=Location}" Header="Location" Width="220" IsReadOnly="True" />
                         <my:DataGridTextColumn Binding="{Binding Path=Note}" Header="Note" Width="200" IsReadOnly="True" />
@@ -228,7 +203,7 @@
                     </my:DataGrid.Columns>
                 </my:DataGrid>
                 <Label Content="Registry Settings" HorizontalAlignment="Left" Name="lblrgstryval" Margin="0,939,0,312"  FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,964,0,0" Name="dataGrid_registr" VerticalAlignment="Top" Width="770" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,964,0,0" Name="dataGrid_registr" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=RegKey}" Header="Registry Key" Width="290" IsReadOnly="True">
                             <my:DataGridTextColumn.ElementStyle>
@@ -270,7 +245,7 @@
                     </my:DataGrid.Columns>
                 </my:DataGrid>
                 <Label Content="Microsoft HotFixes" HorizontalAlignment="Left" Name="lblhotfixval" FontWeight="Bold" Margin="0,1102,0,0" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1127,0,0" Name="dataGrid_hotfix" VerticalAlignment="Top" Width="770" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1127,0,0" Name="dataGrid_hotfix" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=HotFixIDs}" Header="HotFix ID" Width="350" IsReadOnly="True" />
                         <my:DataGridCheckBoxColumn Header="Match" Width="350" IsReadOnly="True">
@@ -312,12 +287,11 @@
                 <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1102,0,0" Name="elpGreenhot" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
                 <Ellipse Height="20" HorizontalAlignment="Left" Margin="156.903,1102,0,0" Name="elpYellowhot" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
                 <Ellipse Height="20" HorizontalAlignment="Left" Margin="156.903,1102,0,0" Name="elpRedhot" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-				
+
             </Grid>
 
         </ScrollViewer>
-    
+
     </DockPanel>
 
 </PageFunction>
-    
