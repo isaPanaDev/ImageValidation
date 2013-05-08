@@ -319,80 +319,49 @@ C:\Users\Sudhir\Desktop\ImageValidation-ValidatorToolAndClientTool\ImageValidati
 C:\Users\Sudhir\Desktop\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Client\obj\Debug\GenerateResource-ResGen.read.1.tlog
 C:\Users\Sudhir\Desktop\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Client\obj\Debug\GenerateResource-ResGen.write.1.tlog
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_Content.g.cs
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\c2-4-3.png
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\toughbook_c2_5.jpg
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe.config
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.pdb
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\WPFToolkit.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\Xceed.Wpf.Toolkit.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.pdb
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.pdb
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidationClient.baml
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\MainWindow.baml
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\App.baml
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidationClient.g.cs
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\MainWindow.g.cs
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\App.g.cs
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_Content.g.cs
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_MarkupCompile.cache
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.g.resources
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.Properties.Resources.resources
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.csproj.GenerateResource.Cache
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.exe
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.pdb
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe.config
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.exe
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.pdb
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\c2-4-3.png
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\toughbook_c2_5.jpg
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.pdb
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\WPFToolkit.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\Xceed.Wpf.Toolkit.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.pdb
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.pdb
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ResolveAssemblyReference.cache
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidationClient.baml
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\MainWindow.baml
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\App.baml
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidationClient.g.cs
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\MainWindow.g.cs
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\App.g.cs
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_Content.g.cs
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_MarkupCompile.cache
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.g.resources
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.Properties.Resources.resources
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ResGen.read.1.tlog
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation.Client\obj\Debug\ResGen.write.1.tlog
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe.config
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\c2-4-3.png
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\toughbook_c2_5.jpg
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.pdb
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\WPFToolkit.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\Xceed.Wpf.Toolkit.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.pdb
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.pdb
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ResolveAssemblyReference.cache
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidationClient.baml
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\MainWindow.baml
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\App.baml
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidationClient.g.cs
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\MainWindow.g.cs
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\App.g.cs
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_Content.g.cs
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_MarkupCompile.cache
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.g.resources
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.Properties.Resources.resources
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ResGen.read.1.tlog
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ResGen.write.1.tlog
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.exe
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe.config
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidation.Client.exe
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidation.Client.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\ImageValidation.Client.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\ImageValidation.Collection.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\WPFToolkit.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\ImageValidation.Collection.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\ImageValidation.Core.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Client\bin\Debug\WPFToolkit.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidation.Client.csprojResolveAssemblyReference.cache
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidationClient.baml
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\MainWindow.baml
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\App.baml
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidationClient.g.cs
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\MainWindow.g.cs
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\App.g.cs
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidation.Client_Content.g.cs
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidation.Client_MarkupCompile.cache
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidation.Client.g.resources
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidation.Client.Properties.Resources.resources
+D:\Project\New-ImageValidation\New\ImageValidation.Client\obj\Debug\ImageValidation.Client.csproj.GenerateResource.Cache
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe.config
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.exe
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.pdb
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.pdb
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.dll
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.dll
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\WPFToolkit.dll
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.pdb
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.pdb
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\bin\Debug\WPFToolkit.pdb
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.csprojResolveAssemblyReference.cache
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidationClient.baml
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\MainWindow.baml
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\App.baml
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidationClient.g.cs
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\MainWindow.g.cs
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\App.g.cs
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_Content.g.cs
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client_MarkupCompile.cache
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.g.resources
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.Properties.Resources.resources
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\ImageValidation.Client.csproj.GenerateResource.Cache

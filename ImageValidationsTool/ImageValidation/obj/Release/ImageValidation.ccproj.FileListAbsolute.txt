@@ -73,3 +73,17 @@ D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageV
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.config
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.Debug.config
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Release\ImageValidation.Service\Web1.Release.config
+D:\Project\New-ImageValidation\New\ImageValidation\bin\Release\ServiceConfiguration.cscfg
+D:\Project\New-ImageValidation\New\ImageValidation\bin\Release\ServiceDefinition.csdef
+D:\Project\New-ImageValidation\New\ImageValidation\bin\Release\ValidationIssues.xml
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\bin\ImageValidation.Service.dll
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\ImageValidationService.svc
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\packages.config
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\Web.config
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\Web1.config
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\Web1.Debug.config
+D:\Project\New-ImageValidation\New\ImageValidation\obj\Release\ImageValidation.Service\Web1.Release.config

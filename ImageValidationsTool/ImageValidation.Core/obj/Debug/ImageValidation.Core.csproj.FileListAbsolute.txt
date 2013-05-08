@@ -123,17 +123,13 @@ D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageV
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.dll
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.pdb
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Core\bin\Debug\ImageValidation.Core.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Core\bin\Debug\ImageValidation.Core.pdb
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Core\bin\Debug\WPFToolkit.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Core\bin\Debug\Xceed.Wpf.Toolkit.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.pdb
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.csprojResolveAssemblyReference.cache
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\bin\Debug\ImageValidation.Core.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\bin\Debug\ImageValidation.Core.pdb
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\bin\Debug\WPFToolkit.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\bin\Debug\Xceed.Wpf.Toolkit.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\obj\Debug\ResolveAssemblyReference.cache
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Core\bin\Debug\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Core\bin\Debug\ImageValidation.Core.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Core\obj\Debug\ImageValidation.Core.csprojResolveAssemblyReference.cache
+D:\Project\New-ImageValidation\New\ImageValidation.Core\obj\Debug\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Core\obj\Debug\ImageValidation.Core.pdb
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Core\bin\Debug\ImageValidation.Core.dll
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Core\bin\Debug\ImageValidation.Core.pdb
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.csprojResolveAssemblyReference.cache
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.dll
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.pdb

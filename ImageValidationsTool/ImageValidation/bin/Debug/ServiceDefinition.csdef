@@ -20,7 +20,7 @@
     </Sites>
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
-      <InputEndpoint name="Endpoint2" protocol="https" port="443" certificate="Certificate1" />
+      <InputEndpoint name="Endpoint2" protocol="https" port="443" certificate="tools.imagevalidate.com" />
     </Endpoints>
     <Imports>
       <Import moduleName="Diagnostics" />
@@ -32,7 +32,7 @@
       <Setting name="StorageConnectionString" />
     </ConfigurationSettings>
     <Certificates>
-      <Certificate name="Certificate1" storeLocation="CurrentUser" storeName="My" />
+      <Certificate name="tools.imagevalidate.com" storeLocation="CurrentUser" storeName="My" />
     </Certificates>
   </WebRole>
 </ServiceDefinition>

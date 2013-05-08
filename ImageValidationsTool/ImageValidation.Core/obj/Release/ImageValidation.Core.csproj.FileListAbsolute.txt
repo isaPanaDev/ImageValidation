@@ -32,3 +32,7 @@ D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageV
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Core\bin\Release\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Core\bin\Release\ImageValidation.Core.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Core\obj\Release\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Core\obj\Release\ImageValidation.Core.pdb

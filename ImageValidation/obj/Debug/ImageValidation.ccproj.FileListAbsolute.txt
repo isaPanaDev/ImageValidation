@@ -80,3 +80,5 @@ C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\I
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\WPFToolkit.dll
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Xceed.Wpf.DataGrid.dll
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Xceed.Wpf.Toolkit.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation\bin\Debug\ServiceConfiguration.cscfg
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation\bin\Debug\ServiceDefinition.csdef

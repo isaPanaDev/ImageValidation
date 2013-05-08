@@ -75,3 +75,14 @@ D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageV
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Service\obj\Release\ImageValidation.Service.dll
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Service\obj\Release\ImageValidation.Service.pdb
 D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Service\obj\Release\ImageValidation.Service.csprojResolveAssemblyReference.cache
+D:\Project\New-ImageValidation\New\ImageValidation.Service\bin\ImageValidation.Service.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Service\bin\ImageValidation.Service.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Service\bin\ImageValidation.Core.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Service\bin\ImageValidation.Core.pdb
+D:\Project\New-ImageValidation\New\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Project\New-ImageValidation\New\ImageValidation.Service\obj\Release\ImageValidation.Service.csprojResolveAssemblyReference.cache
+D:\Project\New-ImageValidation\New\ImageValidation.Service\obj\Release\ImageValidation.Service.dll
+D:\Project\New-ImageValidation\New\ImageValidation.Service\obj\Release\ImageValidation.Service.pdb

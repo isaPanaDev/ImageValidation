@@ -321,3 +321,16 @@ C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\I
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Service\obj\Debug\ResolveAssemblyReference.cache
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Service\obj\Debug\ImageValidation.Service.dll
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Service\obj\Debug\ImageValidation.Service.pdb
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\ImageValidation.Service.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\ImageValidation.Service.pdb
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\ImageValidation.Core.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\Xceed.Wpf.DataGrid.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\Xceed.Wpf.Toolkit.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\ImageValidation.Core.pdb
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\obj\Debug\ImageValidation.Service.csprojResolveAssemblyReference.cache
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\obj\Debug\ImageValidation.Service.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Service\obj\Debug\ImageValidation.Service.pdb

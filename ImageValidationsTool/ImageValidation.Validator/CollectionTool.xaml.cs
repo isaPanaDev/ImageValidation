@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Navigation;
-using ImageValidation.Validator.ServiceReference1;
+using ImageValidation.Validator.ServiceReference2;
 using System.ComponentModel;
 using ImageValidation.Collection;
 using ImageValidation.Core;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1daef454-54f2-40e7-b0e6-86371aaa1c72" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="56f54b64-36ea-462f-aa11-2a2cec4687a2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -18,13 +18,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:57480/ImageValidationService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://tools.imagevalidate.com/ImageValidationService.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ImageValidationService.xsd" MetadataType="Schema" ID="3d4f6883-543e-4f47-99d2-1f082ce18102" SourceId="1" SourceUrl="http://localhost:57480/ImageValidationService.svc?xsd=xsd1" />
-    <MetadataFile FileName="ImageValidationService.wsdl" MetadataType="Wsdl" ID="56ba08c9-6b3e-4e6f-97e9-9c5090a7bb39" SourceId="1" SourceUrl="http://localhost:57480/ImageValidationService.svc?wsdl" />
-    <MetadataFile FileName="ImageValidationService1.xsd" MetadataType="Schema" ID="49e5569d-5bf4-4095-bf59-89f728383e39" SourceId="1" SourceUrl="http://localhost:57480/ImageValidationService.svc?xsd=xsd0" />
-    <MetadataFile FileName="ImageValidationService2.xsd" MetadataType="Schema" ID="8e824162-7eb1-469c-b359-f612cd1b6ff6" SourceId="1" SourceUrl="http://localhost:57480/ImageValidationService.svc?xsd=xsd2" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="5caed0f8-f415-4647-b434-4b8ced798885" SourceId="1" SourceUrl="https://tools.imagevalidate.com/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="554ceec8-8331-4301-8e2d-e4d363c5cc22" SourceId="1" SourceUrl="https://tools.imagevalidate.com/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="a211df23-4036-42eb-88bb-6ef964fd7079" SourceId="1" SourceUrl="https://tools.imagevalidate.com/ImageValidationService.svc/mex" />
+    <MetadataFile FileName="ImageValidation.Core.xsd" MetadataType="Schema" ID="11752092-99e3-48ed-a75b-1360c720b59f" SourceId="1" SourceUrl="https://tools.imagevalidate.com/ImageValidationService.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

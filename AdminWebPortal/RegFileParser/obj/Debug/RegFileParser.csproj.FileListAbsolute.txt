@@ -22,3 +22,4 @@ D:\Project\AdminWebPanel\RegFileParser\bin\Debug\RegFileParser.dll
 D:\Project\AdminWebPanel\RegFileParser\bin\Debug\RegFileParser.pdb
 D:\Project\AdminWebPanel\RegFileParser\obj\Debug\RegFileParser.dll
 D:\Project\AdminWebPanel\RegFileParser\obj\Debug\RegFileParser.pdb
+D:\Project\AdminWebPanel\RegFileParser\obj\Debug\RegFileParser.csprojResolveAssemblyReference.cache

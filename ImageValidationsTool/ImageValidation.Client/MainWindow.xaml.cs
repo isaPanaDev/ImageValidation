@@ -24,11 +24,6 @@ namespace ImageValidation.Client
             InitializeComponent();
         }
 
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
-        }
-        
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             ImageValidationClient client = new ImageValidationClient();

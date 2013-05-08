@@ -71,7 +71,7 @@
                     </TextBlock>-->
                     <TextBlock Margin="0,14,0,71">
                        <Label Content="Cloud Record :" Margin="15,1,31,-8" Foreground="#ffffff" HorizontalAlignment="Left" Name="label11" VerticalAlignment="Top" />
-                       <Hyperlink Name="hprlnkWebUrl1" Foreground="#ffffff" RequestNavigate="hprlnkWebUrl_RequestNavigate"  NavigateUri="https://admin.imagevalidate.com/">Browse to Cloud Record</Hyperlink>
+                       <Hyperlink Name="hprlnkWebUrl1" Foreground="#ffffff" RequestNavigate="hprlnkWebUrl_RequestNavigate"  NavigateUri="http://imagevalidationadmin.cloudapp.net/">Browse to Cloud Record</Hyperlink>
                     </TextBlock>
 
                     <TextBlock Margin="0,47,0,39">

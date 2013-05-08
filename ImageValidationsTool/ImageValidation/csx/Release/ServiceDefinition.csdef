@@ -11,10 +11,10 @@
     </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" localPort="80" />
-      <InputEndpoint name="Endpoint2" protocol="https" port="443" certificate="Certificate1" localPort="443" />
+      <InputEndpoint name="Endpoint2" protocol="https" port="443" certificate="tools.imagevalidate.com" localPort="443" />
     </Endpoints>
     <Certificates>
-      <Certificate name="Certificate1" storeLocation="CurrentUser" storeName="My" />
+      <Certificate name="tools.imagevalidate.com" storeLocation="CurrentUser" storeName="My" />
     </Certificates>
   </WebRole>
 </ServiceDefinition>

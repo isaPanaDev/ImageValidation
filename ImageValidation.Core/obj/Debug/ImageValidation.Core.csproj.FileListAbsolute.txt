@@ -137,3 +137,10 @@ C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\I
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\obj\Debug\ResolveAssemblyReference.cache
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.dll
 C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Core\obj\Debug\ImageValidation.Core.pdb
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Core\bin\Debug\ImageValidation.Core.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Core\bin\Debug\ImageValidation.Core.pdb
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Core\bin\Debug\WPFToolkit.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Core\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Core\obj\Debug\ImageValidation.Core.csprojResolveAssemblyReference.cache
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Core\obj\Debug\ImageValidation.Core.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Core\obj\Debug\ImageValidation.Core.pdb

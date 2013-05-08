@@ -52,31 +52,7 @@ C:\Users\Sudhir\Desktop\ImageValidation-ValidatorToolAndClientTool\ImageValidati
 C:\Users\Sudhir\Desktop\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
 C:\Users\Sudhir\Desktop\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.xml
 C:\Users\Sudhir\Desktop\ImageValidation-ValidatorToolAndClientTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation\bin\Debug\ServiceConfiguration.cscfg
-C:\Users\Administrator\Documents\GitHub\ImageValidation\ImageValidationsTool\ImageValidation\bin\Debug\ServiceDefinition.csdef
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\bin\Debug\ServiceConfiguration.cscfg
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\bin\Debug\ServiceDefinition.csdef
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\ImageValidation.Core.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\ImageValidation.Core.pdb
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\ImageValidation.Service.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\ImageValidation.Service.pdb
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.xml
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\WPFToolkit.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Xceed.Wpf.DataGrid.dll
-C:\Development\Image Validation\ImageValidation.git\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Xceed.Wpf.Toolkit.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\bin\Debug\ServiceConfiguration.cscfg
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\bin\Debug\ServiceDefinition.csdef
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\ImageValidation.Core.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\ImageValidation.Core.pdb
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\ImageValidation.Service.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\ImageValidation.Service.pdb
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.Configuration.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.Diagnostics.xml
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Microsoft.WindowsAzure.StorageClient.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\WPFToolkit.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Xceed.Wpf.DataGrid.dll
-C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation\obj\Debug\ImageValidation.Service\bin\Xceed.Wpf.Toolkit.dll
+D:\Project\New-ImageValidation\New\ImageValidation\bin\Debug\ServiceConfiguration.cscfg
+D:\Project\New-ImageValidation\New\ImageValidation\bin\Debug\ServiceDefinition.csdef
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation\bin\Debug\ServiceConfiguration.cscfg
+C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation\bin\Debug\ServiceDefinition.csdef

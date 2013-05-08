@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Validator\obj\x86\Debug\
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Validator\obj\x86\Debug\
 ImageValidation.Validator
 none
 false
 DEBUG;TRACE
-D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation.Validator\App.xaml
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Validator\App.xaml
 31125996760
-
+11745232934
 13-154687731
-17-934252394
+19291722116
 CollectionTool.xaml;Login.xaml;MainWindow.xaml;
 
 False

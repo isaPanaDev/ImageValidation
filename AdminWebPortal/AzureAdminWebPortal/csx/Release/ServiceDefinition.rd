@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureAdminWebPortal" generation="1" functional="0" release="0" Id="e9634e15-8fe9-430c-a72b-6b3e109e5c33" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureAdminWebPortal" generation="1" functional="0" release="0" Id="36b75cc8-39b8-4efc-bcdd-cc24f12d87e7" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="AzureAdminWebPortalGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -105,14 +105,14 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="c2ddc210-99c3-4c68-8935-ab196c1ef640" ref="Microsoft.RedDog.Contract\ServiceContract\AzureAdminWebPortalContract@ServiceDefinition">
+    <implementation Id="26514a92-6fb8-4686-a14a-3882f9c0a799" ref="Microsoft.RedDog.Contract\ServiceContract\AzureAdminWebPortalContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="cbce226c-8617-41b0-ac5a-7858ad4ae6d4" ref="Microsoft.RedDog.Contract\Interface\AdminWebPortal:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="081050a9-9bf1-4836-a73f-85ab788db12d" ref="Microsoft.RedDog.Contract\Interface\AdminWebPortal:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/AzureAdminWebPortal/AzureAdminWebPortalGroup/AdminWebPortal:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="05f739df-28cf-4e1d-a667-7a34df4243fd" ref="Microsoft.RedDog.Contract\Interface\AdminWebPortal:Endpoint2@ServiceDefinition">
+        <interfaceReference Id="a27d30cb-4cc0-47e9-8f38-d56bd8273968" ref="Microsoft.RedDog.Contract\Interface\AdminWebPortal:Endpoint2@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/AzureAdminWebPortal/AzureAdminWebPortalGroup/AdminWebPortal:Endpoint2" />
           </inPort>

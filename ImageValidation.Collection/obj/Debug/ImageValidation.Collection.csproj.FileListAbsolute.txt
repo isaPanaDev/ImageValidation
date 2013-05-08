@@ -1,0 +1,8 @@
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Collection\bin\Debug\ImageValidation.Collection.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Collection\bin\Debug\ImageValidation.Collection.pdb
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Collection\bin\Debug\ImageValidation.Core.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Collection\bin\Debug\WPFToolkit.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Collection\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Collection\bin\Debug\ImageValidation.Core.pdb
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Collection\obj\Debug\ImageValidation.Collection.dll
+C:\Development\IsaImageValidation\ImageValidation\ImageValidation.Collection\obj\Debug\ImageValidation.Collection.pdb

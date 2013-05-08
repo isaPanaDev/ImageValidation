@@ -7,7 +7,7 @@
       <Setting name="StorageConnectionString" value="BlobEndpoint=http://imagevalidationblob.blob.core.windows.net/;AccountName=imagevalidationblob;AccountKey=ZusTpUgGPdQ98NlQdtMFP1WLBm+QZ0DlQKkOKHIBO/GaUeE+nq5xJ/I+aHYdPZXdD7Lw5CcEUfHlKDxzu5DinA==" />
     </ConfigurationSettings>
     <Certificates>
-      <Certificate name="Certificate1" thumbprint="69159839B552844FE2B90776513C269ADAA74E6B" thumbprintAlgorithm="sha1" />
+      <Certificate name="tools.imagevalidate.com" thumbprint="9A91822FC616BD9EDA3879FC8D06DCE8A08DE227" thumbprintAlgorithm="sha1" />
     </Certificates>
   </Role>
 </ServiceConfiguration>

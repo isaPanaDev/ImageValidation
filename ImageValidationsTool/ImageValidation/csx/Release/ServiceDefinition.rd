@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ImageValidation" generation="1" functional="0" release="0" Id="73b5e03e-0099-46f1-adcf-d9010e74aae2" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ImageValidation" generation="1" functional="0" release="0" Id="298be618-29f5-4e07-8b48-b9f29cf6bde6" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="ImageValidationGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -15,9 +15,9 @@
         </inPort>
       </componentports>
       <settings>
-        <aCS name="Certificate|ImageValidation.Service:Certificate1" defaultValue="">
+        <aCS name="Certificate|ImageValidation.Service:tools.imagevalidate.com" defaultValue="">
           <maps>
-            <mapMoniker name="/ImageValidation/ImageValidationGroup/MapCertificate|ImageValidation.Service:Certificate1" />
+            <mapMoniker name="/ImageValidation/ImageValidationGroup/MapCertificate|ImageValidation.Service:tools.imagevalidate.com" />
           </maps>
         </aCS>
         <aCS name="ImageValidation.Service:Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" defaultValue="">
@@ -49,9 +49,9 @@
         </lBChannel>
       </channels>
       <maps>
-        <map name="MapCertificate|ImageValidation.Service:Certificate1" kind="Identity">
+        <map name="MapCertificate|ImageValidation.Service:tools.imagevalidate.com" kind="Identity">
           <certificate>
-            <certificateMoniker name="/ImageValidation/ImageValidationGroup/ImageValidation.Service/Certificate1" />
+            <certificateMoniker name="/ImageValidation/ImageValidationGroup/ImageValidation.Service/tools.imagevalidate.com" />
           </certificate>
         </map>
         <map name="MapImageValidation.Service:Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" kind="Identity">
@@ -72,12 +72,12 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="ImageValidation.Service" generation="1" functional="0" release="0" software="D:\Project\New-ImageValidation\ImageValidation-ValidatorToolAndClientTool\ImageValidation\csx\Release\roles\ImageValidation.Service" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="1792" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="ImageValidation.Service" generation="1" functional="0" release="0" software="D:\Project\New-ImageValidation\New\ImageValidation\csx\Release\roles\ImageValidation.Service" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="1792" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
               <inPort name="Endpoint2" protocol="https" portRanges="443">
                 <certificate>
-                  <certificateMoniker name="/ImageValidation/ImageValidationGroup/ImageValidation.Service/Certificate1" />
+                  <certificateMoniker name="/ImageValidation/ImageValidationGroup/ImageValidation.Service/tools.imagevalidate.com" />
                 </certificate>
               </inPort>
             </componentports>
@@ -92,14 +92,14 @@
               <resourceReference name="EventStore" defaultAmount="[1000,1000,1000]" defaultSticky="false" kind="LogStore" />
             </resourcereferences>
             <storedcertificates>
-              <storedCertificate name="Stored0Certificate1" certificateStore="My" certificateLocation="User">
+              <storedCertificate name="Stored0tools.imagevalidate.com" certificateStore="My" certificateLocation="User">
                 <certificate>
-                  <certificateMoniker name="/ImageValidation/ImageValidationGroup/ImageValidation.Service/Certificate1" />
+                  <certificateMoniker name="/ImageValidation/ImageValidationGroup/ImageValidation.Service/tools.imagevalidate.com" />
                 </certificate>
               </storedCertificate>
             </storedcertificates>
             <certificates>
-              <certificate name="Certificate1" />
+              <certificate name="tools.imagevalidate.com" />
             </certificates>
           </role>
           <sCSPolicy>
@@ -117,14 +117,14 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="3394a82a-f8cd-4927-9381-4adbd1250be1" ref="Microsoft.RedDog.Contract\ServiceContract\ImageValidationContract@ServiceDefinition">
+    <implementation Id="7f3a0a96-5b3f-4308-baa6-74ed09b98ca6" ref="Microsoft.RedDog.Contract\ServiceContract\ImageValidationContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="09d441af-9f2e-4056-9e3b-8238f2485c23" ref="Microsoft.RedDog.Contract\Interface\ImageValidation.Service:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="8a66f27c-68fe-41a2-ad7d-13e1f9cea467" ref="Microsoft.RedDog.Contract\Interface\ImageValidation.Service:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/ImageValidation/ImageValidationGroup/ImageValidation.Service:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="449b4ff4-daa0-4c77-bd4c-95c756178005" ref="Microsoft.RedDog.Contract\Interface\ImageValidation.Service:Endpoint2@ServiceDefinition">
+        <interfaceReference Id="69810d06-b4c4-4be6-8569-08da47bb95dd" ref="Microsoft.RedDog.Contract\Interface\ImageValidation.Service:Endpoint2@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/ImageValidation/ImageValidationGroup/ImageValidation.Service:Endpoint2" />
           </inPort>
