@@ -29,6 +29,11 @@ namespace ImageValidation.Client
             ImageValidationClient client = new ImageValidationClient();
             NavigationService.Navigate(client);
         }
+
+        private void NavigationWindow_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
         
     }
 }

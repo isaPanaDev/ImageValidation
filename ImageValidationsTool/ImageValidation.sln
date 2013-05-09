@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{4185FC8C-9ABF-469F-AC40-8212FD3A9757}"
-EndProject
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "ImageValidation", "ImageValidation\ImageValidation.ccproj", "{7E25D082-B497-4BFB-8967-B55E4230FD30}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageValidation.Service", "ImageValidation.Service\ImageValidation.Service.csproj", "{55DA7D54-42B8-46C8-91B3-DD8CB7638103}"

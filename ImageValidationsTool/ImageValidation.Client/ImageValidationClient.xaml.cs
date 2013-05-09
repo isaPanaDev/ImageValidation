@@ -19,6 +19,8 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 using Microsoft.Win32;
+using System.ComponentModel;
+using ImageValidation.Client.Controls;
 
 namespace ImageValidation.Client
 {
@@ -67,49 +69,88 @@ namespace ImageValidation.Client
         int CountMatchHotFix = 0;
         int CountHot = 0;
 
+        ucCustomTreeCodeBehind treeControl;
         #endregion
+
         public ImageValidationClient()
         {
             InitializeComponent();
-            LoadComputerInfo();
+           // LoadComputerInfo();
+
+            treeControl = new ucCustomTreeCodeBehind();
+            ShowTreeControl(treeControl, "Custom Tree");
+        }
+        
+        private void ShowTreeControl(Control control, string title)
+        {
+            control.VerticalAlignment = System.Windows.VerticalAlignment.Stretch;
+            control.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
+
+            control.Width = double.NaN;
+            control.Height = double.NaN;
+
+            gvContainer.Children.Clear();
+            gvContainer.Children.Add(control);
         }
 
         private void btnvaidate_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                lblprocess.Content = "Processing...";
-                Computer ObjComp = compInfo.GetComputerInformation(); //Getting computer information from system
-
-                #region Get Computer ID By Model & Product
-
-                int ComputerIDByModel = sRef.SeleteComputerInfoByModel(ObjComp.Model); //Return ComputerID By Model
-                int ComputerIDByProduct = sRef.SeleteComputerInfoByProduct(ObjComp.Product); //Return ComputerID By Product
-
-                #endregion
-
-                if (ComputerIDByModel > 0)
+                //lblprocess.Content = "Processing...";                
+                BackgroundWorker worker = new BackgroundWorker();
+               
+                // Long running process !
+                worker.DoWork += (o, ea) =>
                 {
-                    BindData(ComputerIDByModel);
-                }
-                else if (ComputerIDByProduct > 0)
-                {
-                    BindData(ComputerIDByProduct);
-                }
-                else
-                {
-                    #region Summary messages displays if computer information not exist in azure database
+                    Computer ObjComp = compInfo.GetComputerInformation(); //Getting computer information from system
 
-                    lbloverall.Content = "- Overall Validation: Overall failed (Result not found).";
-                    lblapp.Content = "- Application Validation: Not Found Any Record.";
-                    lbldriver.Content = "- Driver Validation: Not Found Any Record.";
-                    lblfilefolder.Content = "- File and Folder Validation: Not Found Any Record.";
-                    lblhotfixes.Content = "- Microsoft HotFix Validation: Not Found Any Record.";
-                    lblregistry.Content = "- Registry Validation: Not Found Any Record.";
+                    #region Get Computer ID By Model & Product
+
+                    int ComputerIDByModel = sRef.SeleteComputerInfoByModel(ObjComp.Model); //Return ComputerID By Model
+                    int ComputerIDByProduct = sRef.SeleteComputerInfoByProduct(ObjComp.Product); //Return ComputerID By Product
 
                     #endregion
-                    lblprocess.Visibility = System.Windows.Visibility.Hidden;
-                }
+
+                    if (ComputerIDByModel > 0)
+                    {
+                        BindData(ComputerIDByModel);
+                    }
+                    else if (ComputerIDByProduct > 0)
+                    {
+                        BindData(ComputerIDByProduct);
+                    }
+                    else
+                    {
+                        #region Summary messages displays if computer information not exist in azure database
+
+                        lbloverall.Content = "- Overall Validation: Overall failed (Result not found).";
+                        lblapp.Content = "- Application Validation: Not Found Any Record.";
+                        lbldriver.Content = "- Driver Validation: Not Found Any Record.";
+                        lblfilefolder.Content = "- File and Folder Validation: Not Found Any Record.";
+                        lblhotfixes.Content = "- Microsoft HotFix Validation: Not Found Any Record.";
+                        lblregistry.Content = "- Registry Validation: Not Found Any Record.";
+
+                        #endregion
+                        lblprocess.Visibility = System.Windows.Visibility.Hidden;
+                    }
+
+                    //no direct interaction with the UI is allowed from this method
+                    for (int i = 0; i < 100; i++)
+                    {
+                        System.Threading.Thread.Sleep(50);
+                    }
+                };
+
+                worker.RunWorkerCompleted += (o, ea) =>
+                {
+                    //work has completed. you can now interact with the UI
+                    _busyIndicator.IsBusy = false;
+                };
+
+                //set the IsBusy before you start the thread
+                _busyIndicator.IsBusy = true;
+                worker.RunWorkerAsync();
             }
             catch (Exception ex)
             { throw ex; }
@@ -122,16 +163,18 @@ namespace ImageValidation.Client
             ImageSource imgThumbUp = new BitmapImage(new Uri(@"/ImageValidation.Client;component/Images/Thumb-up.png", UriKind.Relative));
 
             ImageSource imgThumbDown = new BitmapImage(new Uri(@"/ImageValidation.Client;component/Images/Thumb-down.png", UriKind.Relative));
-
-
+         
             #region Bind All DataGrid - Applications, Drivers, HotFixes, FileFolders, Registry etc after comparison & XML Serializer
 
             ComputerXml Mainobj = new ComputerXml();
             XmlDocument xmldoc = new XmlDocument();
             XmlSerializer ser = new XmlSerializer(Mainobj.GetType());
+
             #region Application
             //Comparing System`s Applications With Azure Database (Applications)
-            dataGrid_app.ItemsSource = CompareApplications(ComputerID, xmldoc, ser);
+            //dataGrid_app.ItemsSource = CompareApplications(ComputerID, xmldoc, ser);
+            List<Applications> allApplications =  CompareApplications(ComputerID, xmldoc, ser);
+            Dispatcher.Invoke((Action)(() => dataGrid_app.ItemsSource = allApplications));
 
             //Count if red,yellow,green exist 
             int CountAppRed = CompareApplications(ComputerID, xmldoc, ser).Count(x => x.IsCompared == 0);
@@ -142,21 +185,25 @@ namespace ImageValidation.Client
 
             if (CountAppRed > 0)
             {
-                elpRedapp.Visibility = System.Windows.Visibility.Visible;
+                //elpRedapp.Visibility = System.Windows.Visibility.Visible;
+                Dispatcher.Invoke((Action)(() => elpRedapp.Visibility = System.Windows.Visibility.Visible));
             }
             else if (CountAppYellow > 0)
             {
-                elpYellowapp.Visibility = System.Windows.Visibility.Visible;
+                //elpYellowapp.Visibility = System.Windows.Visibility.Visible;
+                Dispatcher.Invoke((Action)(() => elpYellowapp.Visibility = System.Windows.Visibility.Visible));
             }
             else
             {
-                elpGreenapp.Visibility = System.Windows.Visibility.Visible;
+                //elpGreenapp.Visibility = System.Windows.Visibility.Visible;
+                Dispatcher.Invoke((Action)(() => elpGreenapp.Visibility = System.Windows.Visibility.Visible));
             }
             #endregion
             #region Driver
             //Comparing System`s Drivers With Azure Database (Drivers)
-            dataGrid_driver.ItemsSource = CompareDrivers(ComputerID, xmldoc, ser);
-
+            //dataGrid_driver.ItemsSource = CompareDrivers(ComputerID, xmldoc, ser);
+            List<Driver> allDrivers = CompareDrivers(ComputerID, xmldoc, ser);
+            Dispatcher.Invoke((Action)(() => dataGrid_driver.ItemsSource = allDrivers));
 
             //Count if red,yellow,green exist 
             int CountDvrRed = CompareDrivers(ComputerID, xmldoc, ser).Count(x => x.IsCompared == 0);
@@ -165,63 +212,78 @@ namespace ImageValidation.Client
             CountDriverV = CountDvrYellow;
             if (CountDvrRed > 0)
             {
-                elpRedDrv.Visibility = System.Windows.Visibility.Visible;
+                //elpRedDrv.Visibility = System.Windows.Visibility.Visible;
+                Dispatcher.Invoke((Action)(() => elpRedDrv.Visibility = System.Windows.Visibility.Visible));
             }
             else if (CountDvrYellow > 0)
             {
-                elpYellowDrv.Visibility = System.Windows.Visibility.Visible;
+                //elpYellowDrv.Visibility = System.Windows.Visibility.Visible;
+                 Dispatcher.Invoke((Action)(() => elpYellowDrv.Visibility = System.Windows.Visibility.Visible));
             }
             else
             {
-                elpGreenDrv.Visibility = System.Windows.Visibility.Visible;
+                //elpGreenDrv.Visibility = System.Windows.Visibility.Visible;
+                 Dispatcher.Invoke((Action)(() =>elpGreenDrv.Visibility = System.Windows.Visibility.Visible));
             }
             #endregion
             #region HotFixes
             //Comparing System`s HotFixes With Azure Database (Drivers)
-            dataGrid_hotfix.ItemsSource = CompareHotFixes(ComputerID, xmldoc, ser);
+            //dataGrid_hotfix.ItemsSource = CompareHotFixes(ComputerID, xmldoc, ser);
+            List<HotFix> allHotFixes = CompareHotFixes(ComputerID, xmldoc, ser);
+            Dispatcher.Invoke((Action)(() => dataGrid_hotfix.ItemsSource = allHotFixes));
             //CountHot = CountMatchHotFix;
             //Count if red,yellow,green exist 
             int CounthotRed = CompareHotFixes(ComputerID, xmldoc, ser).Count(x => x.IsCompared == false);
             CountHot = CounthotRed;
             if (CounthotRed > 0)
             {
-                elpRedhot.Visibility = System.Windows.Visibility.Visible;
+                //elpRedhot.Visibility = System.Windows.Visibility.Visible;
+                 Dispatcher.Invoke((Action)(() => elpRedhot.Visibility = System.Windows.Visibility.Visible));
             }
             else
             {
-                elpGreenhot.Visibility = System.Windows.Visibility.Visible;
+                //elpGreenhot.Visibility = System.Windows.Visibility.Visible;
+                 Dispatcher.Invoke((Action)(() => elpGreenhot.Visibility = System.Windows.Visibility.Visible));
             }
             #endregion
             #region File Folder
             //Comparing System`s FileFolders With Azure Database (FileFolders)
-            dataGrid_filefolder.ItemsSource = CompareFileFolder(ComputerID, xmldoc, ser);
-           // CountFile = CountMatchFileFolder;
+            //dataGrid_filefolder.ItemsSource = CompareFileFolder(ComputerID, xmldoc, ser);
+            List<FileFolder> allFileFolders = CompareFileFolder(ComputerID, xmldoc, ser);
+            Dispatcher.Invoke((Action)(() => dataGrid_filefolder.ItemsSource = allFileFolders));
+            // CountFile = CountMatchFileFolder;
             //Count if red,yellow,green exist 
             int CountfileRed = CompareFileFolder(ComputerID, xmldoc, ser).Count(x => x.IsCompared == false);
             CountFile = CountfileRed;
             if (CountfileRed > 0)
             {
-                elpRedfile.Visibility = System.Windows.Visibility.Visible;
+                //elpRedfile.Visibility = System.Windows.Visibility.Visible;
+                 Dispatcher.Invoke((Action)(() => elpRedfile.Visibility = System.Windows.Visibility.Visible));
             }
             else
             {
-                elpGreenfile.Visibility = System.Windows.Visibility.Visible;
+                //elpGreenfile.Visibility = System.Windows.Visibility.Visible;
+                 Dispatcher.Invoke((Action)(() => elpGreenfile.Visibility = System.Windows.Visibility.Visible));
             }
             #endregion
             #region Registry
             //Comparing System`s Registry With Azure Database (FileFolders)
-            dataGrid_registr.ItemsSource = CompareRegistry(ComputerID, xmldoc, ser);
+            //dataGrid_registr.ItemsSource = CompareRegistry(ComputerID, xmldoc, ser);
+            List<RegistryGroupData> allRegisters = CompareRegistry(ComputerID, xmldoc, ser);
+            Dispatcher.Invoke((Action)(() => dataGrid_registr.ItemsSource = allRegisters));
            // CountReg = CountMatchRegistry;
             //Count if red,yellow,green exist 
             int CountregRed = CompareRegistry(ComputerID, xmldoc, ser).Count(x => x.IsCompared == false);
             CountReg = CountregRed;
             if (CountregRed > 0)
             {
-                elpRedreg.Visibility = System.Windows.Visibility.Visible;
+                //elpRedreg.Visibility = System.Windows.Visibility.Visible;
+                 Dispatcher.Invoke((Action)(() => elpRedreg.Visibility = System.Windows.Visibility.Visible));
             }
             else
             {
-                elpGreenreg.Visibility = System.Windows.Visibility.Visible;
+                //elpGreenreg.Visibility = System.Windows.Visibility.Visible;
+                 Dispatcher.Invoke((Action)(() => elpGreenreg.Visibility = System.Windows.Visibility.Visible));
             }
             #endregion
             //_grdMainlContent.Visibility = System.Windows.Visibility.Visible; //Display DataGrids Container
@@ -232,18 +294,18 @@ namespace ImageValidation.Client
 
             if (CountApp > 0 || CountDrvr > 0 || CountFile > 0 || CountHot > 0 || CountReg > 0)
             {
-                lbloverall.Content = " Overall Validation: Failed";
+                //lbloverall.Content = " Overall Validation: Failed";
+                Dispatcher.Invoke((Action)(() => lbloverall.Content = " Overall Validation: Failed"));
                 //imgthumboverall.Source = imgThumbDown; 
 				Dispatcher.Invoke((Action)(() => imgthumboveralld.Visibility = System.Windows.Visibility.Visible));           
             }
             else
             {
-                lbloverall.Content = " Overall Validation: Passed";
+                //lbloverall.Content = " Overall Validation: Passed";
+                Dispatcher.Invoke((Action)(() => lbloverall.Content = " Overall Validation: Passed"));
                 //imgthumboverall.Source = imgThumbUp;
 				Dispatcher.Invoke((Action)(() => imgthumboverall.Visibility = System.Windows.Visibility.Visible));          
             }
-
-
 
             string Mismatchappversion = ((CountAppV > 0) ? ", " + CountAppV + " Version Mismatch" : "");
             string Mismatchdriverversion = ((CountDriverV > 0) ? ", " + CountDriverV + " Version Mismatch" : "");
@@ -261,6 +323,9 @@ namespace ImageValidation.Client
                	{
                    Dispatcher.Invoke((Action)(() => imgthumbapp.Visibility = System.Windows.Visibility.Visible));
                	}
+
+                // Tree update: Application
+                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lblapp.Content, allApplications)));
 			}
             else
             {
@@ -294,6 +359,9 @@ namespace ImageValidation.Client
                 {
                     Dispatcher.Invoke((Action)(() => imgthumbdriver.Visibility = System.Windows.Visibility.Visible));
                 }
+
+                // Tree update: Driver
+                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lbldriver.Content, allDrivers)));
             }
             else
             {
@@ -327,19 +395,17 @@ namespace ImageValidation.Client
                 {
                     Dispatcher.Invoke((Action)(() => imgthumbfilefolder.Visibility = System.Windows.Visibility.Visible));
                 }
+
+                // Tree update: File and Folder
+                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lblfilefolder.Content, allFileFolders)));
             }
             else
-            {
-                /*lblfilefolder.Content = " File and Folder Validation: Not Found Any Record.";
-                dataGrid_filefolder.Visibility = System.Windows.Visibility.Hidden;
-                lblfilefolderval.Content = "File Folder validation Record Not Found!!";
-                imgthumbfilefolder.Source = imgThumbUp;
-                elpRedfile.Visibility = System.Windows.Visibility.Hidden;
-                elpGreenfile.Visibility = System.Windows.Visibility.Hidden;*/
-				 Dispatcher.Invoke((Action)(() => lblfilefolder.Content = " File and Folder Validation: Not Found Any Record."));
-                //Dispatcher.Invoke((Action)(() => dataGrid_filefolder.Visibility = System.Windows.Visibility.Hidden));
+            {    // File Folder not found!!	
+                // Hide Grid
+                Dispatcher.Invoke((Action)(() => lblfilefolder.Content = " File and Folder Validation: Not Found Any Record."));
+               // Dispatcher.Invoke((Action)(() => dataGrid_filefolder.Visibility = System.Windows.Visibility.Hidden));
                 Dispatcher.Invoke((Action)(() => lblfilefolderval.Content = "File Folder validation Record Not Found!!"));
-                //imgthumbfilefolder.Source = imgThumbUp;
+                // Show/Hide Thumbnails
                 Dispatcher.Invoke((Action)(() => imgthumbfilefolder.Visibility = System.Windows.Visibility.Visible));
                 Dispatcher.Invoke((Action)(() => elpRedfile.Visibility = System.Windows.Visibility.Hidden));
                 Dispatcher.Invoke((Action)(() => elpGreenfile.Visibility = System.Windows.Visibility.Hidden));
@@ -358,17 +424,17 @@ namespace ImageValidation.Client
                 {
                     Dispatcher.Invoke((Action)(() => imgthumbhotfixes.Visibility = System.Windows.Visibility.Visible));
                 }
+
+                // Tree update: HotFix
+                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lblhotfixes.Content, allHotFixes)));
             }
             else
-            {
-                /*lblhotfixes.Content = " Microsoft HotFix Validation: Not Found Any Record.";
-                dataGrid_hotfix.Visibility = System.Windows.Visibility.Hidden;
-                lblhotfixval.Content = "Microsoft HotFix Validation Record Not Found!!";
-                imgthumbhotfixes.Source = imgThumbUp;
-                elpRedhot.Visibility = System.Windows.Visibility.Hidden;
-                elpGreenhot.Visibility = System.Windows.Visibility.Hidden;*/
+            {    //  HotFix not Found!!
+                // Hide Grid
 				Dispatcher.Invoke((Action)(() => lblhotfixes.Content = " Microsoft HotFix Validation: Not Found Any Record."));
                 Dispatcher.Invoke((Action)(() => lblhotfixval.Content = "Microsoft HotFix Validation Record Not Found!!"));
+               // Dispatcher.Invoke((Action)(() => dataGrid_hotfix.Visibility = System.Windows.Visibility.Hidden));
+                // Show/Hide Thumbnails
                 Dispatcher.Invoke((Action)(() => imgthumbhotfixes.Visibility = System.Windows.Visibility.Visible));
                 Dispatcher.Invoke((Action)(() => elpRedhot.Visibility = System.Windows.Visibility.Hidden));
                 Dispatcher.Invoke((Action)(() => elpGreenhot.Visibility = System.Windows.Visibility.Hidden));
@@ -387,17 +453,17 @@ namespace ImageValidation.Client
                 {
                     Dispatcher.Invoke((Action)(() => imgthumbregistry.Visibility = System.Windows.Visibility.Visible));
                 }
+
+                // Tree update: Registry
+                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lblregistry.Content, allRegisters)));
             }
             else
-            {
-                /*lblregistry.Content = " Registry Validation: Not Found Any Record.";
-                dataGrid_registr.Visibility = System.Windows.Visibility.Hidden;
-                lblrgstryval.Content = "Registry Validation Record Not Found!!";
-                imgthumbregistry.Source = imgThumbUp;
-                elpRedreg.Visibility = System.Windows.Visibility.Hidden;
-                elpGreenreg.Visibility = System.Windows.Visibility.Hidden;*/
+            {   // Registry not Found!!
+                // Hide Grid
 				Dispatcher.Invoke((Action)(() => lblregistry.Content = " Registry Validation: Not Found Any Record."));
                 Dispatcher.Invoke((Action)(() => lblrgstryval.Content = "Registry Validation Record Not Found!!"));
+               // Dispatcher.Invoke((Action)(() => dataGrid_registr.Visibility = System.Windows.Visibility.Hidden));
+                // Show/Hide Thumbnails
                 Dispatcher.Invoke((Action)(() => imgthumbregistry.Visibility = System.Windows.Visibility.Visible));
                 Dispatcher.Invoke((Action)(() => elpRedreg.Visibility = System.Windows.Visibility.Hidden));
                 Dispatcher.Invoke((Action)(() => elpGreenreg.Visibility = System.Windows.Visibility.Hidden));
@@ -405,7 +471,8 @@ namespace ImageValidation.Client
 
             #endregion
 
-            lblprocess.Visibility = System.Windows.Visibility.Hidden;
+            //lblprocess.Visibility = System.Windows.Visibility.Hidden;
+            Dispatcher.Invoke((Action)(() => lblprocess.Visibility = System.Windows.Visibility.Hidden));
         }
 
         #region Load all Data also comparison with azure database to local system (Computer Info, Applications, Drivers, HotFixes, FileFolders, Registry etc.)

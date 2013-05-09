@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\
+C:\Development\IsaImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\obj\Debug\
 ImageValidation.Client
 none
 false
 
-C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\App.xaml
-2381667819
+C:\Development\IsaImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Client\App.xaml
+3-1645821214
 11745232934
-8101468526
-251421208207
-ImageValidationClient.xaml;MainWindow.xaml;
+9-1224586582
+26-1284863610
+Controls\ucCustomTreeCodeBehind.xaml;ImageValidationClient.xaml;MainWindow.xaml;
 
 False
 
