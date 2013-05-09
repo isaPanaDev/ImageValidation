@@ -186,17 +186,17 @@ namespace ImageValidation.Client
             if (CountAppRed > 0)
             {
                 //elpRedapp.Visibility = System.Windows.Visibility.Visible;
-                Dispatcher.Invoke((Action)(() => elpRedapp.Visibility = System.Windows.Visibility.Visible));
+                //Dispatcher.Invoke((Action)(() => elpRedapp.Visibility = System.Windows.Visibility.Visible));
             }
             else if (CountAppYellow > 0)
             {
                 //elpYellowapp.Visibility = System.Windows.Visibility.Visible;
-                Dispatcher.Invoke((Action)(() => elpYellowapp.Visibility = System.Windows.Visibility.Visible));
+                //Dispatcher.Invoke((Action)(() => elpYellowapp.Visibility = System.Windows.Visibility.Visible));
             }
             else
             {
                 //elpGreenapp.Visibility = System.Windows.Visibility.Visible;
-                Dispatcher.Invoke((Action)(() => elpGreenapp.Visibility = System.Windows.Visibility.Visible));
+                //Dispatcher.Invoke((Action)(() => elpGreenapp.Visibility = System.Windows.Visibility.Visible));
             }
             #endregion
             #region Driver

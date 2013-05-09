@@ -72,11 +72,13 @@
                     </Grid>
                 </GroupBox>
 
-                <GroupBox Header="Tree Summary" Background="LightGray" Height="240" HorizontalAlignment="Left" Margin="0,140,0,0" Name="grpboxtree" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" Grid.Column="1" FontWeight="Bold" BorderBrush="Red">
+                <GroupBox Header="Tree Summary" Background="LightGray" Height="380" HorizontalAlignment="Left" Margin="0,140,0,0" Name="grpboxtree" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" Grid.Column="1" FontWeight="Bold" BorderBrush="Red">
                     <Grid Name="gvContainer" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" ></Grid>
                 </GroupBox>
 
-                <GroupBox Header="Summary" Background="LightGray" Height="300" HorizontalAlignment="Left" Margin="0,380,0,0" Name="grpboxsmmry" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" Grid.Column="1" FontWeight="Bold" BorderBrush="DarkGray">
+                <Button Grid.Column="3" Margin="0,530,0,0" Width="178" Height="45"  VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold" BorderBrush="Red" FontSize="18" Foreground="Blue">Detailed Report</Button>
+
+                <GroupBox Header="Summary" Background="LightGray" Height="230" HorizontalAlignment="Left" Margin="0,570,0,0" Name="grpboxsmmry" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" Grid.Column="1" FontWeight="Bold" BorderBrush="DarkGray">
                     <Grid>
                         <Image Name="imgthumboverall"  VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,10,718,0" />
                         <Image Name="imgthumboveralld" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,10,718,0" />
@@ -122,8 +124,8 @@
                     </Grid>
                 </GroupBox>
 
-                <Label Content="Driver Validation" Height="28" HorizontalAlignment="Left" Margin="0,714,0,0" Name="lblDrvr" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" RenderTransformOrigin="0.226,0.407" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,736,0,0" Name="dataGrid_driver" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <Label Content="Driver Validation" Height="28" HorizontalAlignment="Left" Margin="0,794,0,0" Name="lblDrvr" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" RenderTransformOrigin="0.226,0.407" />
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,816,0,0" Name="dataGrid_driver" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=DeviceName}" Header="Device Name" Width="230" IsReadOnly="True" >
                             <my:DataGridTextColumn.ElementStyle>
@@ -160,8 +162,8 @@
                     </my:DataGrid.Columns>
                 </my:DataGrid>
 
-                <Label Content="Application Validation" HorizontalAlignment="Left" Margin="0,877,0,658" Name="lblappval" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,899,0,0" Name="dataGrid_app" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <Label Content="Application Validation" HorizontalAlignment="Left" Margin="0,947,0,658" Name="lblappval" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" />
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,970,0,0" Name="dataGrid_app" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=DisplayName}" Header="Display Name" Width="230" IsReadOnly="True" >
                             <my:DataGridTextColumn.ElementStyle>
@@ -198,8 +200,8 @@
                     </my:DataGrid.Columns>
                 </my:DataGrid>
 
-                <Label Content="File And Folder" HorizontalAlignment="Left" Margin="0,1040,0,0" Name="lblfilefolderval" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1"/>
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1062,0,0" Name="dataGrid_filefolder" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <Label Content="File And Folder" HorizontalAlignment="Left" Margin="0,1110,0,0" Name="lblfilefolderval" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1"/>
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1132,0,0" Name="dataGrid_filefolder" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=Location}" Header="Location" Width="220" IsReadOnly="True" />
                         <my:DataGridTextColumn Binding="{Binding Path=Note}" Header="Note" Width="200" IsReadOnly="True" />
@@ -227,8 +229,8 @@
                         </my:DataGridCheckBoxColumn>
                     </my:DataGrid.Columns>
                 </my:DataGrid>
-                <Label Content="Registry Settings" HorizontalAlignment="Left" Name="lblrgstryval" Margin="0,1200,0,312"  FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1225,0,0" Name="dataGrid_registr" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <Label Content="Registry Settings" HorizontalAlignment="Left" Name="lblrgstryval" Margin="0,1270,0,312"  FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" />
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1295,0,0" Name="dataGrid_registr" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=RegKey}" Header="Registry Key" Width="290" IsReadOnly="True">
                             <my:DataGridTextColumn.ElementStyle>
@@ -269,8 +271,8 @@
                         </my:DataGridCheckBoxColumn>
                     </my:DataGrid.Columns>
                 </my:DataGrid>
-                <Label Content="Microsoft HotFixes" HorizontalAlignment="Left" Name="lblhotfixval" FontWeight="Bold" Margin="0,1368,0,0" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1388,0,0" Name="dataGrid_hotfix" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
+                <Label Content="Microsoft HotFixes" HorizontalAlignment="Left" Name="lblhotfixval" FontWeight="Bold" Margin="0,1438,0,0" Grid.ColumnSpan="2" Grid.Column="1" />
+                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1458,0,0" Name="dataGrid_hotfix" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
                     <my:DataGrid.Columns>
                         <my:DataGridTextColumn Binding="{Binding Path=HotFixIDs}" Header="HotFix ID" Width="350" IsReadOnly="True" />
                         <my:DataGridCheckBoxColumn Header="Match" Width="350" IsReadOnly="True">
@@ -297,21 +299,21 @@
                     </my:DataGrid.Columns>
                 </my:DataGrid>
                 <Label Height="28" HorizontalAlignment="Left" Margin="267.425,190,0,0" Name="lblprocess" VerticalAlignment="Top" Foreground="#FFEF1818" Grid.Column="2"/>
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,450,0,0" Name="elpGreenDrv" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,450,0,0" Name="elpYellowDrv" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,450,0,0" Name="elpRedDrv" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,613,0,0" Name="elpGreenapp" Stroke="Black"  Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="159.903,613,0,0" Name="elpYellowapp" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="159.903,613,0,0" Name="elpRedapp" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,776,0,0" Name="elpGreenfile" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,776,0,0" Name="elpYellowfile" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,776,0,0" Name="elpRedfile" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,939,0,0" Name="elpGreenreg" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,939,0,0" Name="elpYellowreg" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,939,0,0" Name="elpRedreg" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1102,0,0" Name="elpGreenhot" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="156.903,1102,0,0" Name="elpYellowhot" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="156.903,1102,0,0" Name="elpRedhot" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,794,0,0" Name="elpGreenDrv" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,794,0,0" Name="elpYellowDrv" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,794,0,0" Name="elpRedDrv" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,947,0,0" Name="elpGreenapp" Stroke="Black"  Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="159.903,947,0,0" Name="elpYellowapp" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="159.903,947,0,0" Name="elpRedapp" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1110,0,0" Name="elpGreenfile" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1110,0,0" Name="elpYellowfile" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1110,0,0" Name="elpRedfile" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,1270,0,0" Name="elpGreenreg" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,1270,0,0" Name="elpYellowreg" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,1270,0,0" Name="elpRedreg" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1438,0,0" Name="elpGreenhot" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="156.903,1438,0,0" Name="elpYellowhot" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                <Ellipse Height="20" HorizontalAlignment="Left" Margin="156.903,1438,0,0" Name="elpRedhot" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
 
             </Grid>
 
