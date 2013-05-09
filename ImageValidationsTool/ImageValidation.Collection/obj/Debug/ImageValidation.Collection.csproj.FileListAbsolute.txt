@@ -205,6 +205,5 @@ C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidat
 C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Collection\bin\Debug\ImageValidation.Collection.pdb
 C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Collection\bin\Debug\ImageValidation.Core.dll
 C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Collection\bin\Debug\ImageValidation.Core.pdb
-C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Collection\obj\Debug\ImageValidation.Collection.csprojResolveAssemblyReference.cache
 C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Collection\obj\Debug\ImageValidation.Collection.dll
 C:\Development\ImageValidation\ImageValidation\ImageValidationsTool\ImageValidation.Collection\obj\Debug\ImageValidation.Collection.pdb

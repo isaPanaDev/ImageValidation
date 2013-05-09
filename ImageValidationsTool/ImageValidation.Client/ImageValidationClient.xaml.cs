@@ -75,10 +75,10 @@ namespace ImageValidation.Client
         public ImageValidationClient()
         {
             InitializeComponent();
-           // LoadComputerInfo();
+            LoadComputerInfo();
 
             treeControl = new ucCustomTreeCodeBehind();
-            ShowTreeControl(treeControl, "Custom Tree");
+            //ShowTreeControl(treeControl, "Custom Tree");
         }
         
         private void ShowTreeControl(Control control, string title)
@@ -473,6 +473,10 @@ namespace ImageValidation.Client
 
             //lblprocess.Visibility = System.Windows.Visibility.Hidden;
             Dispatcher.Invoke((Action)(() => lblprocess.Visibility = System.Windows.Visibility.Hidden));
+
+
+            // Display the Tree Summary data
+            Dispatcher.Invoke((Action)(() => ShowTreeControl(treeControl, "Custom Tree")));
         }
 
         #region Load all Data also comparison with azure database to local system (Computer Info, Applications, Drivers, HotFixes, FileFolders, Registry etc.)
@@ -900,6 +904,11 @@ namespace ImageValidation.Client
         }
 
         #endregion
+
+        private void Import_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
 
     }
 }
