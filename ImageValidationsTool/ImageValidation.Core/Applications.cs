@@ -101,7 +101,18 @@ namespace ImageValidation.Core
                 _Version = value;
             }
         }
-
+        private string _BaseAppVersion;
+        public string BaseAppVersion
+        {
+            get
+            {
+                return _BaseAppVersion;
+            }
+            set
+            {
+                _BaseAppVersion = value;
+            }
+        }
 
 
 

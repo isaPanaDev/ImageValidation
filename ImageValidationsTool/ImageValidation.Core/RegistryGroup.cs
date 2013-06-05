@@ -104,6 +104,19 @@ namespace ImageValidation.Core
             }
         }
 
+        private string _Type;
+        public string Type
+        {
+            get
+            {
+                return _Type;
+            }
+            set
+            {
+                _Type = value;
+            }
+        }
+
         private bool _IsCompared;
         public bool IsCompared
         {

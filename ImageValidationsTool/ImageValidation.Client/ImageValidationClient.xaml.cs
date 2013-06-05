@@ -16,11 +16,13 @@ using System.Data;
 using ImageValidation.Client.ServiceReference2;
 using ImageValidation.Collection;
 using System.Xml;
+using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 using System.IO;
 using Microsoft.Win32;
 using System.ComponentModel;
 using ImageValidation.Client.Controls;
+using System.Net;
 
 namespace ImageValidation.Client
 {
@@ -28,11 +30,11 @@ namespace ImageValidation.Client
     /// Interaction logic for ImageValidationClient.xaml
     /// </summary>
     /// 
-    
+
     public partial class ImageValidationClient : PageFunction<String>
     {
-       
         #region Declaration and Initialization section
+        private log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         ServiceReference2.ImageValidationServiceClient sRef = new ServiceReference2.ImageValidationServiceClient();
 
@@ -48,14 +50,14 @@ namespace ImageValidation.Client
         int CountMatchApplication = 0;
         int CountMatchVersionApplication = 0;
         int CountAppV = 0;
-        int CountApp = 0;
+        int CountAppMissing = 0;
 
 
         int CountDriver = 0;
         int CountMatchDriver = 0;
         int CountMatchVersionDriver = 0;
         int CountDriverV = 0;
-        int CountDrvr = 0;
+        int CountDrvrMissing = 0;
 
         int CountFileFolder = 0;
         int CountMatchFileFolder = 0;
@@ -78,10 +80,13 @@ namespace ImageValidation.Client
             LoadComputerInfo();
 
             treeControl = new ucCustomTreeCodeBehind();
-            //ShowTreeControl(treeControl, "Custom Tree");
+            ShowTreeControl(treeControl);
+
+            // Initilize log4net only when you want to start logging.
+            log4net.Config.XmlConfigurator.Configure();
         }
-        
-        private void ShowTreeControl(Control control, string title)
+
+        private void ShowTreeControl(Control control)
         {
             control.VerticalAlignment = System.Windows.VerticalAlignment.Stretch;
             control.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
@@ -89,20 +94,27 @@ namespace ImageValidation.Client
             control.Width = double.NaN;
             control.Height = double.NaN;
 
-            gvContainer.Children.Clear();
-            gvContainer.Children.Add(control);
+            treeContainer.Children.Clear();
+            treeContainer.Children.Add(control);
         }
 
-        private void btnvaidate_Click(object sender, RoutedEventArgs e)
+        private void btnvalidate_Click(object sender, RoutedEventArgs e)
         {
             try
             {
+                File.WriteAllText(@"../../Report/ImageReport.csv", string.Empty);
+
                 //lblprocess.Content = "Processing...";                
                 BackgroundWorker worker = new BackgroundWorker();
-               
+
                 // Long running process !
                 worker.DoWork += (o, ea) =>
                 {
+                    // Toggling the look&feel between ProgressCloud and Tree Summary data
+                    Dispatcher.Invoke((Action)(() => treeControl.ClearTree()));
+                    Dispatcher.Invoke((Action)(() => progressCloud.Visibility = System.Windows.Visibility.Visible));
+                    Dispatcher.Invoke((Action)(() => treegbx.Visibility = System.Windows.Visibility.Hidden));
+
                     Computer ObjComp = compInfo.GetComputerInformation(); //Getting computer information from system
 
                     #region Get Computer ID By Model & Product
@@ -122,17 +134,7 @@ namespace ImageValidation.Client
                     }
                     else
                     {
-                        #region Summary messages displays if computer information not exist in azure database
-
-                        lbloverall.Content = "- Overall Validation: Overall failed (Result not found).";
-                        lblapp.Content = "- Application Validation: Not Found Any Record.";
-                        lbldriver.Content = "- Driver Validation: Not Found Any Record.";
-                        lblfilefolder.Content = "- File and Folder Validation: Not Found Any Record.";
-                        lblhotfixes.Content = "- Microsoft HotFix Validation: Not Found Any Record.";
-                        lblregistry.Content = "- Registry Validation: Not Found Any Record.";
-
-                        #endregion
-                        lblprocess.Visibility = System.Windows.Visibility.Hidden;
+                        // Computer information not exist in azure database
                     }
 
                     //no direct interaction with the UI is allowed from this method
@@ -163,7 +165,7 @@ namespace ImageValidation.Client
             ImageSource imgThumbUp = new BitmapImage(new Uri(@"/ImageValidation.Client;component/Images/Thumb-up.png", UriKind.Relative));
 
             ImageSource imgThumbDown = new BitmapImage(new Uri(@"/ImageValidation.Client;component/Images/Thumb-down.png", UriKind.Relative));
-         
+
             #region Bind All DataGrid - Applications, Drivers, HotFixes, FileFolders, Registry etc after comparison & XML Serializer
 
             ComputerXml Mainobj = new ComputerXml();
@@ -172,311 +174,167 @@ namespace ImageValidation.Client
 
             #region Application
             //Comparing System`s Applications With Azure Database (Applications)
-            //dataGrid_app.ItemsSource = CompareApplications(ComputerID, xmldoc, ser);
-            List<Applications> allApplications =  CompareApplications(ComputerID, xmldoc, ser);
-            Dispatcher.Invoke((Action)(() => dataGrid_app.ItemsSource = allApplications));
+            List<Applications> allApplications = CompareApplications(ComputerID, xmldoc, ser);
 
             //Count if red,yellow,green exist 
             int CountAppRed = CompareApplications(ComputerID, xmldoc, ser).Count(x => x.IsCompared == 0);
             int CountAppYellow = CompareApplications(ComputerID, xmldoc, ser).Count(x => x.IsCompared == 1);
+            CountAppV = CountAppRed;// CountAppYellow;
+            CountAppMissing = CountAppYellow;// CountAppRed;
 
-            CountAppV = CountAppYellow;
-            CountApp = CountAppRed;
-
-            if (CountAppRed > 0)
-            {
-                //elpRedapp.Visibility = System.Windows.Visibility.Visible;
-                //Dispatcher.Invoke((Action)(() => elpRedapp.Visibility = System.Windows.Visibility.Visible));
-            }
-            else if (CountAppYellow > 0)
-            {
-                //elpYellowapp.Visibility = System.Windows.Visibility.Visible;
-                //Dispatcher.Invoke((Action)(() => elpYellowapp.Visibility = System.Windows.Visibility.Visible));
-            }
-            else
-            {
-                //elpGreenapp.Visibility = System.Windows.Visibility.Visible;
-                //Dispatcher.Invoke((Action)(() => elpGreenapp.Visibility = System.Windows.Visibility.Visible));
-            }
             #endregion
             #region Driver
             //Comparing System`s Drivers With Azure Database (Drivers)
-            //dataGrid_driver.ItemsSource = CompareDrivers(ComputerID, xmldoc, ser);
             List<Driver> allDrivers = CompareDrivers(ComputerID, xmldoc, ser);
-            Dispatcher.Invoke((Action)(() => dataGrid_driver.ItemsSource = allDrivers));
 
             //Count if red,yellow,green exist 
             int CountDvrRed = CompareDrivers(ComputerID, xmldoc, ser).Count(x => x.IsCompared == 0);
             int CountDvrYellow = CompareDrivers(ComputerID, xmldoc, ser).Count(x => x.IsCompared == 1);
-            CountDrvr = CountDvrRed;
+            CountDrvrMissing = CountDvrRed;
             CountDriverV = CountDvrYellow;
-            if (CountDvrRed > 0)
-            {
-                //elpRedDrv.Visibility = System.Windows.Visibility.Visible;
-                Dispatcher.Invoke((Action)(() => elpRedDrv.Visibility = System.Windows.Visibility.Visible));
-            }
-            else if (CountDvrYellow > 0)
-            {
-                //elpYellowDrv.Visibility = System.Windows.Visibility.Visible;
-                 Dispatcher.Invoke((Action)(() => elpYellowDrv.Visibility = System.Windows.Visibility.Visible));
-            }
-            else
-            {
-                //elpGreenDrv.Visibility = System.Windows.Visibility.Visible;
-                 Dispatcher.Invoke((Action)(() =>elpGreenDrv.Visibility = System.Windows.Visibility.Visible));
-            }
+
             #endregion
             #region HotFixes
             //Comparing System`s HotFixes With Azure Database (Drivers)
-            //dataGrid_hotfix.ItemsSource = CompareHotFixes(ComputerID, xmldoc, ser);
             List<HotFix> allHotFixes = CompareHotFixes(ComputerID, xmldoc, ser);
-            Dispatcher.Invoke((Action)(() => dataGrid_hotfix.ItemsSource = allHotFixes));
             //CountHot = CountMatchHotFix;
             //Count if red,yellow,green exist 
             int CounthotRed = CompareHotFixes(ComputerID, xmldoc, ser).Count(x => x.IsCompared == false);
             CountHot = CounthotRed;
-            if (CounthotRed > 0)
-            {
-                //elpRedhot.Visibility = System.Windows.Visibility.Visible;
-                 Dispatcher.Invoke((Action)(() => elpRedhot.Visibility = System.Windows.Visibility.Visible));
-            }
-            else
-            {
-                //elpGreenhot.Visibility = System.Windows.Visibility.Visible;
-                 Dispatcher.Invoke((Action)(() => elpGreenhot.Visibility = System.Windows.Visibility.Visible));
-            }
+
             #endregion
             #region File Folder
             //Comparing System`s FileFolders With Azure Database (FileFolders)
-            //dataGrid_filefolder.ItemsSource = CompareFileFolder(ComputerID, xmldoc, ser);
             List<FileFolder> allFileFolders = CompareFileFolder(ComputerID, xmldoc, ser);
-            Dispatcher.Invoke((Action)(() => dataGrid_filefolder.ItemsSource = allFileFolders));
             // CountFile = CountMatchFileFolder;
             //Count if red,yellow,green exist 
             int CountfileRed = CompareFileFolder(ComputerID, xmldoc, ser).Count(x => x.IsCompared == false);
             CountFile = CountfileRed;
-            if (CountfileRed > 0)
-            {
-                //elpRedfile.Visibility = System.Windows.Visibility.Visible;
-                 Dispatcher.Invoke((Action)(() => elpRedfile.Visibility = System.Windows.Visibility.Visible));
-            }
-            else
-            {
-                //elpGreenfile.Visibility = System.Windows.Visibility.Visible;
-                 Dispatcher.Invoke((Action)(() => elpGreenfile.Visibility = System.Windows.Visibility.Visible));
-            }
+
             #endregion
             #region Registry
             //Comparing System`s Registry With Azure Database (FileFolders)
-            //dataGrid_registr.ItemsSource = CompareRegistry(ComputerID, xmldoc, ser);
             List<RegistryGroupData> allRegisters = CompareRegistry(ComputerID, xmldoc, ser);
-            Dispatcher.Invoke((Action)(() => dataGrid_registr.ItemsSource = allRegisters));
-           // CountReg = CountMatchRegistry;
+            CountReg = CountMatchRegistry;
             //Count if red,yellow,green exist 
             int CountregRed = CompareRegistry(ComputerID, xmldoc, ser).Count(x => x.IsCompared == false);
             CountReg = CountregRed;
-            if (CountregRed > 0)
-            {
-                //elpRedreg.Visibility = System.Windows.Visibility.Visible;
-                 Dispatcher.Invoke((Action)(() => elpRedreg.Visibility = System.Windows.Visibility.Visible));
-            }
-            else
-            {
-                //elpGreenreg.Visibility = System.Windows.Visibility.Visible;
-                 Dispatcher.Invoke((Action)(() => elpGreenreg.Visibility = System.Windows.Visibility.Visible));
-            }
+
             #endregion
-            //_grdMainlContent.Visibility = System.Windows.Visibility.Visible; //Display DataGrids Container
 
             #endregion
 
             #region Summary section messages related to all if computer information exist after that check other info
 
-            if (CountApp > 0 || CountDrvr > 0 || CountFile > 0 || CountHot > 0 || CountReg > 0)
-            {
-                //lbloverall.Content = " Overall Validation: Failed";
-                Dispatcher.Invoke((Action)(() => lbloverall.Content = " Overall Validation: Failed"));
-                //imgthumboverall.Source = imgThumbDown; 
-				Dispatcher.Invoke((Action)(() => imgthumboveralld.Visibility = System.Windows.Visibility.Visible));           
+            if (CountAppMissing > 0 || CountDrvrMissing > 0 || CountFile > 0 || CountHot > 0 || CountReg > 0)
+            { // Overall Validation Failed
             }
             else
-            {
-                //lbloverall.Content = " Overall Validation: Passed";
-                Dispatcher.Invoke((Action)(() => lbloverall.Content = " Overall Validation: Passed"));
-                //imgthumboverall.Source = imgThumbUp;
-				Dispatcher.Invoke((Action)(() => imgthumboverall.Visibility = System.Windows.Visibility.Visible));          
+            { // Overall Validation Pass
             }
 
-            string Mismatchappversion = ((CountAppV > 0) ? ", " + CountAppV + " Version Mismatch" : "");
-            string Mismatchdriverversion = ((CountDriverV > 0) ? ", " + CountDriverV + " Version Mismatch" : "");
+            /* APPLICATION */
             if (CountApplication > 0)
             {
-               // lblapp.Content = " Application Validation: " + ((CountApp > 0) ? "Failed: " + CountApp + "Missing Software" + Mismatchappversion : "Passed");
+                // lblapp.Content = " Application Validation: " + ((CountApp > 0) ? "Failed: " + CountApp + "Missing Software" + Mismatchappversion : "Passed");
                 //imgthumbapp.Source = CountApp > 0 ? imgThumbDown : imgThumbUp;
-				 Dispatcher.Invoke((Action)(() => lblapp.Content = " Application Validation: " + ((CountApp > 0) ? "Failed: " + CountApp + "Missing Software" + Mismatchappversion : "Passed")));
-            
-				if (CountApp > 0)
-               	{
-                   Dispatcher.Invoke((Action)(() => imgthumbappd.Visibility = System.Windows.Visibility.Visible));
-               	}
-               	else
-               	{
-                   Dispatcher.Invoke((Action)(() => imgthumbapp.Visibility = System.Windows.Visibility.Visible));
-               	}
-
-                // Tree update: Application
-                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lblapp.Content, allApplications)));
-			}
+                // Only show if Failed!
+                if (CountAppMissing > 0)
+                {
+                    // TreeView update: Application
+                    Dispatcher.Invoke((Action)(() => treeControl.LoadData(CountAppMissing, CountAppV, allApplications, this.log)));
+                }
+                else
+                {
+                    // Dispatcher.Invoke((Action)(() => imgthumbapp.Visibility = System.Windows.Visibility.Visible));
+                }
+            }
             else
-            {
-                /*lbloverall.Content = " Overall Validation: Overall failed (Result not found).";
-                dataGrid_app.Visibility = System.Windows.Visibility.Hidden;
-                lblappval.Content = "Application Validation Record Not Found!!";
-                imgthumbapp.Source = imgThumbUp;
-                elpRedapp.Visibility = System.Windows.Visibility.Hidden;
-                elpYellowapp.Visibility = System.Windows.Visibility.Hidden;
-                elpGreenapp.Visibility = System.Windows.Visibility.Hidden;*/
-				 Dispatcher.Invoke((Action)(() => lbloverall.Content = " Overall Validation: Overall failed (Result not found)."));
-                Dispatcher.Invoke((Action)(() => dataGrid_app.Visibility = System.Windows.Visibility.Hidden));
-                Dispatcher.Invoke((Action)(() => lblappval.Content = "Application Validation Record Not Found!!"));
-               // imgthumbapp.Source = imgThumbUp;
-               Dispatcher.Invoke((Action)(() => imgthumbapp.Visibility = System.Windows.Visibility.Visible));
-               Dispatcher.Invoke((Action)(() => elpRedapp.Visibility = System.Windows.Visibility.Hidden));
-               Dispatcher.Invoke((Action)(() => elpYellowapp.Visibility = System.Windows.Visibility.Hidden));
-               Dispatcher.Invoke((Action)(() => elpGreenapp.Visibility = System.Windows.Visibility.Hidden));
+            { // Overall Validation Failed
             }
 
+            /* DRIVER */
             if (CountDriver > 0)
             {
-                //lbldriver.Content = " Driver Validation: " + ((CountDrvr > 0) ? "Failed: " + CountDrvr + " Missing Software" + Mismatchdriverversion : "Passed");
-                //imgthumbdriver.Source = CountDrvr > 0 ? imgThumbDown : imgThumbUp;
-				Dispatcher.Invoke((Action)(() => lbldriver.Content = " Driver Validation: " + ((CountDrvr > 0) ? "Failed: " + CountDrvr + " Missing Software" + Mismatchdriverversion : "Passed")));
-                if (CountDrvr > 0)
+                if (CountDrvrMissing > 0)
                 {
-                    Dispatcher.Invoke((Action)(() => imgthumbdriverd.Visibility = System.Windows.Visibility.Visible));
+                    // TreeView update: Driver
+                    Dispatcher.Invoke((Action)(() => treeControl.LoadData(CountDrvrMissing, CountDriverV, allDrivers, this.log)));
                 }
                 else
                 {
-                    Dispatcher.Invoke((Action)(() => imgthumbdriver.Visibility = System.Windows.Visibility.Visible));
+                    // Dispatcher.Invoke((Action)(() => imgthumbdriver.Visibility = System.Windows.Visibility.Visible));
                 }
-
-                // Tree update: Driver
-                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lbldriver.Content, allDrivers)));
             }
             else
-            {
-                /*lbldriver.Content = " Driver Validation: Not Found Any Record.";
-                dataGrid_driver.Visibility = System.Windows.Visibility.Hidden;
-                lblDrvr.Content = "Driver Validation Record Not Found!!";
-                imgthumbdriver.Source = imgThumbUp;
-                elpRedDrv.Visibility = System.Windows.Visibility.Hidden;
-                elpYellowDrv.Visibility = System.Windows.Visibility.Hidden;
-                elpYellowDrv.Visibility = System.Windows.Visibility.Hidden;*/
-				 Dispatcher.Invoke((Action)(() => lbldriver.Content = " Driver Validation: Not Found Any Record."));
-                //Dispatcher.Invoke((Action)(() => dataGrid_driver.Visibility = System.Windows.Visibility.Hidden));
-                Dispatcher.Invoke((Action)(() => lblDrvr.Content = "Driver Validation Record Not Found!!"));
-               // imgthumbdriver.Source = imgThumbUp;
-               Dispatcher.Invoke((Action)(() => imgthumbdriver.Visibility = System.Windows.Visibility.Visible));
-               Dispatcher.Invoke((Action)(() => elpRedDrv.Visibility = System.Windows.Visibility.Hidden));
-               Dispatcher.Invoke((Action)(() => elpYellowDrv.Visibility = System.Windows.Visibility.Hidden));
-               Dispatcher.Invoke((Action)(() => elpYellowDrv.Visibility = System.Windows.Visibility.Hidden));
+            { // No Driver Found
             }
 
+            /* FILE & FOLDER */
             if (CountFileFolder > 0)
             {
-                //lblfilefolder.Content = " File and Folder Validation: " + ((CountFile > 0) ? "Failed: " + CountFile + " Missing Software" : "Passed");
-                //imgthumbfilefolder.Source = CountFile > 0 ? imgThumbDown : imgThumbUp;
-				 Dispatcher.Invoke((Action)(() => lblfilefolder.Content = " File and Folder Validation: " + ((CountFile > 0) ? "Failed: " + CountFile + " Missing Software" : "Passed")));
                 if (CountFile > 0)
                 {
-                    Dispatcher.Invoke((Action)(() => imgthumbfilefolderd.Visibility = System.Windows.Visibility.Visible));
+                    // Tree update: File and Folder
+                    Dispatcher.Invoke((Action)(() => treeControl.LoadData(CountFile, allFileFolders, this.log)));
                 }
                 else
                 {
-                    Dispatcher.Invoke((Action)(() => imgthumbfilefolder.Visibility = System.Windows.Visibility.Visible));
                 }
-
-                // Tree update: File and Folder
-                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lblfilefolder.Content, allFileFolders)));
             }
             else
             {    // File Folder not found!!	
-                // Hide Grid
-                Dispatcher.Invoke((Action)(() => lblfilefolder.Content = " File and Folder Validation: Not Found Any Record."));
-               // Dispatcher.Invoke((Action)(() => dataGrid_filefolder.Visibility = System.Windows.Visibility.Hidden));
-                Dispatcher.Invoke((Action)(() => lblfilefolderval.Content = "File Folder validation Record Not Found!!"));
-                // Show/Hide Thumbnails
-                Dispatcher.Invoke((Action)(() => imgthumbfilefolder.Visibility = System.Windows.Visibility.Visible));
-                Dispatcher.Invoke((Action)(() => elpRedfile.Visibility = System.Windows.Visibility.Hidden));
-                Dispatcher.Invoke((Action)(() => elpGreenfile.Visibility = System.Windows.Visibility.Hidden));
             }
 
+            /* HOTFIX */
             if (CountHotFix > 0)
             {
-               // lblhotfixes.Content = " Microsoft HotFix Validation: " + ((CountHot > 0) ? "Failed: " + CountHot + " Missing Software" : "Passed");
-                //imgthumbhotfixes.Source = CountHot > 0 ? imgThumbDown : imgThumbUp;
-				Dispatcher.Invoke((Action)(() => lblhotfixes.Content = " Microsoft HotFix Validation: " + ((CountHot > 0) ? "Failed: " + CountHot + " Missing Software" : "Passed")));
                 if (CountHot > 0)
                 {
-                    Dispatcher.Invoke((Action)(() => imgthumbhotfixesd.Visibility = System.Windows.Visibility.Visible));
+                    // Tree update: HotFix
+                    Dispatcher.Invoke((Action)(() => treeControl.LoadData(CountHot, allHotFixes, this.log)));
                 }
                 else
                 {
-                    Dispatcher.Invoke((Action)(() => imgthumbhotfixes.Visibility = System.Windows.Visibility.Visible));
                 }
-
-                // Tree update: HotFix
-                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lblhotfixes.Content, allHotFixes)));
             }
             else
             {    //  HotFix not Found!!
-                // Hide Grid
-				Dispatcher.Invoke((Action)(() => lblhotfixes.Content = " Microsoft HotFix Validation: Not Found Any Record."));
-                Dispatcher.Invoke((Action)(() => lblhotfixval.Content = "Microsoft HotFix Validation Record Not Found!!"));
-               // Dispatcher.Invoke((Action)(() => dataGrid_hotfix.Visibility = System.Windows.Visibility.Hidden));
-                // Show/Hide Thumbnails
-                Dispatcher.Invoke((Action)(() => imgthumbhotfixes.Visibility = System.Windows.Visibility.Visible));
-                Dispatcher.Invoke((Action)(() => elpRedhot.Visibility = System.Windows.Visibility.Hidden));
-                Dispatcher.Invoke((Action)(() => elpGreenhot.Visibility = System.Windows.Visibility.Hidden));
             }
 
+            /* REGISTRY */
             if (CountRegistry > 0)
             {
-                //lblregistry.Content = " Registry Validation: " + ((CountReg > 0) ? "Failed: " + CountReg + " Missing Software" : "Passed");
-                //imgthumbregistry.Source = CountReg > 0 ? imgThumbDown : imgThumbUp;
-				Dispatcher.Invoke((Action)(() => lblregistry.Content = " Registry Validation: " + ((CountReg > 0) ? "Failed: " + CountReg + " Missing Software" : "Passed")));
-                if (CountReg > 0)
-                {
-                    Dispatcher.Invoke((Action)(() => imgthumbregistryd.Visibility = System.Windows.Visibility.Visible));
-                }
-                else
-                {
-                    Dispatcher.Invoke((Action)(() => imgthumbregistry.Visibility = System.Windows.Visibility.Visible));
-                }
-
                 // Tree update: Registry
-                Dispatcher.Invoke((Action)(() => treeControl.LoadData(lblregistry.Content, allRegisters)));
+                Dispatcher.Invoke((Action)(() => treeControl.LoadData(CountReg, allRegisters, this.log)));
             }
             else
             {   // Registry not Found!!
-                // Hide Grid
-				Dispatcher.Invoke((Action)(() => lblregistry.Content = " Registry Validation: Not Found Any Record."));
-                Dispatcher.Invoke((Action)(() => lblrgstryval.Content = "Registry Validation Record Not Found!!"));
-               // Dispatcher.Invoke((Action)(() => dataGrid_registr.Visibility = System.Windows.Visibility.Hidden));
-                // Show/Hide Thumbnails
-                Dispatcher.Invoke((Action)(() => imgthumbregistry.Visibility = System.Windows.Visibility.Visible));
-                Dispatcher.Invoke((Action)(() => elpRedreg.Visibility = System.Windows.Visibility.Hidden));
-                Dispatcher.Invoke((Action)(() => elpGreenreg.Visibility = System.Windows.Visibility.Hidden));
             }
 
             #endregion
 
-            //lblprocess.Visibility = System.Windows.Visibility.Hidden;
-            Dispatcher.Invoke((Action)(() => lblprocess.Visibility = System.Windows.Visibility.Hidden));
-
-
             // Display the Tree Summary data
-            Dispatcher.Invoke((Action)(() => ShowTreeControl(treeControl, "Custom Tree")));
+            Dispatcher.Invoke((Action)(() => ShowTreeControl(treeControl)));
+            Dispatcher.Invoke((Action)(() => treegbx.Visibility = System.Windows.Visibility.Visible));
+            Dispatcher.Invoke((Action)(() => progressCloud.Visibility = System.Windows.Visibility.Hidden));
+        }
+
+        private string ReadFile(string path)
+        {
+            try
+            {
+                StreamReader sr = new StreamReader(path);
+                string data = sr.ReadToEnd();
+                sr.Close();
+                return data;
+            }
+
+            catch (Exception exception)
+            {
+                //handle error
+                return exception.Message;
+            }
         }
 
         #region Load all Data also comparison with azure database to local system (Computer Info, Applications, Drivers, HotFixes, FileFolders, Registry etc.)
@@ -530,15 +388,13 @@ namespace ImageValidation.Client
                 { }
 
                 List<Applications> applications = new List<Applications>(); //In this items added from azure database and its return with list of items
-
-
                 foreach (var app in arrApplications)
                 {
                     int status = 2;
-
+                    int index = -1;
                     if (ObjAppLst.Any(y => y.DisplayName == app.DisplayName))
                     {
-
+                         index = ObjAppLst.FindIndex(y => y.DisplayName == app.DisplayName);
                     }
                     else
                     {
@@ -548,20 +404,64 @@ namespace ImageValidation.Client
 
                     if (ObjAppLst.Any(y => y.Version == app.Version))
                     {
-
+                        index = ObjAppLst.FindIndex(y => y.Version == app.Version);
                     }
                     else
                     {
                         status = 0;
                         CountMatchVersionApplication++;
                     }
-
-
+                       
+                    Console.WriteLine("---------------- PRINT SOFTWARE OBJ ------------ " +  index);
+                    Console.WriteLine(" ApplicationUrl: "  + ((index >= 0) ? " BASE: " + ObjAppLst[index].ApplicationUrl : " CURR: " + app.ApplicationUrl));
+                    Console.WriteLine(" Comments: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].Comments : " CURR: " + app.Comments));
+                    Console.WriteLine(" Contact: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].Contact : " CURR: " + app.Contact));
+                    Console.WriteLine(" DisplayName: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].DisplayName : " CURR: " + app.DisplayName));
+                   Console.WriteLine(" DisplayVersion: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].DisplayVersion : " CURR: " + app.DisplayVersion));
+                   /* Console.WriteLine(" EstimatedSize: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].EstimatedSize : " CURR: " + app.EstimatedSize));
+                   Console.WriteLine(" HelpLink: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].HelpLink : " CURR: " + app.HelpLink));
+                   Console.WriteLine(" HelpTelephone: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].HelpTelephone : " CURR: " + app.HelpTelephone));
+                   Console.WriteLine(" InstallDate: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].InstallDate : " CURR: " + app.InstallDate));
+                   Console.WriteLine(" InstallLocation: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].InstallLocation : " CURR: " + app.InstallLocation));
+                   Console.WriteLine(" InstallSource: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].InstallSource : " CURR: " + app.InstallSource));
+                   Console.WriteLine(" IsRequired: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].IsRequired : " CURR: " + app.IsRequired));
+                   Console.WriteLine(" Language: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].Language : " CURR: " + app.Language));
+                   Console.WriteLine(" ModifyPath: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].ModifyPath : " CURR: " + app.ModifyPath));
+                   Console.WriteLine(" Publisher: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].Publisher : " CURR: " + app.Publisher));
+                   Console.WriteLine(" ReadMe: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].ReadMe : " CURR: " + app.ReadMe));
+                   Console.WriteLine(" UninstallString: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].UninstallString : " CURR: " + app.UninstallString));
+                   Console.WriteLine(" UrlInfoAbout: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].UrlInfoAbout : " CURR: " + app.UrlInfoAbout));
+                   Console.WriteLine(" URLUpdateInfo: " + ((index >= 0) ? " BASE: " + ObjAppLst[index].URLUpdateInfo : " CURR: " + app.URLUpdateInfo));*/
+                    /*               ApplicationUrl:  BASE: 
+               Comments:  BASE: 
+               Contact:  BASE: 
+               DisplayName:  BASE: MSXML 4.0 SP3 Parser
+               DisplayVersion:  BASE: 4.30.2100.0
+               EstimatedSize:  BASE: 1512
+               HelpLink:  BASE: http://www.msdn.microsoft.com/xml
+               HelpTelephone:  BASE: 
+               InstallDate:  BASE: 20130227
+               InstallLocation:  BASE: c:\Windows\SysWOW64\
+               InstallSource:  BASE: c:\util\sonic\MSXMLMSI_40SP3\
+               IsRequired:  BASE: 0
+               Language:  BASE: 1033
+               ModifyPath:  BASE: MsiExec.exe /I{196467F1-C11F-4F76-858B-5812ADC83B94}
+               Publisher:  BASE: Microsoft Corporation
+               ReadMe:  BASE: 
+               UninstallString:  BASE: MsiExec.exe /I{196467F1-C11F-4F76-858B-5812ADC83B94}
+               UrlInfoAbout:  BASE: 
+               URLUpdateInfo:  BASE: 
+               Version:  BASE: 69077044*/
+             
                     applications.Add(new Applications()
                     {
                         DisplayName = app.DisplayName,
-                        Version = app.Version,
-                        IsCompared = status
+                        BaseAppVersion =  app.DisplayVersion,
+                        Version = ((index >= 0) ? ObjAppLst[index].DisplayVersion : ""),
+                        IsCompared = status,
+                        HelpLink = ((index >= 0) ? ObjAppLst[index].HelpLink : ""),
+                        InstallLocation = ((index >= 0) ? ObjAppLst[index].InstallLocation: ""),
+                        InstallSource = ((index >= 0) ? ObjAppLst[index].InstallSource : ""),
                     });
                     CountApplication++;
                 }
@@ -583,8 +483,7 @@ namespace ImageValidation.Client
         {
             try
             {
-                List<Driver> ObjDriverLst = driverInfo.GetDriverInfo();//Getting from system
-
+                List<Driver> baseDriverLst = driverInfo.GetDriverInfo();//Getting from system
                 string xmlDriver = sRef.SelectDriverByComputerID(ComputerID);//Getting from azure database by computerID in xml format
 
                 xmldoc.LoadXml(xmlDriver);
@@ -594,35 +493,65 @@ namespace ImageValidation.Client
                 Driver[] arrDrivers = myObj.Driver;
 
                 List<Driver> driver = new List<Driver>();  //In this items added from azure database and its return with list of items
-                foreach (var app in arrDrivers)
+                foreach (var currDrivers in arrDrivers)
                 {
                     int status = 0;
-
-                    if (ObjDriverLst.Any(y => y.DeviceName == app.DeviceName))
+                    int index = -1;
+                    if (baseDriverLst.Any(y => y.DeviceName == currDrivers.DeviceName))
                     {
+                        index = baseDriverLst.FindIndex(y => y.DeviceName == currDrivers.DeviceName);
                         status = 1;
-
                     }
                     else
                     {
                         CountMatchDriver++;
                     }
 
-                    if (ObjDriverLst.Any(y => y.DriverVersion == app.DriverVersion))
+                    if (baseDriverLst.Any(y => y.DriverVersion == currDrivers.DriverVersion))
                     {
-
+                        index = baseDriverLst.FindIndex(y => y.DriverVersion == currDrivers.DriverVersion);
                         status = 2;
                     }
                     else
                     {
                         CountMatchVersionDriver++;
                     }
+                    if (index >= 0)
+                    { // Mismatched Drivers!!
+                        /*    Console.WriteLine("---------------- MISMATCH OBJ ------------ ");
+                               Console.WriteLine("MMID: " + index + " DeviceID: " + currDrivers.DeviceID);
+                               Console.WriteLine("BASE DeviceName: " + currDrivers.DeviceName + " LOCAL IS: " + baseDriverLst[index].DeviceName);
+                               Console.WriteLine("VERSION REQUIRED: " + baseDriverLst[index].DriverVersion + " CUrrent Version: " + currDrivers.DriverVersion);
+                               Console.WriteLine("IDDriverProviderName: " + currDrivers.DriverProviderName + " CUrrent: " + baseDriverLst[index].DriverProviderName);
+                               Console.WriteLine("friendlyName: " + currDrivers.friendlyName + " CUrrent: " + baseDriverLst[index].friendlyName);
+                               Console.WriteLine("******httpUrl: " + currDrivers.httpUrl + " CUrrent: " + baseDriverLst[index].httpUrl + "******");
+                         Console.WriteLine("HardWareID: " + currDrivers.HardWareID);
+                         Console.WriteLine("InfName: " + currDrivers.InfName + " CUrrent: " + baseDriverLst[index].InfName);
+                           Console.WriteLine("IsRequired: " + currDrivers.IsRequired);
+                           Console.WriteLine("IsSigned: " + currDrivers.IsSigned);
+                           Console.WriteLine("Manufacturer: " + currDrivers.Manufacturer);
+                           Console.WriteLine("Name: " + currDrivers.Name);
+                           Console.WriteLine("PDO: " + currDrivers.PDO); */
+                    }
+                    else
+                    { // Missing Current Driver!!
+                        // Console.WriteLine("---------------- MISSING OBJ ------------ ");
+
+                    }
 
                     driver.Add(new Driver()
                     {
-                        DeviceName = app.DeviceName,
-                        DriverVersion = app.DriverVersion,
-                        IsCompared = status
+                        DeviceName = currDrivers.DeviceName,
+                        DriverVersion = (index >= 0) ? baseDriverLst[index].DriverVersion : "", // else: missing current driver
+                        BaseDriverVersion = currDrivers.DriverVersion,
+                        IsCompared = status,
+                        Description = currDrivers.Description,
+                        InfName = (index >= 0) ? baseDriverLst[index].InfName : currDrivers.InfName,
+                        Manufacturer = currDrivers.Manufacturer,
+                        httpUrl = currDrivers.httpUrl,
+                        HardWareID = currDrivers.HardWareID,
+                        DriverProviderName = (index >= 0) ? baseDriverLst[index].DriverProviderName : currDrivers.DriverProviderName,
+                        friendlyName = currDrivers.friendlyName
                     });
                     CountDriver++;
                 }
@@ -668,6 +597,14 @@ namespace ImageValidation.Client
                     {
                         CountMatchHotFix++;
                     }
+
+                   Console.WriteLine("---------------- PRINT HOTFIX OBJ ------------ ");
+                   Console.WriteLine("CSName: " + htfix.CSName);
+                    Console.WriteLine("Description: " + htfix.Description);
+                    Console.WriteLine("HotFixIDs: " + htfix.HotFixIDs);
+                    Console.WriteLine("InstallDate: " + htfix.InstallDate);
+                    Console.WriteLine("InstalledBy: " + htfix.InstalledBy);
+                    Console.WriteLine("IsRequired: " + htfix.IsRequired);           
 
                     hotfix.Add(new HotFix()
                     {
@@ -732,10 +669,16 @@ namespace ImageValidation.Client
                         }
                     }
 
+                    /*Console.WriteLine("---------------- PRINT FILE FOLDER OBJ ------------ ");
+                    Console.WriteLine(" FileFolderTypeID: " + filefolder.FileFolderTypeID);
+                    Console.WriteLine("Location: " + filefolder.Location);
+                    Console.WriteLine("NOTE: " + filefolder.Note);
+                    Console.WriteLine("Type: " + (filefolder.FileFolderTypeID == 1 ? "File" : "Folder"));*/
+
                     filefolders.Add(new FileFolder()
                     {
                         Location = filefolder.Location,
-                        Note = filefolder.Note,
+                        Note = filefolder.Note.Replace("<p>", "").Replace("</p>",""),
                         Type = filefolder.FileFolderTypeID == 1 ? "File" : "Folder",
                         IsCompared = status
                     });
@@ -777,7 +720,7 @@ namespace ImageValidation.Client
                 {
                     bool Status = false;
 
-                   // var RegData = arrRegistry.Where(p => !arrRegistry.Any(q => (p != q && p.ValueData == q.ValueData && p.Key == q.Key)));                  
+                    // var RegData = arrRegistry.Where(p => !arrRegistry.Any(q => (p != q && p.ValueData == q.ValueData && p.Key == q.Key)));                  
                     var RegData = arrRegistry.GroupBy(x => new { x.ValueData, x.Key }).Select(y => y.First());
 
                     foreach (var item in RegData.Where(x => x.RegistryGroupID == registrygroup.RegistryGroupID))
@@ -809,7 +752,7 @@ namespace ImageValidation.Client
                             {
                                 Status = true;
                             }
-                        }                       
+                        }
                         else if (regKeyUsers != null)
                         {
                             //RegistryValueKind rvk = regKeyAppRoot.GetValueKind(item.Value);
@@ -838,55 +781,31 @@ namespace ImageValidation.Client
                             }
                         }
 
-
-
-
-                        //string[] reg_Key = keystring.Split('{');// Substring(keystring.IndexOf('{') + 1);
-                        //string RegistryKey = reg_Key[0];
-
-                        //using (Microsoft.Win32.RegistryKey key = Registry.LocalMachine.OpenSubKey(RegistryKey))
-                        //{
-                        //    if (key != null)
-                        //    {                               
-                        //        foreach (string subKeyName in key.GetSubKeyNames())
-                        //        {
-                        //            if (subKeyName != null)
-                        //            {
-                        //                using (RegistryKey
-                        //                    tempKey = key.OpenSubKey(subKeyName))
-                        //                {
-                        //                    foreach (string valueName in tempKey.GetValueNames())
-                        //                    {
-                        //                        if (valueName == item.Value && tempKey.GetValue(valueName).ToString() == item.ValueData && tempKey.GetValueKind(valueName).ToString() == item.DataType)
-                        //                        {
-                        //                            Status = true;
-                        //                        }
-                        //                    }
-                        //                }                                        
-                        //            }
-                        //        }
-                        //    }
-
-                        //}
-
                         if (Status == false)
                         {
                             CountMatchRegistry++;
                         }
 
-
+                        Console.WriteLine("---------------- PRINT REGISTER OBJ ------------ ");
+                        Console.WriteLine(" DataType: " + item.DataType);
+                        Console.WriteLine(" Key: " + item.Key);
+                        Console.WriteLine(" RegistryGroupID: " + item.RegistryGroupID);
+                        Console.WriteLine(" Value: " + item.Value);
+                        Console.WriteLine(" ValueData: " + item.ValueData);
+                        Console.WriteLine(" registrygroup.FileName: " + registrygroup.FileName);
+                        Console.WriteLine(" registrygroup.Note: " + registrygroup.Note.Replace("<p>", "").Replace("</p>", ""));
+                           
                         registry.Add(new RegistryGroupData()
                         {
                             RegKey = item.Key,// registrygroup.RegistryGroupID,
-                            Note = registrygroup.Note,
+                            Note = registrygroup.Note.Replace("<p>", "").Replace("</p>", ""),
+                            Type = item.DataType,
+                            FileName = registrygroup.FileName,
                             Value = item.Value,
                             ValueData = item.ValueData,
                             IsCompared = Status
-
                         });
-
                     }
-
 
                     CountRegistry++;
                 }
@@ -900,14 +819,18 @@ namespace ImageValidation.Client
 
         private void CloseButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	 Application.Current.Shutdown();
+            Application.Current.Shutdown();
         }
 
         #endregion
 
-        private void Import_Click(object sender, RoutedEventArgs e)
+        private void DetailReportBtn_Click(object sender, RoutedEventArgs e)
         {
+            var rootAppender = ((log4net.Repository.Hierarchy.Hierarchy)log4net.LogManager.GetRepository()).Root.Appenders.OfType<log4net.Appender.FileAppender>().FirstOrDefault();
+            string filename = rootAppender != null ? rootAppender.File : string.Empty;
 
+            OutputForm outputform = new OutputForm(filename);
+            outputform.Visible = true;
         }
 
     }

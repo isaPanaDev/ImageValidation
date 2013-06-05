@@ -47,6 +47,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -57,6 +58,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>DLL\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -104,10 +113,10 @@
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.1.9.0\lib\net35\WPFToolkit.dll</HintPath>
+      <HintPath>..\packages\Extended.Wpf.Toolkit.Plus.1.9.0\lib\net35\WPFToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Xceed.Wpf.Toolkit">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.1.9.0\lib\net35\Xceed.Wpf.Toolkit.dll</HintPath>
+      <HintPath>..\packages\Extended.Wpf.Toolkit.Plus.1.9.0\lib\net35\Xceed.Wpf.Toolkit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +132,15 @@
     </Compile>
     <Compile Include="Controls\ucCustomTreeCodeBehind.xaml.cs">
       <DependentUpon>ucCustomTreeCodeBehind.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateExcelFile.cs" />
+    <Compile Include="HtmlAssembler.cs" />
+    <Compile Include="HtmlTransforms.cs" />
+    <Compile Include="OutputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputForm.Designer.cs">
+      <DependentUpon>OutputForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Service References\ServiceReference2\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -168,6 +186,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="OutputForm.resx">
+      <DependentUpon>OutputForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -175,6 +196,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ImageValidation.Core.Users.datasource" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
@@ -205,6 +227,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DLL\DocumentFormat.OpenXml.dll" />
+    <Content Include="DLL\log4net.dll" />
+    <Content Include="DLL\WindowsBase.dll" />
+    <Content Include="Report\log_template.html" />
+    <Resource Include="Images\Add-icon.png" />
     <Resource Include="Images\Background.png" />
     <Resource Include="Images\OffButton.png" />
     <Resource Include="Images\CloudVerify.png" />
@@ -269,6 +296,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

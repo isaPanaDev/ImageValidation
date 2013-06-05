@@ -14,9 +14,6 @@ namespace ImageValidation.Collection
     {
 
         #region Collect Application information
-
-        string variable;
-
         public List<Applications> GetApplicationInformation()
         {
             List<Applications> ObjAppsLst = new List<Applications>();

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			html, body
+			{
+				margin: 0;
+				padding: 0;				
+			}
+
+			body
+			{
+				text-align: center;
+				font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+				background-color: white;
+				font-size: 75%;
+			}
+
+			div#page
+			{
+				width:auto;
+				background-color: white;
+				margin: 0 auto;
+				text-align: left;
+				border-color: #ddd;
+				border-style: none solid solid;
+				border-width: medium 1px 1px;
+				margin-top: 1em;
+				min-height: 50em;
+                background-color: white;
+				margin: 10px 10px 5px 5px;
+			}
+
+			div#container
+			{
+				padding: 0;
+				min-height: 20em;
+                color: green; /* Default table color*/
+                height: auto;
+                background-color:white;
+			}
+
+			div#content
+			{
+                /*width:auto;*/
+				font-family: Times;
+				font-size: 2.5em;
+                background-color:white;
+			}
+
+			div div#footer
+			{
+				clear: both;
+				color: #777;
+				margin: 0 auto;
+				padding-top: 2em;
+				text-align: center;
+			}
+
+			div div#header
+			{ /* Big Title Header */
+				font-size: 1.2em;
+				font-weight: bold;
+                color: black;
+                margin-left:20px;
+			}
+            table 
+            {
+                width:100%;
+                table-layout:fixed;
+            }
+			#tablecontent
+			{
+				font-family: Arial;
+				font-size: 12px;
+                font-weight:bold;
+				 width:100%;
+                 height:100%;
+				border-collapse: collapse;
+				text-align: left;
+				padding:5px 5px 5px 5px;
+				width:auto;
+			}
+			#tablecontent th
+			{ /* Headers: Drivers, Applications, HotFix, Registry, etc. */
+				 font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+				font-size: 16px;
+                font-weight:bold;
+				color: blue;
+				padding:10px 5px 5px 5px;
+			}
+			#tablecontent td
+			{ /* Table Entries 
+				border-bottom: 1px solid black;*/
+				background-color: white; /*#F3F4EC; background color of table entries */
+				padding:5px 5px 5px 5px;
+			}
+            #tablecontent #error-td
+			{ /* Mismatched data: Red 
+				border-bottom: 1px solid black;*/
+				color: 	#AA1111;
+				padding:5px 5px 5px 5px;
+			}
+			#error-td   
+			{
+				color: 	#AA1111;
+			}
+            #tablecontent #mismatch-td
+			{  /* Mismatched data: Yellow 
+				border-bottom: 1px solid black;*/
+				color: 	#FF9900; /* yellow */
+				padding:5px 5px 5px 5px;
+			}
+			#mismatch-td   
+			{
+				color: 	#FF9900;
+			}
+            #tablecontent #header-td
+			{/* Table Header data: Device Name, Version etc. 
+				border-bottom: 1px solid black;*/
+				color: black;
+				padding:5px 5px 5px 5px;
+			}
+			#header-td   
+			{
+                font-family: Calibri, Sans-Serif;
+				font-size: 16px;
+                font-weight:bold;
+			}
+            /* Input boxes formatting */
+		    .inputs
+		    {
+                font-size: 14px;
+                width:129px;
+                padding: 1px 1px 1px 1px;
+                float:right;
+                color:Black;
+		    }
+		    #glabels
+		    {
+		        color: Green;
+		        background-color: white;
+		    }
+		    #rlabels
+		    {
+		        color: 	#AA1111;
+		        background-color: white;
+		    }
+		    #ylabels
+		    {
+		        color: #FF9900;
+		         background-color: white;
+		    }
+			#tablecontent tbody tr:hover td
+			{
+				color: green;
+			}
+			.th.coldriver 
+			{
+			    width:15%; background-color:Yellow;
+			}
+			.th.colfilefolder
+			{
+			     width:10%; background-color:Green;
+			}
+			.th.colapp
+			{
+			    width:30%; background-color:Gray;
+			}
+		</style>
+		<title>log file</title>
+	</head>
+	<body>
+	    <script>
+	        function toggle_visibility(id) {
+	            var rows = document.getElementsByTagName("tr");
+	            for (i in rows) {
+	                if (rows[i].className == "error-tr") {
+	                    rows[i].style.display = (id.checked) ? "" : "none";
+	                }
+	            }
+	        }
+	        function toggle_visibility_mismatch(id) {
+	            var rows = document.getElementsByTagName("tr");
+	            for (i in rows) {
+	                if (rows[i].className == "mismatch-tr") {
+	                    rows[i].style.display = (id.checked) ? "" : "none";
+	                }
+	            }
+	        }
+	        function toggle_visibility_match(id) {
+	            var rows = document.getElementsByTagName("tr");
+	            for (i in rows) {
+	                if (rows[i].className == "noerror-tr") {
+	                    rows[i].style.display = (id.checked) ? "" : "none";
+	                }
+	            }
+	        }
+		</script>
+        <div id="page">
+          <div id="container">
+            <div id="content">
+			  <div>
+              <div id="header" style="float:left">
+                Image Validation Report
+              </div>
+              <div class="inputs" id="rlabels" style="float:right;">
+                <input onclick="toggle_visibility(this)" type="checkbox" checked="checked"/>Show Missing 
+              </div>
+              <div class="inputs" id="ylabels" style="float:right;">
+                <input onclick="toggle_visibility_mismatch(this)" type="checkbox" checked="checked"/>Show Mismatched 
+              </div>
+              <div class="inputs" id="glabels" style="float:right;">
+                <input onclick="toggle_visibility_match(this)" type="checkbox" checked="checked" />Show Matched
+              </div>
+			  </div>
+			  <div style="clear:both"></div>
+              <table id="tablecontent">
+                <tr>
+                  <th id="drivercontent" class="coldriver">Drivers</th>
+                </tr>
+                  <!--@data1-->
+                <tr>
+                  <th id="appcontent" class="colapp">Applications</th>
+                </tr>
+				<!--@data2-->
+                <tr>
+                  <th id="filefolcontent" class="colfilefolder">File and Folders</th>
+                </tr>
+				<!--@data3-->
+                <tr>
+                  <th id="regcontent" scope="col">Registry Settings</th>
+                </tr>
+				<!--@data4-->
+                   <tr>
+                  <th id="hotfixcontent" scope="col">Microsoft HotFixes</th>
+                </tr>
+				<!--@data5-->
+              </table>
+            </div>
+          </div>
+        </div>
+	</body>
+</html>

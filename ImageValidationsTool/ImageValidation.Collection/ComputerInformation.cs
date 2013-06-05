@@ -12,24 +12,30 @@ namespace ImageValidation.Collection
 {
     public class ComputerInformation
     {
+        private Computer comp;
+        
+        public string ComputerModel { set { comp.Model = value; } get { return comp.Model; } }
+        public string ComputerOS { set { comp.Caption = value; } }
+        public string ComputerOSArch { set { comp.OSArchitecture = value; } }
+        public string ComputerProduct { set { comp.Product = value; } }
+        public string ComputerSerial { set { comp.SerialNumber = value; } }
+
+        public ComputerInformation()
+        {
+            comp = new Computer(); 
+        }
 
         #region Collect computer information
-
         /// <summary>
         /// Get computer information throught Win32_OperatingSystem
         /// </summary>
         /// <returns>Computer</returns>
         public Computer GetComputerInformation()
         {
-
-            Computer comp = new Computer();
-
-
-            //Get Operating system information
+           //Get Operating system information
             ManagementObjectSearcher mosOperatingSys = new ManagementObjectSearcher("SELECT * FROM Win32_OperatingSystem");
             foreach (ManagementBaseObject mosOper in mosOperatingSys.Get())
             {
-
                 if (mosOper["BuildNumber"] != null)
                 {
                     comp.BuildNumber = mosOper["BuildNumber"].ToString();
@@ -217,15 +223,12 @@ namespace ImageValidation.Collection
                 {
                     comp.Manufacturer = string.Empty;
                 }
-
             }
-
 
             //Get basic computer information
             ManagementObjectSearcher mosCompSys = new ManagementObjectSearcher("SELECT * FROM Win32_ComputerSystem");
             foreach (ManagementObject moComp in mosCompSys.Get())
             {
-
                 if (moComp["Model"] != null)
                 {
                     comp.Model = moComp["Model"].ToString();
@@ -271,7 +274,6 @@ namespace ImageValidation.Collection
             comp.IsPrimaryModel = "0";
             return comp;
         }
-
 
         #endregion
     }

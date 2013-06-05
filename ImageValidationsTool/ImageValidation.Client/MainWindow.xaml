@@ -1,9 +1,18 @@
 ﻿<NavigationWindow x:Class="ImageValidation.Client.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Image Validation System" Height="600" Width="820" Loaded="Window_Loaded" WindowState="Normal" AllowsTransparency="True"  WindowStyle="None" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen" MouseDown="NavigationWindow_MouseDown"
-        >
+        Title="Image Validation System" HorizontalAlignment="Stretch" Width="930" Loaded="Window_Loaded" WindowState="Normal" 
+                  AllowsTransparency="True"  WindowStyle="None" ResizeMode="CanResizeWithGrip" 
+                  WindowStartupLocation="CenterScreen" MouseDown="NavigationWindow_MouseDown">
 		<NavigationWindow.Background>
-		<ImageBrush ImageSource="pack://application:,,,/Images/Background.png"/>
-	</NavigationWindow.Background>
+		    <ImageBrush ImageSource="pack://application:,,,/Images/Background.png"/>
+	    </NavigationWindow.Background>
+    <NavigationWindow.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        </Style>
+    </NavigationWindow.Resources>
+
 </NavigationWindow>

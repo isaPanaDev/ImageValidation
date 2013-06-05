@@ -36,9 +36,7 @@ namespace ImageValidation.Service
 
         bool result = false;
         int RowID;
-        private string strConn = "";
         SqlConnection sqlConn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["SQLAzureConn"].ConnectionString);
-        SqlCommand cmd;
 
         //Validator Collector Tool
         #region Validator Collector Tool

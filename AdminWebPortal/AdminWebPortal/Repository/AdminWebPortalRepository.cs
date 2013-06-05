@@ -111,7 +111,7 @@ namespace AdminWebPortal.Repository
         /// <returns></returns>
         public User GetUser(string userName)
         {
-            return entities.Users.SingleOrDefault(user => user.Username == userName);
+             return entities.Users.SingleOrDefault(user => user.Username == userName);
         }
 
         /// <summary>

@@ -35,6 +35,8 @@ namespace AdminWebPortal.MemberShipMember
 
         public override bool ValidateUser(string username, string password)
         {
+            //return true;
+
             if (string.IsNullOrEmpty(password.Trim()) || string.IsNullOrEmpty(username.Trim()))
                 return false;
 

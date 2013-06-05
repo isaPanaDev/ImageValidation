@@ -74,6 +74,7 @@ namespace ImageValidation.Collection
                 xmlTextWriter.WriteElementString("CompactID", item.CompactID);
                 xmlTextWriter.WriteElementString("Description", item.Description);
                 xmlTextWriter.WriteElementString("DeviceClass", item.DeviceClass);
+                xmlTextWriter.WriteElementString("ExecutablePath", item.DeviceClass);
                 xmlTextWriter.WriteElementString("DeviceID", item.DeviceID);
                 xmlTextWriter.WriteElementString("DeviceName", item.DeviceName);
                 xmlTextWriter.WriteElementString("DriverDate", item.DriverDate.ToString());

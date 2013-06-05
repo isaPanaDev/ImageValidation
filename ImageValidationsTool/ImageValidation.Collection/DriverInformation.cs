@@ -34,6 +34,10 @@ namespace ImageValidation.Collection
             foreach (ManagementObject WmiObject in Searcher.Get())
             {
                 Driver driver = new Driver();
+               // foreach (PropertyData prop in WmiObject.Properties)
+               // {
+                   // Console.WriteLine("********************** " + prop.Name + " - " + prop.Value);
+               // }
 
                 if (WmiObject["CompatID"] != null)
                 {

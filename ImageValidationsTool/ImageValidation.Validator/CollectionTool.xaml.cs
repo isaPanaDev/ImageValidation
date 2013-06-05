@@ -91,6 +91,8 @@ namespace ImageValidation.Validator
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Network error: " + ex.Message);
+                MessageBox.Show("Network error: " + ex.Message);
             }
         }
 
@@ -534,11 +536,11 @@ namespace ImageValidation.Validator
         {
             if (showControls)
             {
-                gbImageResult.Visibility = System.Windows.Visibility.Visible;
+                //gbImageResult.Visibility = System.Windows.Visibility.Visible;
                 //lblCloudRecord.Visibility = System.Windows.Visibility.Visible;
                 lblID.Visibility = System.Windows.Visibility.Visible;
                 lblXMLOutput.Visibility = System.Windows.Visibility.Visible;
-                grdResult.Visibility = System.Windows.Visibility.Visible;
+               // grdResult.Visibility = System.Windows.Visibility.Visible;
             }
             else
             {

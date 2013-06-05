@@ -15,18 +15,10 @@ using ImageValidation.Service.Data;
 public static class clsDataAccessLayer
 {
     static DataTable objdt;
-    static SqlCommand cmd = null;
-    static SqlConnection con = null;
-    static SqlDataAdapter adp = null;
     public static string sql = string.Empty;
     static string stringResult = string.Empty;
     static bool queryresult = false;
     static function objfun = new function();
-    static DataSet ds = null;
-    static int rowCount = 0;
-    static int result = 0;
-
-
 
     public enum SQlCMDType
     {
@@ -152,8 +144,6 @@ public static class clsDataAccessLayer
         {
 
             SqlConnection sqlConn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["SQLAzureConn"].ConnectionString);
-            SqlCommand cmd;
-
             sqlConn.Open();
             SqlCommand cmdProc = new SqlCommand("Usp_SaveComputerInformation", sqlConn);
             cmdProc.CommandType = CommandType.StoredProcedure;
@@ -220,8 +210,6 @@ public static class clsDataAccessLayer
         {
 
             SqlConnection sqlConn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["SQLAzureConn"].ConnectionString);
-            SqlCommand cmd;
-
             sqlConn.Open();
             SqlCommand cmdProc = new SqlCommand("Usp_SaveComputerInfoUpdateCheckedModelRecord", sqlConn);
             cmdProc.CommandType = CommandType.StoredProcedure;
@@ -273,8 +261,6 @@ public static class clsDataAccessLayer
         {
 
             SqlConnection sqlConn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["SQLAzureConn"].ConnectionString);
-            SqlCommand cmd;
-
             sqlConn.Open();
             SqlCommand cmdProc = new SqlCommand("Usp_SaveComputerInfoUpdateCheckedModelRecordSet1", sqlConn);
             cmdProc.CommandType = CommandType.StoredProcedure;
@@ -557,6 +543,8 @@ public static class clsDataAccessLayer
                 xmlTextWriter.WriteStartElement("Driver");
                 foreach (DataRow row in objdt.Rows) // Loop over the rows.
                 {
+                    Console.WriteLine("111111111 " + row.ItemArray.ToString());
+                    Console.WriteLine("111111111 " + row.ItemArray.ToString());
                     xmlTextWriter.WriteStartElement("Driver");
                     xmlTextWriter.WriteElementString("DeviceName", row["DeviceName"].ToString());
                     xmlTextWriter.WriteElementString("DriverVersion", row["DriverVersion"].ToString());
@@ -688,7 +676,7 @@ public static class clsDataAccessLayer
                     xmlTextWriter.WriteStartElement("FileFolder");
                     xmlTextWriter.WriteElementString("Location", row["Location"].ToString());
                     xmlTextWriter.WriteElementString("FileFolderTypeID", row["FileFolderTypeID"].ToString());
-                    xmlTextWriter.WriteElementString("Note", row["Note"].ToString());
+                    xmlTextWriter.WriteElementString("Note","testing");//row["Note"].ToString());
                     xmlTextWriter.WriteEndElement();
                 }
                 xmlTextWriter.WriteEndElement();
@@ -741,7 +729,7 @@ public static class clsDataAccessLayer
                             xmlTextWriter.WriteStartElement("RegistryGroup");
                             xmlTextWriter.WriteElementString("RegistryGroupID", RegistryGroupdtRow["RegistryGroupID"].ToString());
                             xmlTextWriter.WriteElementString("FileName", RegistryGroupdtRow["FileName"].ToString());
-                            xmlTextWriter.WriteElementString("Note", RegistryGroupdtRow["Note"].ToString());
+                            xmlTextWriter.WriteElementString("Note", "mytest");//RegistryGroupdtRow["Note"].ToString());
                             xmlTextWriter.WriteEndElement();
                         }
                     }

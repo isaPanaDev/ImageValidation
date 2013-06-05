@@ -1,0 +1,3573 @@
+<<<<<<< .mine
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.vshost.exe', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\PresentationFramework.Aero\3.0.0.0__31bf3856ad364e35\PresentationFramework.Aero.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\3.5.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Configuration.Install\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.Install.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Runtime.Serialization\3.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.ServiceModel\3.0.0.0__b77a5c561934e089\System.ServiceModel.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.ServiceModel.Web\3.5.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Web.Extensions\3.5.0.0__31bf3856ad364e35\System.Web.Extensions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Web.Abstractions\3.5.0.0__31bf3856ad364e35\System.Web.Abstractions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Xml.Linq\3.5.0.0__b77a5c561934e089\System.Xml.Linq.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Data.DataSetExtensions\3.5.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_64\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\UIAutomationProvider\3.0.0.0__31bf3856ad364e35\UIAutomationProvider.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\UIAutomationTypes\3.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\WindowsBase\3.0.0.0__31bf3856ad364e35\WindowsBase.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_64\PresentationCore\3.0.0.0__31bf3856ad364e35\PresentationCore.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\PresentationFramework\3.0.0.0__31bf3856ad364e35\PresentationFramework.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread 'vshost.NotifyLoad' (0x1f3c) has exited with code 0 (0x0).
+The thread '<No Name>' (0x1280) has exited with code 0 (0x0).
+The thread 'vshost.LoadReference' (0x1570) has exited with code 0 (0x0).
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe', Symbols loaded.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Step into: Stepping over non-user code 'ImageValidation.Client.App.App'
+Step into: Stepping over non-user code 'ImageValidation.Client.App.InitializeComponent'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\log4net.dll'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.dll', Symbols loaded.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.dll', Symbols loaded.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\SMDiagnostics\3.0.0.0__b77a5c561934e089\SMDiagnostics.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.WorkflowServices\3.5.0.0__31bf3856ad364e35\System.WorkflowServices.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Diagnostics.ServiceModelSink\3.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Diagnostics.ServiceModelSink.dll'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.IdentityModel\3.0.0.0__b77a5c561934e089\System.IdentityModel.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\Xceed.Wpf.Toolkit.dll'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\WPFToolkit.dll'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Management\2.0.0.0__b03f5f7f11d50a3a\System.Management.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread '<No Name>' (0x1d7c) has exited with code 0 (0x0).
+The thread '<No Name>' (0x2598) has exited with code 0 (0x0).
+The thread '<No Name>' (0x335c) has exited with code 0 (0x0).
+The thread '<No Name>' (0x3bdc) has exited with code 0 (0x0).
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'ilesilba'
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 17 DeviceID: 
+BASE DeviceName: Bluetooth RFCOMM
+VERSION: 8.0.2505.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 18 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 19 DeviceID: 
+BASE DeviceName: Hotkey Driver for Panasonic PC
+VERSION: 11.2.1000.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 20 DeviceID: 
+BASE DeviceName: Panasonic Misc Driver
+VERSION: 1.3.1100.100
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 21 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Memory Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 22 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework PCH Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family SMBus Host Controller - 1E22
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 24 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series Chipset Family SATA AHCI Controller
+VERSION: 11.1.0.1006
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 25 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Fan Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 26 DeviceID: 
+BASE DeviceName: Synaptics PS/2 Port Compatible TouchPad
+VERSION: 15.2.20.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) QM77 Express Chipset LPC Controller - 1E55
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: FCL USB Pen Tablet(Sus)
+VERSION: 1.0.0.9
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 29 DeviceID: 
+BASE DeviceName: Ricoh PCIe SDXC/MMC Host Controller
+VERSION: 6.10.10.28
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 30 DeviceID: 
+BASE DeviceName: Intel(R) Centrino(R) Advanced-N 6205
+VERSION: 15.0.1.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 3 - 1E14
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 1 - 1E10
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 33 DeviceID: 
+BASE DeviceName: Intel(R) Display Audio
+VERSION: 6.14.0.3090
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 34 DeviceID: 
+BASE DeviceName: Realtek High Definition Audio
+VERSION: 6.0.1.6591
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: SCR35xx USB Smart Card Reader
+VERSION: 4.49.0.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFHID
+VERSION: 8.0.830.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFBUS
+VERSION: 9.0.1330.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth V4.0 Module (ALPS)
+VERSION: 8.1.1216.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 41 DeviceID: 
+BASE DeviceName: Intel(R) 82579LM Gigabit Network Connection
+VERSION: 11.15.16.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 47 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 Root Hub
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 48 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 eXtensible Host Controller
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 49 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Processor Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 50 DeviceID: 
+BASE DeviceName: Intel(R) HD Graphics 4000
+VERSION: 8.15.10.2696
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: 3rd Gen Core processor DRAM Controller - 0154
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 52 DeviceID: 
+BASE DeviceName: PCI bus
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 17 DeviceID: 
+BASE DeviceName: Bluetooth RFCOMM
+VERSION: 8.0.2505.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 18 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 19 DeviceID: 
+BASE DeviceName: Hotkey Driver for Panasonic PC
+VERSION: 11.2.1000.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 20 DeviceID: 
+BASE DeviceName: Panasonic Misc Driver
+VERSION: 1.3.1100.100
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 21 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Memory Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 22 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework PCH Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family SMBus Host Controller - 1E22
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 24 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series Chipset Family SATA AHCI Controller
+VERSION: 11.1.0.1006
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 25 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Fan Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 26 DeviceID: 
+BASE DeviceName: Synaptics PS/2 Port Compatible TouchPad
+VERSION: 15.2.20.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) QM77 Express Chipset LPC Controller - 1E55
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: FCL USB Pen Tablet(Sus)
+VERSION: 1.0.0.9
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 29 DeviceID: 
+BASE DeviceName: Ricoh PCIe SDXC/MMC Host Controller
+VERSION: 6.10.10.28
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 30 DeviceID: 
+BASE DeviceName: Intel(R) Centrino(R) Advanced-N 6205
+VERSION: 15.0.1.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 3 - 1E14
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 1 - 1E10
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 33 DeviceID: 
+BASE DeviceName: Intel(R) Display Audio
+VERSION: 6.14.0.3090
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 34 DeviceID: 
+BASE DeviceName: Realtek High Definition Audio
+VERSION: 6.0.1.6591
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: SCR35xx USB Smart Card Reader
+VERSION: 4.49.0.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFHID
+VERSION: 8.0.830.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFBUS
+VERSION: 9.0.1330.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth V4.0 Module (ALPS)
+VERSION: 8.1.1216.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 41 DeviceID: 
+BASE DeviceName: Intel(R) 82579LM Gigabit Network Connection
+VERSION: 11.15.16.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 47 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 Root Hub
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 48 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 eXtensible Host Controller
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 49 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Processor Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 50 DeviceID: 
+BASE DeviceName: Intel(R) HD Graphics 4000
+VERSION: 8.15.10.2696
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: 3rd Gen Core processor DRAM Controller - 0154
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 52 DeviceID: 
+BASE DeviceName: PCI bus
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 17 DeviceID: 
+BASE DeviceName: Bluetooth RFCOMM
+VERSION: 8.0.2505.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 18 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 19 DeviceID: 
+BASE DeviceName: Hotkey Driver for Panasonic PC
+VERSION: 11.2.1000.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 20 DeviceID: 
+BASE DeviceName: Panasonic Misc Driver
+VERSION: 1.3.1100.100
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 21 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Memory Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 22 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework PCH Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family SMBus Host Controller - 1E22
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 24 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series Chipset Family SATA AHCI Controller
+VERSION: 11.1.0.1006
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 25 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Fan Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 26 DeviceID: 
+BASE DeviceName: Synaptics PS/2 Port Compatible TouchPad
+VERSION: 15.2.20.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) QM77 Express Chipset LPC Controller - 1E55
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: FCL USB Pen Tablet(Sus)
+VERSION: 1.0.0.9
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 29 DeviceID: 
+BASE DeviceName: Ricoh PCIe SDXC/MMC Host Controller
+VERSION: 6.10.10.28
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 30 DeviceID: 
+BASE DeviceName: Intel(R) Centrino(R) Advanced-N 6205
+VERSION: 15.0.1.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 3 - 1E14
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 1 - 1E10
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 33 DeviceID: 
+BASE DeviceName: Intel(R) Display Audio
+VERSION: 6.14.0.3090
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 34 DeviceID: 
+BASE DeviceName: Realtek High Definition Audio
+VERSION: 6.0.1.6591
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: SCR35xx USB Smart Card Reader
+VERSION: 4.49.0.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFHID
+VERSION: 8.0.830.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFBUS
+VERSION: 9.0.1330.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth V4.0 Module (ALPS)
+VERSION: 8.1.1216.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 41 DeviceID: 
+BASE DeviceName: Intel(R) 82579LM Gigabit Network Connection
+VERSION: 11.15.16.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 47 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 Root Hub
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 48 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 eXtensible Host Controller
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 49 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Processor Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 50 DeviceID: 
+BASE DeviceName: Intel(R) HD Graphics 4000
+VERSION: 8.15.10.2696
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: 3rd Gen Core processor DRAM Controller - 0154
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 52 DeviceID: 
+BASE DeviceName: PCI bus
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT FILE FOLDER OBJ ------------ 
+ FileFolderTypeID: 1
+Location: d:\windows\system32\inetsrv\MDT_SCCM Best Practices Recomendations.gdoc
+NOTE: <p>Isabel's document added to test description!</p>
+Type: 
+---------------- PRINT FILE FOLDER OBJ ------------ 
+ FileFolderTypeID: 1
+Location: d:\windows\system32\inetsrv\MDT_SCCM Best Practices Recomendations.gdoc
+NOTE: <p>Isabel's document added to test description!</p>
+Type: 
+The thread 'vshost.RunParkingWindow' (0x3594) has exited with code 0 (0x0).
+The thread '<No Name>' (0x1bbc) has exited with code 0 (0x0).
+The program '[10648] ImageValidation.Client.vshost.exe: Managed (v2.0.50727)' has exited with code 0 (0x0).
+=======
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.vshost.exe', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\PresentationFramework.Aero\3.0.0.0__31bf3856ad364e35\PresentationFramework.Aero.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\3.5.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Configuration.Install\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.Install.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Runtime.Serialization\3.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.ServiceModel\3.0.0.0__b77a5c561934e089\System.ServiceModel.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.ServiceModel.Web\3.5.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Web.Extensions\3.5.0.0__31bf3856ad364e35\System.Web.Extensions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Web.Abstractions\3.5.0.0__31bf3856ad364e35\System.Web.Abstractions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Xml.Linq\3.5.0.0__b77a5c561934e089\System.Xml.Linq.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Data.DataSetExtensions\3.5.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_64\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\UIAutomationProvider\3.0.0.0__31bf3856ad364e35\UIAutomationProvider.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\UIAutomationTypes\3.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\WindowsBase\3.0.0.0__31bf3856ad364e35\WindowsBase.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_64\PresentationCore\3.0.0.0__31bf3856ad364e35\PresentationCore.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\PresentationFramework\3.0.0.0__31bf3856ad364e35\PresentationFramework.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread 'vshost.NotifyLoad' (0x1f3c) has exited with code 0 (0x0).
+The thread '<No Name>' (0x1280) has exited with code 0 (0x0).
+The thread 'vshost.LoadReference' (0x1570) has exited with code 0 (0x0).
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Client.exe', Symbols loaded.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Step into: Stepping over non-user code 'ImageValidation.Client.App.App'
+Step into: Stepping over non-user code 'ImageValidation.Client.App.InitializeComponent'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\log4net.dll'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Collection.dll', Symbols loaded.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\ImageValidation.Core.dll', Symbols loaded.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\SMDiagnostics\3.0.0.0__b77a5c561934e089\SMDiagnostics.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.WorkflowServices\3.5.0.0__31bf3856ad364e35\System.WorkflowServices.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Diagnostics.ServiceModelSink\3.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Diagnostics.ServiceModelSink.dll'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.IdentityModel\3.0.0.0__b77a5c561934e089\System.IdentityModel.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\Xceed.Wpf.Toolkit.dll'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Development\Image Validation\ImageValidation.git\trunk\ImageValidationsTool\ImageValidation.Client\bin\Debug\WPFToolkit.dll'
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Management\2.0.0.0__b03f5f7f11d50a3a\System.Management.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread '<No Name>' (0x1d7c) has exited with code 0 (0x0).
+The thread '<No Name>' (0x2598) has exited with code 0 (0x0).
+The thread '<No Name>' (0x335c) has exited with code 0 (0x0).
+The thread '<No Name>' (0x3bdc) has exited with code 0 (0x0).
+'ImageValidation.Client.vshost.exe' (Managed (v2.0.50727)): Loaded 'ilesilba'
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 17 DeviceID: 
+BASE DeviceName: Bluetooth RFCOMM
+VERSION: 8.0.2505.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 18 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 19 DeviceID: 
+BASE DeviceName: Hotkey Driver for Panasonic PC
+VERSION: 11.2.1000.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 20 DeviceID: 
+BASE DeviceName: Panasonic Misc Driver
+VERSION: 1.3.1100.100
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 21 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Memory Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 22 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework PCH Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family SMBus Host Controller - 1E22
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 24 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series Chipset Family SATA AHCI Controller
+VERSION: 11.1.0.1006
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 25 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Fan Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 26 DeviceID: 
+BASE DeviceName: Synaptics PS/2 Port Compatible TouchPad
+VERSION: 15.2.20.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) QM77 Express Chipset LPC Controller - 1E55
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: FCL USB Pen Tablet(Sus)
+VERSION: 1.0.0.9
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 29 DeviceID: 
+BASE DeviceName: Ricoh PCIe SDXC/MMC Host Controller
+VERSION: 6.10.10.28
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 30 DeviceID: 
+BASE DeviceName: Intel(R) Centrino(R) Advanced-N 6205
+VERSION: 15.0.1.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 3 - 1E14
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 1 - 1E10
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 33 DeviceID: 
+BASE DeviceName: Intel(R) Display Audio
+VERSION: 6.14.0.3090
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 34 DeviceID: 
+BASE DeviceName: Realtek High Definition Audio
+VERSION: 6.0.1.6591
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: SCR35xx USB Smart Card Reader
+VERSION: 4.49.0.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFHID
+VERSION: 8.0.830.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFBUS
+VERSION: 9.0.1330.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth V4.0 Module (ALPS)
+VERSION: 8.1.1216.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 41 DeviceID: 
+BASE DeviceName: Intel(R) 82579LM Gigabit Network Connection
+VERSION: 11.15.16.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 47 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 Root Hub
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 48 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 eXtensible Host Controller
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 49 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Processor Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 50 DeviceID: 
+BASE DeviceName: Intel(R) HD Graphics 4000
+VERSION: 8.15.10.2696
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: 3rd Gen Core processor DRAM Controller - 0154
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 52 DeviceID: 
+BASE DeviceName: PCI bus
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 17 DeviceID: 
+BASE DeviceName: Bluetooth RFCOMM
+VERSION: 8.0.2505.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 18 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 19 DeviceID: 
+BASE DeviceName: Hotkey Driver for Panasonic PC
+VERSION: 11.2.1000.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 20 DeviceID: 
+BASE DeviceName: Panasonic Misc Driver
+VERSION: 1.3.1100.100
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 21 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Memory Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 22 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework PCH Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family SMBus Host Controller - 1E22
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 24 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series Chipset Family SATA AHCI Controller
+VERSION: 11.1.0.1006
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 25 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Fan Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 26 DeviceID: 
+BASE DeviceName: Synaptics PS/2 Port Compatible TouchPad
+VERSION: 15.2.20.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) QM77 Express Chipset LPC Controller - 1E55
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: FCL USB Pen Tablet(Sus)
+VERSION: 1.0.0.9
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 29 DeviceID: 
+BASE DeviceName: Ricoh PCIe SDXC/MMC Host Controller
+VERSION: 6.10.10.28
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 30 DeviceID: 
+BASE DeviceName: Intel(R) Centrino(R) Advanced-N 6205
+VERSION: 15.0.1.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 3 - 1E14
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 1 - 1E10
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 33 DeviceID: 
+BASE DeviceName: Intel(R) Display Audio
+VERSION: 6.14.0.3090
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 34 DeviceID: 
+BASE DeviceName: Realtek High Definition Audio
+VERSION: 6.0.1.6591
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: SCR35xx USB Smart Card Reader
+VERSION: 4.49.0.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFHID
+VERSION: 8.0.830.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFBUS
+VERSION: 9.0.1330.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth V4.0 Module (ALPS)
+VERSION: 8.1.1216.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 41 DeviceID: 
+BASE DeviceName: Intel(R) 82579LM Gigabit Network Connection
+VERSION: 11.15.16.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 47 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 Root Hub
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 48 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 eXtensible Host Controller
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 49 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Processor Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 50 DeviceID: 
+BASE DeviceName: Intel(R) HD Graphics 4000
+VERSION: 8.15.10.2696
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: 3rd Gen Core processor DRAM Controller - 0154
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 52 DeviceID: 
+BASE DeviceName: PCI bus
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 7 DeviceID: 
+BASE DeviceName: BT Port
+VERSION: 6.0.616.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 17 DeviceID: 
+BASE DeviceName: Bluetooth RFCOMM
+VERSION: 8.0.2505.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 18 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 19 DeviceID: 
+BASE DeviceName: Hotkey Driver for Panasonic PC
+VERSION: 11.2.1000.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 20 DeviceID: 
+BASE DeviceName: Panasonic Misc Driver
+VERSION: 1.3.1100.100
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 21 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Memory Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 22 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework PCH Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family SMBus Host Controller - 1E22
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 24 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series Chipset Family SATA AHCI Controller
+VERSION: 11.1.0.1006
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 25 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Fan Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 26 DeviceID: 
+BASE DeviceName: Synaptics PS/2 Port Compatible TouchPad
+VERSION: 15.2.20.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) QM77 Express Chipset LPC Controller - 1E55
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: FCL USB Pen Tablet(Sus)
+VERSION: 1.0.0.9
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 29 DeviceID: 
+BASE DeviceName: Ricoh PCIe SDXC/MMC Host Controller
+VERSION: 6.10.10.28
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 30 DeviceID: 
+BASE DeviceName: Intel(R) Centrino(R) Advanced-N 6205
+VERSION: 15.0.1.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 3 - 1E14
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 1 - 1E10
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 33 DeviceID: 
+BASE DeviceName: Intel(R) Display Audio
+VERSION: 6.14.0.3090
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 34 DeviceID: 
+BASE DeviceName: Realtek High Definition Audio
+VERSION: 6.0.1.6591
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: SCR35xx USB Smart Card Reader
+VERSION: 4.49.0.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFHID
+VERSION: 8.0.830.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth RFBUS
+VERSION: 9.0.1330.1
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: -1 DeviceID: 
+BASE DeviceName: Bluetooth V4.0 Module (ALPS)
+VERSION: 8.1.1216.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 41 DeviceID: 
+BASE DeviceName: Intel(R) 82579LM Gigabit Network Connection
+VERSION: 11.15.16.0
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 47 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 Root Hub
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 48 DeviceID: 
+BASE DeviceName: Intel(R) USB 3.0 eXtensible Host Controller
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 49 DeviceID: 
+BASE DeviceName: Intel(R) Dynamic Platform & Thermal Framework Processor Participant Driver
+VERSION: 6.0.1.1067
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 50 DeviceID: 
+BASE DeviceName: Intel(R) HD Graphics 4000
+VERSION: 8.15.10.2696
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 23 DeviceID: 
+BASE DeviceName: 3rd Gen Core processor DRAM Controller - 0154
+VERSION: 9.3.0.1011
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT DRIVER OBJ ------------ 
+MMID: 52 DeviceID: 
+BASE DeviceName: PCI bus
+VERSION: 1.0.4.220
+IDDriverProviderName: 
+friendlyName: 
+****httpUrl: ******
+HardWareID: 
+InfName: 
+****IsRequired: 
+IsSigned: 
+Manufacturer: 
+Name: 
+PDO: 
+---------------- PRINT FILE FOLDER OBJ ------------ 
+ FileFolderTypeID: 1
+Location: d:\windows\system32\inetsrv\MDT_SCCM Best Practices Recomendations.gdoc
+NOTE: <p>Isabel's document added to test description!</p>
+Type: 
+---------------- PRINT FILE FOLDER OBJ ------------ 
+ FileFolderTypeID: 1
+Location: d:\windows\system32\inetsrv\MDT_SCCM Best Practices Recomendations.gdoc
+NOTE: <p>Isabel's document added to test description!</p>
+Type: 
+The thread 'vshost.RunParkingWindow' (0x3594) has exited with code 0 (0x0).
+The thread '<No Name>' (0x1bbc) has exited with code 0 (0x0).
+The program '[10648] ImageValidation.Client.vshost.exe: Managed (v2.0.50727)' has exited with code 0 (0x0).
+>>>>>>> .r16

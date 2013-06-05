@@ -126,7 +126,18 @@ namespace ImageValidation.Core
                 _DriverVersion = value;
             }
         }
-
+        private string _BaseDriverVersion;
+        public string BaseDriverVersion
+        {
+            get
+            {
+                return _BaseDriverVersion;
+            }
+            set
+            {
+                _BaseDriverVersion = value;
+            }
+        }
 
 
 
@@ -293,6 +304,10 @@ namespace ImageValidation.Core
                 _IsCompared = value;
             }
         }
+
+        private string _exePath;
+        public string ExecutablePath { get { return _exePath; } set { _exePath = value; } }
+
     }
 
 }

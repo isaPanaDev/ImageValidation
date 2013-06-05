@@ -1,0 +1,175 @@
+DeviceName,Version,Match
+a,1,Intel(R) Dynamic Platform & Thermal Framework,11.7.700.202,http://www.adobe.com/go/flashplayer_support/,,
+a,1,CyberLink PowerDVD 10,10.0.3809.52,http://support.gocyberlink.com/,c:\Program Files (x86)\CyberLink\PowerDVD10\,c:\util\powerdvd\
+a,1,Windows Live Essentials,11.7.700.202,http://www.adobe.com/go/flashplayer_support/,,
+a,1,Dashboard for Panasonic PC,2.05.1003.00,,C:\Program Files (x86)\Panasonic\DBoard,c:\util\dboard53\
+a,1,Windows Live Installer,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,0,DevUp Service,,,,
+a,0,PC Information Viewer,7.7.1000.0,,C:\Program Files (x86)\Panasonic\pcinfo,C:\util\pcinfo\
+a,1,MSXML 4.0 SP3 Parser,4.30.2100.0,http://www.msdn.microsoft.com/xml,c:\Windows\SysWOW64\,c:\util\sonic\MSXMLMSI_40SP3\
+a,1,Junk Mail filter update,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,1,Windows Live SOXE Definitions,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,1,Intel(R) USB 3.0 eXtensible Host Controller Driver,11.7.700.202,http://www.adobe.com/go/flashplayer_support/,,
+a,1,Roxio Creator LJB,1.0.520,http://support.roxio.com,c:\Program Files (x86)\Roxio 2010\OEM\,c:\util\sonic\MYDVD2010\
+a,1,Intel(R) Rapid Storage Technology,11.7.700.202,http://www.adobe.com/go/flashplayer_support/,,
+a,1,USB Selective Suspend Manager,2.2.1000.100,,C:\Program Files (x86)\Panasonic\Selsussv,C:\util\selsussv\
+a,0,Common Components for Panasonic PC (x64),3.0.1300.0,,C:\Program Files (x86)\Panasonic\pcomn64\,C:\Program Files (x86)\Panasonic\pcomn64\{38B9A393-F0F1-4E7D-936B-29CA53778A4A}\
+a,0,Common Components for Panasonic PC,3.0.1300.0,,C:\Program Files (x86)\Panasonic\pcommon\,C:\Program Files (x86)\Panasonic\pcommon\{4AC7E727-BB02-4973-B477-AF116A37AA96}\
+a,1,Windows Live UX Platform Language Pack,15.4.3508.1109,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b94269801ce14ce1b\
+a,1,Roxio BackOnTrack,1.3.3,,C:\Program Files (x86)\Roxio 2010\OEM\,c:\util\sonic\BCP_CORE_131\
+a,0,Panasonic Notification,1.4.1200.0,,C:\Program Files (x86)\Panasonic\PNotif,C:\util\pnotif\
+a,1,Intel(R) Management Engine Components,11.7.700.202,http://www.adobe.com/go/flashplayer_support/,,
+a,1,Windows Live SOXE,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,2,Calibration Utility,1.4.1200.0,,C:\Program Files (x86)\Panasonic\PNotif,C:\util\pnotif\
+a,1,Roxio Creator LJB,5.0.0,http://support.sonic.com/,c:\Program Files (x86)\Roxio 2010\OEM\,c:\util\sonic\ROXIOCENTRAL_50OEM\
+a,0,Microsoft Visual C++ 2005 Redistributable,8.0.61001,,,C:\Users\Isabel\AppData\Local\Temp\IXP000.TMP\
+a,1,Windows Live PIMT Platform,15.4.3508.1109,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b94269801ce14ce1b\
+a,1,Roxio Creator LJB,12.1.10.16,http://www.roxio.com/,C:\Program Files (x86)\Roxio 2010\OEM,
+a,0,Microsoft Silverlight,,,,
+a,1,MSVCRT,15.4.2862.0708,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b80a953c1ce14ce09\
+a,0,System Interface Manager,11.1.1100.0,,C:\Program Files (x86)\Panasonic\System Interface Manager,C:\util\sysifman\
+a,0,SCR3xxx Smart Card Reader,,,,
+a,1,Windows Live Mail,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,1,Windows Live Photo Common,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,1,Windows Live Writer,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,0,Adobe Reader X (10.0.1),,,,
+a,1,Power Plan Extension Utility,1.9.1200.0,,C:\Program Files\Panasonic\PPlanEx,C:\util\pplanex\
+a,1,Display Selector,1.0.1200.0,,C:\Program Files (x86)\Panasonic\dispsel,c:\util\dispsel\
+a,0,Common Components for Panasonic PC (x64),3.0.1300.0,,C:\Program Files (x86)\Panasonic\pcomn64\,C:\Program Files (x86)\Panasonic\pcomn64\{38B9A393-F0F1-4E7D-936B-29CA53778A4A}\
+a,1,Windows Live Mail,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,1,Quick Boot Manager,3.1.1000.0,,C:\Program Files (x86)\Panasonic\qbmgr,c:\util\qbmgr\
+a,0,Battery Recalibration,3.0.1000.100,,C:\Program Files (x86)\Panasonic\BRECAL,C:\util\brecal\
+a,1,Windows Live UX Platform,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,1,MSVCRT_amd64,15.4.2862.0708,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b80a953c1ce14ce09\
+a,1,Windows Live Photo Common,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,1,Windows Live Communications Platform,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,0,Recovery Disc Creation Utility,3.5.1000.0,,C:\Program Files (x86)\Panasonic\RecvDisc,C:\util\recvdisc\
+a,1,Windows Live Writer Resources,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+a,1,CyberLink PowerDVD 10,10.0.3809.52,http://support.gocyberlink.com/,c:\Program Files (x86)\CyberLink\PowerDVD10\,c:\util\powerdvd\
+a,1,Hotkey Settings,3.0.1100.0,,C:\Program Files (x86)\Panasonic\Hotkey Settings,C:\util\hkeyset\
+a,1,D3DX10,15.4.2368.0902,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b82725bf1ce14ce0b\
+a,1,Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219,10.0.40219,,,C:\Users\Isabel\AppData\Local\Temp\Microsoft Visual Studio 2010 Service Pack 1_10.0.40219\SpTools\
+a,1,Intel(R) Processor Graphics,11.7.700.202,http://www.adobe.com/go/flashplayer_support/,,
+a,1,Realtek High Definition Audio Driver,6.0.1.6591,,C:\Program Files\Realtek\Audio\HDA,c:\util\drivers\sound\
+a,0,Hand Writing Utility,,,,
+a,1,Intel(R) Control Center,11.7.700.202,http://www.adobe.com/go/flashplayer_support/,,
+a,0,Common Components for Panasonic PC,3.0.1300.0,,C:\Program Files (x86)\Panasonic\pcommon\,C:\Program Files (x86)\Panasonic\pcommon\{4AC7E727-BB02-4973-B477-AF116A37AA96}\
+a,0,Wireless Switch Utility,4.11.1200.0,,C:\Program Files\Panasonic\WSwitch,C:\util\wswitch\
+a,1,RICOH Media Driver v2.12.15.01,2.12.15.01,,C:\Windows\TEMP\{8B5908DA-2850-420D-A495-316D04F89FAE}\{FE041B02-234C-4AAA-9511-80DF6482A458}\,c:\util\drivers\sd_ri\
+a,1,Windows Live Essentials,15.4.3502.0922,,,C:\Program Files (x86)\Common Files\Windows Live\.cache\b7eba3591ce14ce08\
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,BT Port,6.0.616.0,6.0.616.0,TOSHIBA, oem13.inf
+d,0,Bluetooth RFCOMM,8.0.2505.0,8.0.2505.0,TOSHIBA, oem14.inf
+d,1,Intel(R) Dynamic Platform & Thermal Framework Driver,6.0.1.1067,6.0.2.1071,Intel, oem33.inf
+d,1,Hotkey Driver for Panasonic PC,11.2.1000.0,11.2.1100.0,Panasonic, oem23.inf
+d,0,Panasonic Misc Driver,1.3.1100.100,1.3.1100.100,Panasonic, oem11.inf
+d,1,Intel(R) Dynamic Platform & Thermal Framework Memory Participant Driver,6.0.1.1067,6.0.2.1071,Intel, oem33.inf
+d,1,Intel(R) Dynamic Platform & Thermal Framework PCH Participant Driver,6.0.1.1067,6.0.2.1071,Intel, oem33.inf
+d,0,Intel(R) 7 Series/C216 Chipset Family SMBus Host Controller - 1E22,9.3.0.1011,9.3.0.1011,Intel, oem4.inf
+d,0,Intel(R) 7 Series Chipset Family SATA AHCI Controller,11.1.0.1006,11.1.0.1006,Intel, oem8.inf
+d,1,Intel(R) Dynamic Platform & Thermal Framework Fan Participant Driver,6.0.1.1067,6.0.2.1071,Intel, oem33.inf
+d,0,Synaptics PS/2 Port Compatible TouchPad,15.2.20.0,15.2.20.0,Synaptics, oem66.inf
+d,0,Intel(R) QM77 Express Chipset LPC Controller - 1E55,9.3.0.1011,9.3.0.1011,Intel, oem4.inf
+d,0,FCL USB Pen Tablet(Sus),1.0.0.9,1.0.0.9,Fujitsu Component, oem32.inf
+d,0,Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26,9.3.0.1011,9.3.0.1011,Intel, oem4.inf
+d,0,Ricoh PCIe SDXC/MMC Host Controller,6.10.10.28,6.10.10.28,Ricoh Company, oem31.inf
+d,1,Intel(R) Centrino(R) Advanced-N 6205,15.0.1.1,15.1.1.1,Intel, oem30.inf
+d,0,Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 3 - 1E14,9.3.0.1011,9.3.0.1011,Intel, oem4.inf
+d,0,Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 1 - 1E10,9.3.0.1011,9.3.0.1011,Intel, oem4.inf
+d,0,Intel(R) Display Audio,6.14.0.3090,6.14.0.3090,Intel(R) Corporation, oem9.inf
+d,0,Realtek High Definition Audio,6.0.1.6591,6.0.1.6591,Realtek Semiconductor Corp., oem41.inf
+d,2,SCR35xx USB Smart Card Reader,4.49.0.0,,, 
+d,2,Bluetooth RFHID,8.0.830.0,,, 
+d,2,Bluetooth RFBUS,9.0.1330.1,,, 
+d,2,Bluetooth V4.0 Module (ALPS),8.1.1216.0,,, 
+d,0,Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D,9.3.0.1011,9.3.0.1011,Intel, oem4.inf
+d,0,Intel(R) 82579LM Gigabit Network Connection,11.15.16.0,11.15.16.0,Intel, oem34.inf
+d,1,Intel(R) USB 3.0 Root Hub,1.0.4.220,1.0.4.225,Intel(R) Corporation, oem25.inf
+d,1,Intel(R) USB 3.0 eXtensible Host Controller,1.0.4.220,1.0.4.225,Intel(R) Corporation, oem26.inf
+d,1,Intel(R) Dynamic Platform & Thermal Framework Processor Participant Driver,6.0.1.1067,6.0.2.1071,Intel, oem33.inf
+d,0,Intel(R) HD Graphics 4000,8.15.10.2696,8.15.10.2696,Intel Corporation, oem2.inf
+d,0,3rd Gen Core processor DRAM Controller - 0154,9.3.0.1011,9.3.0.1011,Intel, oem4.inf
+d,1,PCI bus,1.0.4.220,1.0.4.225,Intel, oem27.inf
+f,2,d:\windows\system32\inetsrv\MDT_SCCM Best Practices Recomendations.gdoc,Isabel's document added to test description!,File
+h,2,982861:2
+h,0,KB958559:0
+h,0,KB2393802:0
+h,0,KB2425227:0
+h,0,KB2459268:0
+h,0,KB2479943:0
+h,0,KB2484033:0
+h,0,KB2488113:0
+h,0,KB2489036:0
+h,0,KB2491683:0
+h,0,KB2492386:0
+h,0,KB2496898:0
+h,0,KB2503658:0
+h,0,KB2505438:0
+h,0,KB2505454:0
+h,0,KB2506014:0
+h,0,KB2506212:0
+h,0,KB2506928:0
+h,0,KB2507618:0
+h,0,KB2509553:0
+h,0,KB2510636:0
+h,0,KB2511250:0
+h,0,KB2515325:0
+h,0,KB2518869:0
+h,0,KB2528984:0
+h,0,KB2529073:0
+h,0,KB2532531:0
+h,0,KB2534111:0
+h,0,KB2536275:0
+h,0,KB2536276:0
+h,0,KB2541014:0
+h,0,KB2544893:0
+h,0,KB2545698:0
+h,0,KB2547666:0
+h,0,KB2552343:0
+h,0,KB2556532:0
+h,0,KB2560656:0
+h,0,KB2563227:0
+h,0,KB2564958:0
+h,0,KB2567680:0
+h,0,KB2570947:0
+h,0,KB2572077:0
+h,0,KB2579686:0
+h,0,KB2584146:0
+h,0,KB2585542:0
+h,0,KB2588516:0
+h,0,KB2607576:0
+h,0,KB2615592:0
+h,0,KB2618451:0
+h,0,KB2619339:0
+h,0,KB2620712:0
+h,0,KB2621440:0
+h,0,KB2631813:0
+h,0,KB2633873:0
+h,0,KB2633952:0
+h,0,KB2639308:0
+h,0,KB2640148:0
+h,0,KB2641653:0
+h,0,KB2641690:0
+h,0,KB2644615:0
+h,0,KB2645640:0
+h,2,KB2647516:2
+h,0,KB2647518:0
+h,0,KB2654428:0
+h,0,KB2656356:0
+h,0,KB2660075:0
+h,0,KB2665364:0
+h,0,KB2667402:0
+h,0,KB958488:0
+h,0,KB976902:0
+h,0,KB976932:0
+h,0,KB982018:0
+r,0,HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Action Center,test.reg,REg 1 note,REG_DWORD
+r,0,HKEY_LOCAL_MACHINE\SOFTWARE\FileZilla 3\fzshellext,reg.reg,reg.reg uploaded,REG_DWORD

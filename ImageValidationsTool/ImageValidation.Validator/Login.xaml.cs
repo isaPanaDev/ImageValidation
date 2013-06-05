@@ -74,7 +74,7 @@ namespace ImageValidation.Validator
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unable to connect to the Cloud Database", "Message");
+                MessageBox.Show("Unable to connect to the Cloud Database", "Message:" +ex.Message);
             }
         }
 

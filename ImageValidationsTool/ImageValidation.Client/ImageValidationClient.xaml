@@ -8,341 +8,221 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     mc:Ignorable="d"
-    d:DesignHeight="621" d:DesignWidth="860" Title="Image Validation Client" WindowHeight="621" WindowWidth="860" WindowTitle="Image Validation Client" Background="Transparent" ShowsNavigationUI="False">
-    <DockPanel>       
+    Title="Image Validation Client" WindowHeight="852" Width="auto" HorizontalAlignment="Stretch"  WindowTitle="Image Validation Client" Background="Transparent" ShowsNavigationUI="False">
+    <DockPanel Width="auto" HorizontalAlignment="Stretch" >
         <Frame x:Name="_mainFrame" />
-        <Grid Background="Transparent" DockPanel.Dock="Top">
+        <Grid Background="Transparent" DockPanel.Dock="Top" Height="43" Margin="0,5,0,0">
+            <!-- Close Button -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="156*"/>
                 <ColumnDefinition Width="59*"/>
             </Grid.ColumnDefinitions>
-            <Button Name="CloseButtonImage" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="148.619,8,52.5,0" Grid.Column="1" Width="34" Height="37" Click="CloseButton_Click">
-                <Image Width="30" Height="32" Source="./Images/Offbutton.png"></Image>
+            <Button Name="CloseButtonImage" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Padding="-4"  BorderThickness="0" BorderBrush="Transparent"  Margin="149.06,2.5,46.94,2.5" Grid.Column="1" Width="40" Height="38" Click="CloseButton_Click">
+                <Image Width="30" Height="32" Source="./Images/Offbutton.png" RenderTransformOrigin="0.467,0.812"></Image>
             </Button>
         </Grid>
-        <ScrollViewer Margin="25,8,28,105" HorizontalContentAlignment="Center" BorderBrush="Black">
+        <ScrollViewer Margin="5,8,28,105" HorizontalContentAlignment="Stretch" BorderBrush="Black">
             <ScrollViewer.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FFF9F9FB" Offset="0"/>
                     <GradientStop Color="#FFF5F5F7" Offset="1"/>
                 </LinearGradientBrush>
             </ScrollViewer.Background>
-            <Grid VerticalAlignment="Center" Width="820" Background="White">
+            <Grid VerticalAlignment="Stretch" Width="auto" HorizontalAlignment="Stretch" Background="WhiteSmoke">
+                <!-- Dark Blue: Whole page Grid-->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="9*"/>
                     <ColumnDefinition Width="83*"/>
                     <ColumnDefinition Width="495*"/>
                     <ColumnDefinition Width="233*"/>
                 </Grid.ColumnDefinitions>
+                <Grid.Resources>
+                    <Style x:Key="{x:Type Button}" TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <ControlTemplate.Resources>
+                                        <Style x:Key="ShadowStyle">
+                                            <Setter Property="Control.Foreground" Value="Red" />
+                                        </Style>
+                                    </ControlTemplate.Resources>
+                                    <Border Name="pagebuttons" Padding="10,5,10,5" BorderBrush="Blue" BorderThickness="2" CornerRadius="5"  >
+                                        <TextBlock Text="{TemplateBinding Content}" />
+                                        <Border.Background>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,2">
+                                                <GradientStop Color="WhiteSmoke" Offset="1" /> <!-- Button Background -->
+                                                <GradientStop Color="LightGray" Offset="0" />
+                                                <GradientStop Color="WhiteSmoke" Offset="1" />
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                    </Border>
+                                    <ControlTemplate.Triggers>                                       
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter Property="RenderTransform" >
+                                                <Setter.Value>
+                                                    <TransformGroup>
+                                                        <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                                        <RotateTransform Angle="0"/>
+                                                        <TranslateTransform X="0" Y="0"/>
+                                                    </TransformGroup>
+                                                </Setter.Value>
+                                            </Setter>
 
-                <GroupBox Header="Computer Information" Background="Lightgray" Height="110" HorizontalAlignment="Left" Margin="1,10,0,0" Name="grpboxImageInfo" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" BorderBrush="DarkGray" FontWeight="Bold" Grid.Column="1">
+                                        </Trigger>
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter Property="Foreground" Value="Red" />
+                                                <Setter Property="Opacity"  Value="0.5"/>
+                                                <Setter Property="Opacity"  Value="1"/>
+                                                <Setter Property="Opacity"  Value="0.5"/>
+                                        </Trigger>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="BitmapEffect">
+                                                <Setter.Value>
+                                                    <OuterGlowBitmapEffect GlowColor="Blue" GlowSize="8"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Grid.Resources>
+
+                <GroupBox Header="Computer Information" Foreground="Black"  Width="800" Height="108" HorizontalAlignment="Stretch" Margin="1,2,0,0" Name="grpboxImageInfo" VerticalAlignment="Top" Grid.ColumnSpan="3" BorderBrush="DarkGray" FontWeight="Bold" Grid.Column="1">
+                    <GroupBox.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,2">
+                            <GradientStop Color="LightBlue" Offset="1" />
+                            <GradientStop Color="LightGray" Offset="0.8" />
+                            <GradientStop Color="WhiteSmoke" Offset=".1" />
+                        </LinearGradientBrush>
+                    </GroupBox.Background>
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="52*"/>
-                            <ColumnDefinition Width="33*"/>
-                            <ColumnDefinition Width="60*"/>
-                            <ColumnDefinition Width="21*"/>
-                            <ColumnDefinition Width="423*"/>
+                            <ColumnDefinition Width="66*"/>
+                            <ColumnDefinition Width="42*"/>
+                            <ColumnDefinition Width="76*"/>
+                            <ColumnDefinition Width="27*"/>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition Width="525*" />
                         </Grid.ColumnDefinitions>
+                        <Grid.Resources>
+                            <Style x:Key="{x:Type Button}" TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <!-- Import Button Graphics -->
+                                            <ControlTemplate.Resources>
+                                                <Style x:Key="ShadowStyle">
+                                                    <Setter Property="Control.Foreground" Value="Red" />
+                                                </Style>
+                                            </ControlTemplate.Resources>
+                                            <Border Name="importbutton" Padding="10,5,10,5" BorderBrush="RoyalBlue" BorderThickness="2" CornerRadius="5" Background="DarkBlue" >
+                                                <TextBlock Text="{TemplateBinding Content}" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsPressed" Value="True">
+                                                    <Setter Property="Opacity" Value="0.5" />
+                                                    <Setter Property="Foreground" Value="LightGoldenrodYellow" />
+                                                </Trigger>
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Foreground" Value="Red" />
+                                                </Trigger>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="BitmapEffect">
+                                                        <Setter.Value>
+                                                            <OuterGlowBitmapEffect GlowColor="Blue" GlowSize="8"/>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Grid.Resources>
+
                         <Label Content="Model:" Height="28" HorizontalAlignment="Left" Name="label6" VerticalAlignment="Top" Margin="1,14,0,0" FontWeight="Bold" Width="49.407" />
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="254.143" Margin="0.857,15,0,0" Grid.ColumnSpan="4" Grid.Column="1">
-                            <TextBox IsReadOnly="True" Background="Transparent" Name="txtmodel" Visibility="Visible" IsEnabled="False" FontSize="12" VerticalContentAlignment="Center">
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="254.143" Margin="1,15,0,0" Grid.ColumnSpan="5" Grid.Column="1">
+                            <TextBox IsReadOnly="True" Background="Transparent" Foreground="Blue" Name="txtmodel" Visibility="Visible" IsEnabled="False" FontSize="12" VerticalContentAlignment="Center">
                             </TextBox>
                         </Border>
-                        <Label Content="Product:" Height="28" HorizontalAlignment="Left" Name="label7" VerticalAlignment="Top" Margin="131.223,14,0,0" FontWeight="Bold" Width="57.857" Grid.Column="4" />
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="77.477" Margin="189.08,14,0,0" Grid.Column="4" >
-                            <TextBox Height="23" IsReadOnly="True"  Name="txtproduct" IsEnabled="False" />
+                        <Label Content="Product:" Height="28" HorizontalAlignment="Left" Name="label7" VerticalAlignment="Top" Margin="120,14,0,0" FontWeight="Bold" Width="57.857" Grid.Column="5" />
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="77.477" Margin="178,14,0,0" Grid.Column="5" >
+                            <TextBox Height="23" IsReadOnly="True"  Foreground="Blue" Name="txtproduct" IsEnabled="False" />
                         </Border>
-                        <Label Content="Serial:" Height="28" HorizontalAlignment="Left" Name="label8" VerticalAlignment="Top" Margin="283.129,15,0,0" FontWeight="Bold" Grid.Column="4" Width="44.527" />
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" VerticalAlignment="Top"  Margin="332.656,15,10,0" Grid.Column="4" >
-                            <TextBox Height="23" IsReadOnly="True" Name="txtserial"  IsEnabled="False" />
+                        <Label Content="Serial:" Height="28" HorizontalAlignment="Left" Name="label8" VerticalAlignment="Top" Margin="272,15,0,0" FontWeight="Bold" Grid.Column="5" Width="44.527" />
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" VerticalAlignment="Top"  Margin="322,15,10,0" Grid.Column="5" >
+                            <TextBox Height="23" IsReadOnly="True" Foreground="Blue" Name="txtserial"  IsEnabled="False" />
                         </Border>
 
                         <Label Content="OS:" Height="28" HorizontalAlignment="Left" Margin="1,47,0,0" Name="label9" VerticalAlignment="Top" FontWeight="Bold" />
 
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" VerticalAlignment="Top" Margin="0.001,50,424.228,0" Grid.Column="1" Grid.ColumnSpan="4">
-                            <TextBox Height="23" IsReadOnly="True" Name="txtos" IsEnabled="False" />
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" VerticalAlignment="Top" Margin="0,50,424,0" Grid.Column="1" Grid.ColumnSpan="5">
+                            <TextBox Height="23" IsReadOnly="True" Foreground="Blue" Name="txtos" IsEnabled="False" />
                         </Border>
 
-                        <Label Content="Arch:" Height="28" HorizontalAlignment="Left" Margin="145.08,47,0,0" Name="label10" VerticalAlignment="Top" FontWeight="Bold" Width="39" Grid.Column="4" />
-                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" HorizontalAlignment="Left" Margin="189.08,50,0,0" VerticalAlignment="Top" Width="77.477" Grid.Column="4" >
-                            <TextBox IsReadOnly="True" Height="23"  Name="txtarch"  IsEnabled="False"/>
+                        <Label Content="Arch:" Height="28" HorizontalAlignment="Left" Margin="134,47,0,0" Name="label10" VerticalAlignment="Top" FontWeight="Bold" Width="39" Grid.Column="5" />
+                        <Border CornerRadius="2" BorderThickness="2" BorderBrush="White" Height="25" Background="White" HorizontalAlignment="Left" Margin="178,50,0,0" VerticalAlignment="Top" Width="77.477" Grid.Column="5" >
+                            <TextBox IsReadOnly="True" Height="23" Foreground="Blue" Name="txtarch"  IsEnabled="False"/>
                         </Border>
 
-                        <Button Content="Import" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445.08,49,0,0"  Width="80" Height="27" Click="Import_Click" Grid.Column="4"  BorderThickness="2" BorderBrush="DarkBlue"   >
-                        <Button.Background>
-                            <LinearGradientBrush EndPoint="1.5,0" StartPoint="0.5,1">
-                                <GradientStop Color="Silver" Offset="1"/> 
-                                <GradientStop Color="White" Offset="0"/> 
-                            </LinearGradientBrush> 
-                        </Button.Background>
-                        </Button>
-                        
                     </Grid>
                 </GroupBox>
-
-                <Button Content="Validate Image" Height="38" HorizontalAlignment="Left"  Margin="-80,122,0,0" VerticalAlignment="Top" Name="btnvaidate" Click="btnvaidate_Click" Width="155" Grid.Column="2" FontWeight="Bold" FontSize="18" Foreground="White">
-                    <Button.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,2">
-                            <GradientStop Color="#1F599A" Offset=".5" />
-                            <GradientStop Color="#7AA0E2" Offset=".2" />
-                            <GradientStop Color="#02286E" Offset="1" />
-                        </LinearGradientBrush>
-                    </Button.Background>
+                
+                <!-- body: Validate Image Button + Tree Summary + Detail Report Button -->
+                <Grid Grid.Column="1" Width="800" Grid.ColumnSpan="4" Margin="0,112,0,0" HorizontalAlignment="Stretch" Background="WhiteSmoke">
+                    <Button x:Name="ValiateImageBtn" Content="Validate Image" Grid.Column="3" Margin="0,1,0,0" Width="158" Height="40" BorderThickness="2"  VerticalAlignment="Top" HorizontalAlignment="Right" FontWeight="Bold" BorderBrush="Red" FontSize="18" Foreground="Black" Click="btnvalidate_Click">
+                    <Button.Triggers> <!-- Make Detail Report start blinking! -->
+                        <EventTrigger RoutedEvent="Button.Click">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard BeginTime="00:00:00" 
+                                        RepeatBehavior="Forever" 
+                                        Storyboard.TargetName="DetailReportBtn" 
+                                        Storyboard.TargetProperty="(Foreground).(SolidColorBrush.Color)">
+                                        <ColorAnimation From="Black" To="Red" Duration="0:0:1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                    </Button.Triggers>
                 </Button>
 
-                <GroupBox Header="Tree Summary" Background="LightGray" Height="385" HorizontalAlignment="Left" Margin="0,160,0,0" Name="grpboxtree" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" Grid.Column="1" FontWeight="Bold">
-                    <Grid Name="gvContainer" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" >
-                        <xctk:BusyIndicator x:Name="_busyIndicator" IsBusy="False" DisplayAfter="0" >
-                            <xctk:BusyIndicator.BusyContentTemplate>
-                                <DataTemplate>
-                                    <StackPanel Background="Transparent" Margin="0">
-                                        <Image Width="150" Height="93" Margin="8,8,8,8" Source="./Images/CloudVerify.png"></Image>
-                                        <ProgressBar Value="100" Height="20"/>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </xctk:BusyIndicator.BusyContentTemplate>
-                            <xctk:BusyIndicator.OverlayStyle>
-                                <Style TargetType="Rectangle">
-                                    <Setter Property="Fill" Value="White"/>
-                                </Style>
-                            </xctk:BusyIndicator.OverlayStyle>
-                            <xctk:BusyIndicator.ProgressBarStyle>
-                                <Style TargetType="ProgressBar">
-                                    <Setter Property="Visibility" Value="Collapsed"/>
-                                </Style>
-                            </xctk:BusyIndicator.ProgressBarStyle>
-                            <ContentControl/>
-                        </xctk:BusyIndicator>
+                    <GroupBox Name="treegbx" Header="Validation Summary (Red:Missing Yellow:Mismatch)" Foreground="Black" Background="WhiteSmoke" Width="800" Height="500" HorizontalAlignment="Stretch" Margin="0,36,0,0" Grid.Column="1" VerticalAlignment="Top" Grid.ColumnSpan="3" FontWeight="Bold">
+                    <Grid Name="treeContainer" Background="WhiteSmoke"  Margin="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" >
+                        </Grid>
+                 </GroupBox>
+                    <Grid Name="progressCloud" Visibility="Visible" Margin="0,45,0,0"  Width="800" Height="485" Grid.Column="1" VerticalAlignment="Top" Grid.ColumnSpan="3">
+                            <xctk:BusyIndicator x:Name="_busyIndicator" IsBusy="False" DisplayAfter="0" >
+                                <xctk:BusyIndicator.BusyContentTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Background="Transparent" Margin="0">
+                                            <Image Width="150" Height="93" Margin="8,8,8,8" Source="./Images/CloudVerify.png"></Image>
+                                            <ProgressBar Value="100" Height="20"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </xctk:BusyIndicator.BusyContentTemplate>
+                                <xctk:BusyIndicator.OverlayStyle>
+                                    <Style TargetType="Rectangle">
+                                        <Setter Property="Fill" Value="White"/>
+                                    </Style>
+                                </xctk:BusyIndicator.OverlayStyle>
+                                <xctk:BusyIndicator.ProgressBarStyle>
+                                    <Style TargetType="ProgressBar">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                    </Style>
+                                </xctk:BusyIndicator.ProgressBarStyle>
+                                <ContentControl/>
+                            </xctk:BusyIndicator>
+                        </Grid>
 
-                    </Grid>
-                </GroupBox>
-
-                <Button Content="Detailed Report" Grid.Column="3" Margin="0,545,0,0" Width="175" Height="38"  VerticalAlignment="Top" Name="btnReport" Click="btnvaidate_Click" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White">
-                    <Button.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,2">
-                            <GradientStop Color="OrangeRed" Offset=".2" />
-                            <GradientStop Color="Orange" Offset=".1" />
-                            <GradientStop Color="Blue" Offset="1" />
-                        </LinearGradientBrush>
-                    </Button.Background>
+                    <Button x:Name="DetailReportBtn" Content="Detailed Report" Grid.Column="3" Margin="0,538,0,0" Width="158" Height="40"  VerticalAlignment="Top" HorizontalAlignment="Right" BorderThickness="2"  FontWeight="Bold" BorderBrush="Red" FontSize="18" Foreground="Black" Click="DetailReportBtn_Click">
                 </Button>
 
-                <GroupBox Header="Summary" Background="LightGray" Height="230" HorizontalAlignment="Left" Margin="0,580,0,0" Name="grpboxsmmry" VerticalAlignment="Top" Width="757" Grid.ColumnSpan="3" Grid.Column="1" FontWeight="Bold" BorderBrush="DarkGray">
-                    <Grid>
-                        <Image Name="imgthumboverall"  VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,10,718,0" />
-                        <Image Name="imgthumboveralld" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,10,718,0" />
-                        <Label FontSize="14" Content="" HorizontalAlignment="Left"  Margin="22,10,0,154" Name="lbloverall" />
-                        <Image Name="imgthumbapp" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,50,718,0" />
-                        <Image Name="imgthumbappd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,50,718,0" />
-                        <Label FontSize="14" Content="" HorizontalAlignment="Left" Margin="22,50,0,120" Name="lblapp" />
-                        <Image Name="imgthumbdriver" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,90,718,0" />
-                        <Image Name="imgthumbdriverd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,90,718,0" />
-                        <Label FontSize="14" Content="" Height="28"  HorizontalAlignment="Left" Margin="22,90,0,0" Name="lbldriver" VerticalAlignment="Top" />
-                        <Image Name="imgthumbfilefolder" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,130,718,0"/>
-                        <Image Name="imgthumbfilefolderd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,130,718,0"/>
-                        <Label FontSize="14" Content="" Height="28" HorizontalAlignment="Left" Margin="22,130,0,0" Name="lblfilefolder" VerticalAlignment="Top" />
-                        <Image Name="imgthumbregistry" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,170,718,0"/>
-                        <Image Name="imgthumbregistryd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,170,718,0"/>
-                        <Label FontSize="14" Content="" Height="28" HorizontalAlignment="Left" Margin="22,170,0,0" Name="lblregistry" VerticalAlignment="Top" />
-                        <Image Name="imgthumbhotfixes" VerticalAlignment="Top"  Visibility="Hidden" Source="./Images/Thumb-up.png" Margin="2,210,718,0" />
-                        <Image Name="imgthumbhotfixesd" VerticalAlignment="Top" Visibility="Hidden" Source="./Images/Thumb-down.png" Margin="2,210,718,0" />
-                        <Label FontSize="14" Content="" Height="28" HorizontalAlignment="Left" Margin="22,210,0,0" Name="lblhotfixes" VerticalAlignment="Top" />
-
-                       
-                    </Grid>
-                </GroupBox>
-
-                <Label Content="Driver Validation" Height="28" HorizontalAlignment="Left" Margin="0,808,0,0" Name="lblDrvr" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" RenderTransformOrigin="0.226,0.407" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,828,0,0" Name="dataGrid_driver" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
-                    <my:DataGrid.Columns>
-                        <my:DataGridTextColumn Binding="{Binding Path=DeviceName}" Header="Device Name" Width="230" IsReadOnly="True" >
-                            <my:DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="TextWrapping" Value="Wrap"/>
-                                </Style>
-                            </my:DataGridTextColumn.ElementStyle>
-                        </my:DataGridTextColumn>
-                        <my:DataGridTextColumn Binding="{Binding Path=DriverVersion}" Header="Version" Width="230" IsReadOnly="True" />
-                        <my:DataGridCheckBoxColumn Header="Match" Width="230" IsReadOnly="True">
-                            <my:DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="{x:Type CheckBox}">
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="{x:Type CheckBox}">
-                                                <Ellipse x:Name="FlagEllipse" Stroke="Black" Fill="#FF20860C" Width="25" Height="25"/>
-                                                <ControlTemplate.Triggers>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="2">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FF20860C"/>
-                                                    </DataTrigger>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="1">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FFE81515"/>
-                                                    </DataTrigger>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="0">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FFD3EF03"/>
-                                                    </DataTrigger>
-                                                </ControlTemplate.Triggers>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </my:DataGridCheckBoxColumn.ElementStyle>
-                        </my:DataGridCheckBoxColumn>
-                    </my:DataGrid.Columns>
-                </my:DataGrid>
-
-                <Label Content="Application Validation" HorizontalAlignment="Left" Margin="0,960,0,658" Name="lblappval" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,980,0,0" Name="dataGrid_app" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
-                    <my:DataGrid.Columns>
-                        <my:DataGridTextColumn Binding="{Binding Path=DisplayName}" Header="Display Name" Width="230" IsReadOnly="True" >
-                            <my:DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="TextWrapping" Value="Wrap"/>
-                                </Style>
-                            </my:DataGridTextColumn.ElementStyle>
-                        </my:DataGridTextColumn>
-                        <my:DataGridTextColumn Binding="{Binding Path=Version}" Header="Version" Width="230" IsReadOnly="True" />
-                        <my:DataGridCheckBoxColumn Header="Match" Width="230" IsReadOnly="True">
-                            <my:DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="{x:Type CheckBox}">
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="{x:Type CheckBox}">
-                                                <Ellipse x:Name="FlagEllipse" Stroke="Black" Fill="#FF20860C" Width="25" Height="25"/>
-                                                <ControlTemplate.Triggers>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="2">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FF20860C"/>
-                                                    </DataTrigger>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="1">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FFD3EF03"/>
-                                                    </DataTrigger>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="0">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FFE81515"/>
-                                                    </DataTrigger>
-                                                </ControlTemplate.Triggers>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </my:DataGridCheckBoxColumn.ElementStyle>
-                        </my:DataGridCheckBoxColumn>
-                    </my:DataGrid.Columns>
-                </my:DataGrid>
-
-                <Label Content="File And Folder" HorizontalAlignment="Left" Margin="0,1120,0,0" Name="lblfilefolderval" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1"/>
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1142,0,0" Name="dataGrid_filefolder" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
-                    <my:DataGrid.Columns>
-                        <my:DataGridTextColumn Binding="{Binding Path=Location}" Header="Location" Width="220" IsReadOnly="True" />
-                        <my:DataGridTextColumn Binding="{Binding Path=Note}" Header="Note" Width="200" IsReadOnly="True" />
-                        <my:DataGridTextColumn Binding="{Binding Path=Type}" Header="Type" Width="200" IsReadOnly="True" />
-                        <my:DataGridCheckBoxColumn Header="Match" Width="100" IsReadOnly="True">
-                            <my:DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="{x:Type CheckBox}">
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="{x:Type CheckBox}">
-                                                <Ellipse x:Name="FlagEllipse" Stroke="Black" Fill="#FF20860C" Width="25" Height="25"/>
-                                                <ControlTemplate.Triggers>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="True">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FF20860C"/>
-                                                    </DataTrigger>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="False">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FFE81515"/>
-                                                    </DataTrigger>
-                                                </ControlTemplate.Triggers>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </my:DataGridCheckBoxColumn.ElementStyle>
-                        </my:DataGridCheckBoxColumn>
-                    </my:DataGrid.Columns>
-                </my:DataGrid>
-                <Label Content="Registry Settings" HorizontalAlignment="Left" Name="lblrgstryval" Margin="0,1280,0,312"  FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1308,0,0" Name="dataGrid_registr" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
-                    <my:DataGrid.Columns>
-                        <my:DataGridTextColumn Binding="{Binding Path=RegKey}" Header="Registry Key" Width="290" IsReadOnly="True">
-                            <my:DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="TextWrapping" Value="Wrap"/>
-                                </Style>
-                            </my:DataGridTextColumn.ElementStyle>
-                        </my:DataGridTextColumn>
-                        <my:DataGridTextColumn Binding="{Binding Path=Note}" Header="Note" Width="120" IsReadOnly="True">
-                            <my:DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="TextWrapping" Value="Wrap"/>
-                                </Style>
-                            </my:DataGridTextColumn.ElementStyle>
-                        </my:DataGridTextColumn>
-                        <my:DataGridTextColumn Binding="{Binding Path=Value}" Header="Value" Width="110" IsReadOnly="True" />
-                        <my:DataGridTextColumn Binding="{Binding Path=ValueData}" Header="Value Data" Width="110" IsReadOnly="True" />
-                        <my:DataGridCheckBoxColumn Header="Match" Width="100" IsReadOnly="True">
-                            <my:DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="{x:Type CheckBox}">
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="{x:Type CheckBox}">
-                                                <Ellipse x:Name="FlagEllipse" Stroke="Black" Fill="#FF20860C" Width="25" Height="25"/>
-                                                <ControlTemplate.Triggers>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="True">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FF20860C"/>
-                                                    </DataTrigger>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="False">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FFE81515"/>
-                                                    </DataTrigger>
-                                                </ControlTemplate.Triggers>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </my:DataGridCheckBoxColumn.ElementStyle>
-                        </my:DataGridCheckBoxColumn>
-                    </my:DataGrid.Columns>
-                </my:DataGrid>
-                <Label Content="Microsoft HotFixes" HorizontalAlignment="Left" Name="lblhotfixval" FontWeight="Bold" Margin="0,1448,0,0" Grid.ColumnSpan="2" Grid.Column="1" />
-                <my:DataGrid AutoGenerateColumns="False" Height="135" HorizontalAlignment="Left" Margin="0,1468,0,0" Name="dataGrid_hotfix" VerticalAlignment="Top" Width="757" CanUserAddRows="False" Grid.ColumnSpan="3" Grid.Column="1">
-                    <my:DataGrid.Columns>
-                        <my:DataGridTextColumn Binding="{Binding Path=HotFixIDs}" Header="HotFix ID" Width="350" IsReadOnly="True" />
-                        <my:DataGridCheckBoxColumn Header="Match" Width="350" IsReadOnly="True">
-                            <my:DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="{x:Type CheckBox}">
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="{x:Type CheckBox}">
-                                                <Ellipse x:Name="FlagEllipse" Stroke="Black" Fill="#FF20860C" Width="25" Height="25"/>
-                                                <ControlTemplate.Triggers>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="True">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FF20860C"/>
-                                                    </DataTrigger>
-                                                    <DataTrigger Binding="{Binding IsCompared}" Value="False">
-                                                        <Setter TargetName="FlagEllipse" Property="Fill" Value="#FFE81515"/>
-                                                    </DataTrigger>
-                                                </ControlTemplate.Triggers>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </my:DataGridCheckBoxColumn.ElementStyle>
-                        </my:DataGridCheckBoxColumn>
-                    </my:DataGrid.Columns>
-                </my:DataGrid>
-                <Label Height="28" HorizontalAlignment="Left" Margin="267.425,190,0,0" Name="lblprocess" VerticalAlignment="Top" Foreground="#FFEF1818" Grid.Column="2"/>
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,794,0,0" Name="elpGreenDrv" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,794,0,0" Name="elpYellowDrv" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,794,0,0" Name="elpRedDrv" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,947,0,0" Name="elpGreenapp" Stroke="Black"  Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="159.903,947,0,0" Name="elpYellowapp" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="159.903,947,0,0" Name="elpRedapp" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1110,0,0" Name="elpGreenfile" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1110,0,0" Name="elpYellowfile" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1110,0,0" Name="elpRedfile" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,1270,0,0" Name="elpGreenreg" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,1270,0,0" Name="elpYellowreg" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="160.903,1270,0,0" Name="elpRedreg" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="161.903,1438,0,0" Name="elpGreenhot" Stroke="Black" Visibility="Hidden" Fill="#FF20860C" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="156.903,1438,0,0" Name="elpYellowhot" Stroke="Black" Visibility="Hidden" Fill="#FFD3EF03" VerticalAlignment="Top" Width="20" Grid.Column="3" />
-                <Ellipse Height="20" HorizontalAlignment="Left" Margin="156.903,1438,0,0" Name="elpRedhot" Stroke="Black" Visibility="Hidden" Fill="#FFE81515" VerticalAlignment="Top" Width="20" Grid.Column="3" />
+                </Grid> <!-- Body End -->
 
             </Grid>
 
